@@ -1,0 +1,15 @@
+extends layout
+
+
+
+block content
+  h1= title
+  if result.length    
+    ul
+      li='ID: ' + message
+      -for (var i=0; i< result.length; i++)
+          li#test='Task Name: ' + result[i]['Task Name'] + ' ' + 'Avg_Recall: ' + result[i].Avg_Recall
+  else
+    li='Vazio'
+
+  

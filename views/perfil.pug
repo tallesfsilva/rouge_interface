@@ -1,0 +1,43 @@
+extends layout
+
+block menu
+    include menu
+
+block content
+    h1= title
+    div(style="display:flex; flex-direction:column; align-items: center")
+    
+        if !success && message && body     
+            each value in message
+                div#error(style="display:block" class="alert alert-danger" role="alert")=value.msg
+        else
+            div(style="display:none" class="alert alert-danger" role="alert")=message
+        if success && message   
+            div#error(style="display:block" class="alert alert-success" role="alert")=message
+        else
+            div(style="display:none" class="alert alert-danger" role="alert")=message 
+        form(method="POST" action="")       
+            div(class="container-fluid" style="background-color: #ececf7;padding-top: 15px;")
+                div(class="group")
+                    input(name="nome" type="text" required value=(undefined===usuario ? '' : usuario.nome))
+                    label Nome: 
+                    span(class="highlight")
+                    span(class="bar")         
+                div(class="group")
+                    input(name="email" type="email" required value=(undefined===usuario ? '' : usuario.email))
+                    label Email: 
+                    span(class="highlight")
+                    span(class="bar")   
+                div(class="group")
+                    input(name="senha" type="password" required)
+                    label Nova senha: 
+                    span(class="highlight")
+                    span(class="bar")    
+                div(class="group")
+                    input(name="senha_2" type="password" required)
+                    label Confirmar senha: 
+                    span(class="highlight")
+                    span(class="bar")          
+                div(class="group")
+                    input(class="input_btn" type="submit" value="Atualizar")  
+                

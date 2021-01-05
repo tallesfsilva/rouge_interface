@@ -1,0 +1,33 @@
+
+block menu
+        nav(class="navbar navbar-inverse" style="border-radius: 0px; background-color:#2f3962")       
+             div(class="container-fluid")
+              div(style="display:flex;")    
+                div(class="modal")
+                    div#loader(style="display: none;")   
+                ul(class="nav navbar-nav")                      
+                    li
+                       a( href="https://unb.br/" target="_blank" class="navbar-brand")
+                          div(style="display:flex")
+                             img(src="/images/logo.svg" style="width:40px")
+                    li
+                        a(href="/home") Home
+                    li
+                        a(href="/projetos") Projetos
+                    li
+                        a(href="/novo_projeto") Criar Projeto
+                    li
+                        a(href="/perfil") Editar Perfil
+                    li
+                        a(href="/configuracoes") Configurações
+                    li
+                        a#sobre(class="nav-link" href="/sobre") Sobre
+                    li
+                        a#logout(class="nav-link" href="/logout") Sair
+                  
+script(src="/javascripts/main.js")
+script.
+      op("#logout").addEventListener('click', () =>{
+          1===1 ? c() : null;           
+   }
+    );

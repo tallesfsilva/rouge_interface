@@ -1,0 +1,39 @@
+extends layout
+
+block menu
+  include menu  
+block content
+    div(style="display:flex; flex-direction:column; margin-left:55px;margin-right: 55px;")
+            if !success
+                div(style="display:block" class="alert alert-danger" role="alert")=message
+            div(class="modal")
+              div#loader(style="display: none")
+            if success
+                h4 Total de projetos: #{projeto.length}
+                table(class="table table-borderless")
+                    thead 
+                        tr(class="projetos")
+                            th(scope="col1") Código                         
+                            th(scope="col2") Nome
+                            th(scope="col3") Data criação
+                            th Download  
+                    tbody               
+                        each value in projeto
+                            tr
+                                td
+                                    a(href=value.url) #{value._id}                           
+                                td=value.nome 
+                                -function formataData(value){ return (value.dataCriacao.getDate()<10 ? "0" +value.dataCriacao.getDate() : value.dataCriacao.getDate())  + "/" + value.dataCriacao.getMonth() + "/" + value.dataCriacao.getFullYear()}                                             
+                                td #{formataData(value)}
+                                td
+                                    a(href='/api/result/'+ value._id download) Baixar
+            else
+                h4 Você não possui nenhum projeto    
+                table(class="table table-borderless")
+                    thead 
+                        tr
+                            td(scope="col1") Projeto
+                            td(scope="col1") Data criação
+                            td Download  
+                   
+                    

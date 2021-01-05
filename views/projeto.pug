@@ -1,0 +1,42 @@
+extends layout
+
+block menu
+    include menu
+
+block content
+    div(style="display:flex; flex-direction:column; margin:10px")
+            div(style="display:flex; margin-top:15px; flex-direction: column;")
+                h4 Código do Projeto: #{projeto._id}
+                h4 Nome: #{projeto.nome}
+                -function formataData(value){ return (value.dataCriacao.getDate()<10 ? "0" +value.dataCriacao.getDate() : value.dataCriacao.getDate())  + "/" + value.dataCriacao.getMonth() + "/" + value.dataCriacao.getFullYear()}                                             
+                h4 Data de criação: #{formataData(projeto)}
+                a(href='/api/result/'+ projeto._id download) Baixar
+
+            table(class="table table-borderless")
+                thead 
+                    tr
+                        th(scope="col1") ROUGE-Type
+                        th(scope="col1") Task Name
+                        th System Name
+                        th Avg_Recall
+                        th Avg_Precision
+                        th Avg_F-SCore
+                        th Num References Summaries
+                tbody
+                    
+                    -for (var i=0; i< medidas.medidas.length; i++)
+                        tr(class="cell_")
+                            td=medidas.medidas[i]['ROUGE-Type']                
+                            td=medidas.medidas[i]['Task Name']
+                            td=medidas.medidas[i]['System Name']
+                            td=medidas.medidas[i].Avg_Recall
+                            td=medidas.medidas[i].Avg_Precision 
+                            td=medidas.medidas[i]['Avg_F-Score']
+                            td(style="text-align:center")=medidas.medidas[i]['Num Reference Summaries']
+
+                                            
+                    
+            
+            
+           
+           

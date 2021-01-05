@@ -1,0 +1,97 @@
+POST http://localhost:3000/api/token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGFsbGVzLnNpbHZhQGdtYWlsLmNvbSIsImlhdCI6MTYwODQ5OTg1OX0.BZ48aUb-0rbcwuH01Etjm2hkgo0rOlXLtKlM3DkE7lc"
+}
+
+####
+
+GET http://localhost:3000/projetos
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3B5dGFsY3VzQGdtYWlsLmNvbSIsImlhdCI6MTYwNjg0MzYwOCwiZXhwIjoxNjA2OTMwMDA4fQ.707Hn9__7Q3_Ws_YvhOrwynXXZafsT4ppyvdFrfIJbg
+
+
+
+
+
+
+####
+
+POST http://localhost:3000/novo_projeto
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGFsbGVzLnNpbHZhQGdtYWlsLmNvbSIsImlhdCI6MTYwODUwNDYyMiwiZXhwIjoxNjA4NTkxMDIyfQ.gO9JK4Pioenk3j8yBL5vVpJios2jCj2_5O3SM_gvwx0
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="projeto"; type="text"
+
+Projeto
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="reference"
+
+
+Content-Disposition: form-data; type="file"; name="reference[0]"; filename="task1_englishReference1.txt"
+
+< ./task1_englishReference1.txt
+
+Content-Disposition: form-data; type="file"; name="reference[1]"; filename="task1_englishReference2.txt"
+
+< ./task1_englishReference2.txt
+
+
+Content-Disposition: form-data; type="file"; name="reference[2]"; filename="task2_persianReference1.txt"
+
+< ./task2_persianReference1.txt
+
+-----WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="system"
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; type="file"; name="system[0]"; filename="task1_englishSyssum1.txt"
+
+< ./task1_englishSyssum1.txt
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; type="file"; name="system[1]"; filename="task1_englishSyssum2.txt"
+
+< ./task1_englishSyssum2.txt
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; type="file"; name="system[2]"; filename="task2_persianSyssum1.txt"
+
+< ./task2_persianSyssum1.txt
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+####
+
+POST http://localhost:3000/registrar
+Content-Type: application/json
+
+{
+       "nome" : "Bonitossssssoss",
+       "email" : "hfhdddddddssssddddffelocof@yahosssssoggssssgffyyyhhh.com",
+       "senha" : "12345",
+       "senha_2" : "12345"
+
+}
+
+####
+
+
+
+GET http://localhost:3000/home
+####
+
+
+
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{ 
+  "email" : "talles.silva@gmail.com",
+  "senha" : "12345"
+ }
+
+####

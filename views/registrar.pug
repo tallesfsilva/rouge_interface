@@ -1,0 +1,52 @@
+extends layout
+block content
+  h1= title
+  div(style="display:flex; flex-direction:column; align-items: center")
+    a(style="color: #2F3962" href="/login") Voltar
+   
+    div(style="display:flex; flex-direction: column;justify-content:center;")
+        a(style="text-align:center" href="https://unb.br/" target="_blank")
+            img(src="/images/logo.svg" style="width:200px; border-radius:5px")       
+    form(name="frm02" method="POST" action="")       
+        div(class="container-fluid" style="background-color: #ececf7;padding-top: 15px;")
+            div(class="modal")
+               div#loader(style="display: none;")
+            h4(style="text-align:center; font-weight: bolder; color: #2F3962") Crie sua conta
+            if !success && message && body     
+                each value in message
+                    div#error(style="display:block" class="alert alert-danger" role="alert")=value.msg
+            else if mongo && !success && message
+                    div(style="display:block" class="alert alert-danger" role="alert")=message                
+            else
+                 div(style="display:none" class="alert alert-danger" role="alert")=message
+           
+            div(class="group")
+                input(name="nome" type="text" required)
+                label Nome: 
+                span(class="highlight")
+                span(class="bar")         
+            div(class="group")
+                input(name="email" type="email" required)
+                label Email: 
+                span(class="highlight")
+                span(class="bar")   
+            div(class="group")
+                input(name="senha" type="password" required)
+                label Senha: 
+                span(class="highlight")
+                span(class="bar")    
+            div(class="group")
+                input(name="senha_2" type="password" required)
+                label Confirmar senha: 
+                span(class="highlight")
+                span(class="bar")          
+            div(class="group")
+                input(class="input_btn" type="submit" id="btn02" value="Registrar")  
+
+  script(src="/javascripts/main.js")
+  script.
+     op("form[name='frm02']").addEventListener('submit', () =>{
+         return 1===1 ? a() : null;           
+       }
+     );
+      
