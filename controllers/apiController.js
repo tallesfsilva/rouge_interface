@@ -361,6 +361,7 @@ function execRouge(projetoPath){
         try{       
             const { exec} = require("child_process");
             let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
+            console.log(rougeProperties);
             try{ 
                 if(rougeProperties){             
                         exec('java -jar -Drouge.prop=' + rougeProperties.toString() + ' ' + path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar'), (error, stdout, stderr) => {
