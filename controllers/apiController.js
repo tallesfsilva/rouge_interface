@@ -357,7 +357,7 @@ function criaDiretorios(idProjeto){
 
 function execRouge(projetoPath){
 
-    return new Promise(resolve =>{
+    return new Promise((resolve,reject) =>{
         try{       
             const { exec} = require("child_process");
             let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
