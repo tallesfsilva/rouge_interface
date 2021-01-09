@@ -325,7 +325,7 @@ function formataRougeProperties(projetoPath, projetoOutput){
                     reject({success: false, message: "Execução não foi possível"});
         }
  }).catch((err) => {    
-    console.log(err);
+    reject({success: false, message: "Não foi possível iniciar a formatação do arquivo properties"});
 
 });
 }
@@ -369,17 +369,17 @@ function execRouge(projetoPath){
                             return;
                         }
                         if (stderr) {
-                            resolve({success:false, message : "Não foi possível executar o ROUGE2", error: stderr})                    
+                            reject({success:false, message : "Não foi possível executar o ROUGE2", error: stderr})                    
                         }
                         resolve({success:true, message : "ROUGE foi executado corretamente"})                      
                           //console.log(`stdout: ${stdout}`);                          
                          });            
                      };
             } catch(err){
-                resolve({success:false, message : "Não foi possível executar o ROUGE2"})
+                reject({success:false, message : "Não foi possível executar o ROUGE2"})
             }
         } catch(err){
-            resolve({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+            reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
 
         }
 
@@ -395,11 +395,11 @@ function gravaArquivos(reference,system, projetoPath){
                 try{
                     for(let i=0;i<reference.length;i++){
                         fs.writeFileSync(projetoPath +'/reference/' +reference[i].name , reference[i].data, (err)=> {      
-                                if(err) return console.log(err);                                            
+                                if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                           
                         })
                     };  
                 } catch(err){
-                    resolve({success: false, message: "Não foi possível gravar o arquivo reference"});
+                    reject({success: false, message: "Não foi possível gravar o arquivo reference"});
                 }
                 
                 try{
@@ -409,10 +409,10 @@ function gravaArquivos(reference,system, projetoPath){
                         })
                     }
                 } catch(err){
-                    resolve({success: false, message: "Não foi possível gravar o arquivo system"});
+                    reject({success: false, message: "Não foi possível gravar o arquivo system"});
 
                 }
-                    resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
+                    reject({success: true, message: "Arquivos system e reference gravados corretamente"});
             
             
             }
@@ -423,22 +423,41 @@ function gravaArquivos(reference,system, projetoPath){
 
 }
 
-function validaArquivos(reference, system){
-        if(reference && system){
-            for(i=0;i<reference.length;i++){
+const validaReference = (reference) => {
+    if(reference){       
+        if(!reference.length) {            
+            return (reference.mimetype == 'text/plain' &&
+            reference.name.split(".")[1] == "txt") && (system.mimetype == 'text/plain') ? true : false;
+
+        }else {
+            for(i=0;i<reference.length;i++){                
                 if(reference[i].mimetype == 'text/plain' &&
                         reference[i].name.split(".")[1] == "txt"){                         
-                 }else{
+                }else{
                 return false;
-               }
+                 }
+            }        
+        }
+        return true;
+    }else{
+        return false;
+    }
+        
+}
+function validaSystem(system){ 
+    if(system){
+        if(!system.length){
+            return (system.mimetype == 'text/plain' &&
+            system.name.split(".")[1] == "txt") ? true : false;
+        }else{                 
+                for(i=0;i<system.length;i++){
+                    if(system[i].mimetype == 'text/plain' &&
+                    system[i].name.split(".")[1] == "txt"){                                
+                    }else{
+                        return false;
+                    }
             }
-          for(i=0;i<system.length;i++){
-            if(system[i].mimetype == 'text/plain' &&
-            system[i].name.split(".")[1] == "txt"){                                
-            }else{
-               return false;
-            }
-      }
+        }
             return true;
     }else{
         return false;
@@ -446,17 +465,71 @@ function validaArquivos(reference, system){
 
 }
 
+function formataNgram(string){
+    return string.replace(/ /g,"").split(",").
+    map((a) => {return a.replace(/^[0-9]+|^S[0-9]+|^SU[0-9]+|^[L]/g,"")}).join("")==""
+}
+/*
+function formataNgram(ngram){
+    let count = 0;
+    if(ngram){
+        //Verificar como criar um regex com o padrão N,SN,SUN,L
+        //Verificar repetições
+        console.log(ngram);
+        for(let i=0; i<ngram.length;i++){            
+            if((parseInt(ngram[i]))){}
+            else if(ngram[i].split('')[0]=='S' && 
+            ngram[i].split('')[1]==parseInt(ngram[i].split('')[1])){}
+            else if((ngram[i].split('')[0]=='S' && ngram[i].split('')[1]=='U'
+            && ngram[i].split('')[2]==parseInt(ngram[i].split('')[2]))){}
+            else if(ngram[i]=='L'){}           
+            else{
+                return false;
+            }            
+        }
+            return true;
+    }
+}*/
+
+
+let arquivoProperties = {
+    ngram: '',
+    beta: '',
+    stopwords_use: '',
+    synonyms_use: '',
+    stemmer_use: '',
+    route_type: '',
+    post_tagger: '',
+    stemmer_name: '' ,
+    project_dir : '',
+    outputFile : '',
+    stopwords_file : "",
+    topic_type : "",
+}
 exports.api_rouge_prepara = (req,res,next) =>{ 
     if(req && req.user.name){
-        console.log(req.body);
-        if(req.body.default_rouge){
-            console.log("Default rouge!");
-        } 
-         
-          let reference = req.files.reference;  
-          let system = req.files.system;
-          let arquivosValida = validaArquivos(reference,system);           
-            if(arquivosValida){
+        console.log(req.body);     
+        arquivoProperties.ngram = req.body.ngram || properties.get('ngram');
+        arquivoProperties.beta = parseFloat(req.body.beta) || parseFloat(properties.get('beta'));
+        arquivoProperties.rouge_type = req.body.rouge_type || properties.get('rouge.type');
+        arquivoProperties.post_tagger = req.body.post_tagger || properties.get('pos_tagger_name');
+        arquivoProperties.stemmer_name = req.body.stemmer_name || properties.get('stemmer.name');
+        arquivoProperties.synonyms_use = req.body.synonyms_use || properties.get('synonyms.use');
+        arquivoProperties.stemmer_use = req.body.stemmer_use || properties.get('stemmer.use');
+        arquivoProperties.stopwords_use = req.body.stopwords_use || properties.get('stopwords.use');
+        arquivoProperties.topic_type = req.body.topic_type || properties.get('topic.type');
+        
+        console.log(arquivoProperties); 
+        let reference = req.files.reference;
+        let system = req.files.system;         
+        let ngramValida = formataNgram(arquivoProperties.ngram)
+        let referenceValida = validaReference(reference)
+        let systemValida = validaSystem(system);    
+         if(!ngramValida){
+            res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
+         }else if(!referenceValida || !systemValida){        
+            res.render('rouge_page',{success : false,message :"Arquivos inválidos. Verifique se formato de arquivo é txt."});
+         }else{ 
                 Usuario.findOne({'email' : req.user.name})
                 .exec((err,usuario)=>{
                         if(err) console.log(err)                      
@@ -470,12 +543,14 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                 projeto.save((err) =>{
                                     if(err) return console.log(err);                                
                                                                                                                               
-                                    rouge_properties.rougeType = req.body.type_rouge;
-                                    console.log(rouge_properties.rougeType);                                   
+                                  //  rouge_properties.rougeType = req.body.type_rouge;
+                                   // console.log(rouge_properties.rougeType);                                   
                                 
                                     let projetoPath = 'projetos/' + projeto._id;
-                                    let projetoOutput = 'projetos/' + projeto._id + '/results';                                
-
+                                    let projetoOutput = 'projetos/' + projeto._id + '/results';
+                                    arquivoProperties.outputFile = 'projetos/' + projeto._id + '/results';                                
+                                    arquivoProperties.project_dir = 'projetos/' + projeto._id;
+                                   
                               
                                 //Verificar forma de parar execução caso retorno de sucesso de qualquer promise seja false
                                 //verificar porque promise não é retornada com a função de salvar    
@@ -507,10 +582,15 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             if(err) console.log(err);
                                                 //console.log("Resultado salvo: " + resultado);
                                                 console.log({success:true, message: "Resultado gravado corretamente"});
-                                                if(req.headers['authorization'])
+                                                if(req.headers['authorization']){                                         
+
                                                     res.json({projeto: projeto._id, resultado : resultado.medidas})
-                                                else                                    
+                                                 } else    {   
+                                                   /* fs.writeFileSync(path.join(process.cwd() +'/' + projetoOutput+'/result.json'), json_result.result, (err)=> {      
+                                                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                                                                         
+                                                })    */                   
                                                     res.redirect('/projeto/' + projeto._id);
+                                                         }
                                          });                                                               
                                                                         
                             }
@@ -521,10 +601,8 @@ exports.api_rouge_prepara = (req,res,next) =>{
         res.json({success : false,message :"Request não disponível. Nome do projeto não pode ser nulo"});
     }
 });
-}else{
-      res.render('rouge_page',{success : false,message :"Arquivos inválidos. Verifique se formato de arquivo é txt."});
-            }
 
+         }
  }else{
      res.json({success : false,message :"Não foi possível iniciar o processo"});
  }
@@ -587,6 +665,19 @@ exports.api_novo_projeto = (req,res,next) => {
 
 }
 
+function formataData(value){
+
+    
+    for(let i=0;i<value.length;i++){
+        if(value){
+            let data = (value[i].dataCriacao.getDate()<10 ? "0" +value[i].dataCriacao.getDate() : value[i].dataCriacao.getDate())  + "/" + mes[value[i].dataCriacao.getMonth()] + "/" + value[i].dataCriacao.getFullYear()                                                
+            console.log(data);
+     }
+    }
+    return value;
+   
+}
+
 exports.api_projeto = (req,res,next) => {
 
     if(req.params.id && req.token){
@@ -598,7 +689,8 @@ exports.api_projeto = (req,res,next) => {
                 Resultado.findOne({'projeto' : projeto})
                 .exec((err, resultado) =>{   
                     if(resultado!=null 
-                    && resultado!=undefined){                    
+                    && resultado!=undefined){  
+                                            
                         res.json({projeto: projeto, medidas: resultado});       
                     }else{
                         res.json({success:false, message:"Resultado não encontrado"}).status(404)
@@ -619,10 +711,11 @@ exports.api_projeto = (req,res,next) => {
 exports.api_lista_projetos = (req,res) =>{
     if(req.idUser && req.token){
         let idProjeto = req.params.id;    
-        Projeto.find({'usuario': req.idUser}, {nome:1, dataCriacao: 1})
+        Projeto.find({'usuario': req.idUser}, {nome:1, dataCriacao: 1}).sort({'dataCriacao': 'desc'})
          .exec((err, projeto) =>{
              if(err) res.render('lista_projetos', {success:false, message:"Projeto não encontrado"})
-            if(projeto!=null && projeto!=undefined){            
+            if(projeto!=null && projeto!=undefined){  
+                     
                     res.render('lista_projetos', {success: true, projeto: projeto});             
         }else{
             res.render('lista_projetos', {success:false, message:"Projeto não encontrado"})
@@ -745,7 +838,10 @@ function formatJSON(projetoOutput){
                                 results.push(jsonObj)         
                         )
                             .on('end', (err) =>{
-                                resolve({ result: results, success: true, message:"Arquivo result-json gerado"});           
+                           
+                                resolve({ result: results, success: true, message:"Arquivo result-json gerado"}); 
+
+                               
 
                         }).on('end', (err) =>{
                                 results = [];

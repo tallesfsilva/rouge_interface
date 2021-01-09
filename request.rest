@@ -7,13 +7,14 @@ Content-Type: application/json
 
 ####
 
-GET http://localhost:3000/projetos
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib3B5dGFsY3VzQGdtYWlsLmNvbSIsImlhdCI6MTYwNjg0MzYwOCwiZXhwIjoxNjA2OTMwMDA4fQ.707Hn9__7Q3_Ws_YvhOrwynXXZafsT4ppyvdFrfIJbg
+GET http://localhost:3000/api/projeto/5ff8e22ad34e692dd089a112
+Authorization: Bearer eyhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGFsbGVzLnNpbHZhQGdtYWlsLmNvbSIsImlhdCI6MTYxMDE0NjY2MSwiZXhwIjoxNjEwMjMzMDYxfQ.e3eFUdJskC6gA5izbFHzFuHNpm23RwKu2q6mGEn3Zc8
 
 
+####
 
-
-
+GET http://localhost:3000/api/result/5ff8e22ad34e692dd089a112
+Authorization: Bearer eyJhbciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoidGFsbGVzLnNpbHZhQGdtYWlsLmNvbSIsImlhdCI6MTYxMDE0NjY2MSwiZXhwIjoxNjEwMjMzMDYxfQ.e3eFUdJskC6gA5izbFHzFuHNpm23RwKu2q6mGEn3Zc8
 
 ####
 

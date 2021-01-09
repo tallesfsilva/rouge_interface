@@ -20,7 +20,8 @@ div(class="container" style="display:flex; flex-direction:column;")
         else
           div(style="display:none" class="alert alert-danger" role="alert")=message
         div(id="g" class="container-fluid" style="background-color: #ececf7;")
-          div(class="group" style="margin-top: 20px; display:flex; flex-direction: row; margin-right:10px")
+          
+          //- div(class="group" style="margin-top: 20px; display:flex; flex-direction: row; margin-right:10px")
             input#check_rouge(type="checkbox" checked name="default_rouge")
             span(style="color:#2F3962;font-size:18px;font-weight:bold; position:absolute;pointer-events:none;left:5px;top:-20px;text-align: center;") Usar padrão ROUGE
           div(class="input_container")
@@ -37,7 +38,7 @@ div(class="container" style="display:flex; flex-direction:column;")
                   path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                   circle(cx="8" cy="4.5" r="1")
               div(class="group")
-                  input#ngram(disabled type="text" name="ngram")                         
+                  input#ngram( type="text" name="ngram")                         
                   span#ngramLabel(class="label_span") Ngram (rouge métricas):                          
                   span(class="highlight")
                   span(class="bar")
@@ -49,9 +50,8 @@ div(class="container" style="display:flex; flex-direction:column;")
                     path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                     circle(cx="8" cy="4.5" r="1")        
               div(class="group")    
-                  div(style="margin-right:70px")
-                    
-                    input#beta(disabled type="number" name="beta" oninput="this.value = this.value.replace(/[^0-9.]/g, '')")   
+                  div(style="margin-right:70px")                    
+                    input#beta( type="text" name="beta" oninput="this.value = this.value.replace(/[^.0-9.]/g, '')")    	
                     span#betaLabel(class="label_span") Beta
                     span(class="highlight")
                     span(class="bar")            
@@ -60,26 +60,26 @@ div(class="container" style="display:flex; flex-direction:column;")
                   span(class="label_form_default" style="color:#2F3962") Arquivos reference:   
               div(class="group" style="margin-top:20px")             
                 div(style="display: flex")
-                  input#reference(type="file" required multiple=true name="reference")
+                  input#reference(type="file" class="form-control-file" required multiple=true name="reference")
               div(style="display: flex")
                   span(class="label_form_default" style="color:#2F3962") Arquivos system:          
               div(class="group" style="margin-top:20px")            
-                  input#system(type="file", required multiple=true name="system")
+                  input#system(type="file" class="form-control-file" required multiple=true name="system")
               div(style="display:flex; flex-direction: column")
                 div(style="display: flex")
                   span(class="label_form") Usar Stopwords     
                 div(class="group" style="margin-top:20px")            
-                  input#stopwords_use(disabled type="checkbox" name="stopwords_use")
+                  input#stopwords_use(class="checkbox" type="checkbox" name="stopwords_use")
               div(class="input_itens")
                 div(style="display: flex")
                   span(class="label_form") Usar Sinônimos    
                 div(class="group" style="margin-top:20px")            
-                  input#synonyms_use(disabled type="checkbox" name="synonyms_use")
+                  input#synonyms_use(class="checkbox" type="checkbox" name="synonyms_use")
               div(class="input_itens")
                 div(style="display: flex")
                   span(class="label_form") Usar Stemmer    
                 div(class="group" style="margin-top:20px")            
-                  input#stemmer_use(disabled type="checkbox" name="stemmer_use")                         
+                  input#stemmer_use( class="checkbox" type="checkbox" name="stemmer_use")                         
 
           div(class="input_container")
             div(class="group")            
@@ -95,10 +95,29 @@ div(class="container" style="display:flex; flex-direction:column;")
                   div(style="margin-right:150px")
                     span(class="label_form") ROUGE type:   
                 div(style="margin-right:70px")
-                  select#rouge_type(disabled required=true name="route_type")
+                  select#rouge_type( class="form-control" required=true name="rouge_type")
                     option(value="normal") normal   
                     option(value="topic") topic
-                    option(value="topicUniq") topicUniq                                     
+                    option(value="topicUniq") topicUniq   
+            div(class="group")            
+              div(style="display: flex; flex-direction: column")
+                div(class="input_rouge" style="display: flex; flex-direction: row")
+                  - var rougeType = "Topic-Type: "
+                  - rougeType += "opções: somente use essa opção se topic ou topicUniq estiver definido"
+                  div(class="icon-info" data-toggle="tooltip" title=rougeType)
+                    svg(style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                      path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                      path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
+                      circle(cx="8" cy="4.5" r="1")
+                  div(style="margin-right:150px")
+                    span(class="label_form") Topic-Type:   
+                div(style="margin-right:70px")
+                    select#topic_type(disabled class="form-control" name="topic_type" multiple)
+                      option(value="nn") nn
+                      option(value="jj") jj
+                      option(value="vb") vb
+                      option(value="zgbpn") zgbpn        
+                      option(value="prp") prp                                        
             div(class="group")            
                 div(style="display: flex; flex-direction: column")
                   div(class="input_rouge" style="display: flex; flex-direction: row")
@@ -113,11 +132,11 @@ div(class="container" style="display:flex; flex-direction:column;")
                       div(style="margin-right:171px")
                         span(class="label_form") Pos Tagger Name:    
                   div(style="margin-right:70px")
-                      select#post_tagger(disabled required=true name="post_tagger")                   
+                      select#post_tagger( class="form-control" required=true name="post_tagger")                   
+                        option(value="english-bidirectional-distsim.tagger") english-bidirectional-distsim.tagger
                         option(value="arabic.tagger") arabic.tagger
                         option(value="chinese-distsim.tagger") chinese-distsim.tagger
-                        option(value="chinese-nodistsim.tagger") chinese-nodistsim.tagger
-                        option(value="english-bidirectional-distsim.tagger") english-bidirectional-distsim.tagger
+                        option(value="chinese-nodistsim.tagger") chinese-nodistsim.tagger                        
                         option(value="english-caseless-left3words-distsim.tagger") english-caseless-left3words-distsim.tagger
                         option(value="english-left3words-distsim.tagger") english-left3words-distsim.tagger
                         option(value="french.tagger") french.tagger - podem não funcionar
@@ -136,16 +155,16 @@ div(class="container" style="display:flex; flex-direction:column;")
                     div(style="margin-right:171px")
                       span(class="label_form") Stemmer Name:    
                   div(style="margin-right:70px")                  
-                    select#stemmer_name(disabled required=true name="stemmer_name")                   
-                      option(value="danishStemmer") danishStemmer
-                      option(value="turkishStemmer") turkishStemmer
+                    select#stemmer_name(disabled class="form-control" name="stemmer_name")                   
                       option(value="englishStemmer") englishStemmer
+                      option(value="danishStemmer") danishStemmer
+                      option(value="turkishStemmer") turkishStemmer                      
                       option(value="frenchStemmer") frenchStemmer
                       option(value="germanStemmer") germanStemmer
                       option(value="dutchStemmer") dutchStemmer
                       option(value="portugueseStemmer") portugueseStemmer
                      
-                    
+             
           div(class="group")
             input(class="input_btn" type="submit", id="start" value="Gerar medidas")
 
@@ -153,9 +172,9 @@ div(class="container" style="display:flex; flex-direction:column;")
 script(src="/javascripts/jquery-3.5.1.min.js")
 
 script.
-     $(document).ready(function() {
-
-          $('#ngram').blur(function() {          
+  (function(){
+     $(document).ready(function(){
+          $('#ngram').blur(function(){          
             if ($(this).val())
               $('#ngramLabel').addClass('used');
             else
@@ -171,18 +190,36 @@ script.
 
         });  
 
-    op("input[name='default_rouge'").addEventListener("click", () =>{
-                  "a"=="a" ? b() : null;
+  $(window).on("load", function(){              
+        if ($('#ngram').val())
+              $('#ngramLabel').addClass('used');
+            else
+              $('#ngramLabel').removeClass('used');        
+   
+            if ( $('#beta').val())
+              $('#betaLabel').addClass('used');
+            else
+              $('#betaLabel').removeClass('used');
+
+               
+        });
+
+  op("#rouge_type").addEventListener("change", () =>{    
+          0===0 ? pv() : null;                
+    })
+  op("input[name='stemmer_use'").addEventListener("click", () =>{
+             0===0 ? b() : null;                
        })
 
-    op("form[name='rouge'").addEventListener('submit', () =>{    
-              "u+"==="u+" ? c() : null;
-        })
+  op("form[name='rouge'").addEventListener('submit', () =>{    
+              "u+"==="u+" ? c() : null;        })
     
-    $(document).ready(function(){
+  $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();   
-     });
-   
+  });   
+
+ 
+  })();
      
      
   

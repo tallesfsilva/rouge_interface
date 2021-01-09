@@ -8,7 +8,7 @@ block content
             div(style="display:flex; margin-top:15px; flex-direction: column;")
                 h4 Código do Projeto: #{projeto._id}
                 h4 Nome: #{projeto.nome}
-                -function formataData(value){ return (value.dataCriacao.getDate()<10 ? "0" +value.dataCriacao.getDate() : value.dataCriacao.getDate())  + "/" + value.dataCriacao.getMonth() + "/" + value.dataCriacao.getFullYear()}                                             
+                -function formataData(value){ const mes = [];mes[0] = "01";mes[1] = "01";  mes[2] = "02";mes[3] = "03"; mes[4] = "04";mes[5] = "05";mes[6] = "06";mes[7] = "07";mes[8] = "08";mes[9] = "09";mes[10] = "10";mes[11] = "11";mes[12] = "12";return (value.dataCriacao.getDate()<10 ? "0" +value.dataCriacao.getDate() : value.dataCriacao.getDate())  + "/" + mes[value.dataCriacao.getMonth()] + "/" + value.dataCriacao.getFullYear()}                                             
                 h4 Data de criação: #{formataData(projeto)}
                 a(href='/api/result/'+ projeto._id download) Baixar
 
