@@ -7,7 +7,20 @@ block content
 
    
 
-    div 
-        h3 Plano de Fundo
-        h3 Cor dos textos
+    div(class="container-fluid" style="display:flex;flex-direction:column;align-items: center;width: 320px;")
+       
+       
+        div(style="display:flex; flex-direction:column ;align-content: center;justify-content: center;width: 100%;")
+            div(class="group" style="display:flex;flex-direction:row; justify-content: flex-end")                    
+                label(style="top:0px") Cor do plano de fundo
+                div
+                    input#color(type="color", name="color-switch") 
+            div(class="group" style="display:flex;flex-direction:row;justify-content: flex-end")        
+                label(style="top:0px") Cor do menu      
+                div
+                   input#color(type="color", name="color-switch") 
+            div(class="group")
+                input(class="input_btn" type="button", value="Salvar")
+
+               
 

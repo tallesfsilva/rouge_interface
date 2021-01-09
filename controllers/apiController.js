@@ -427,7 +427,7 @@ const validaReference = (reference) => {
     if(reference){       
         if(!reference.length) {            
             return (reference.mimetype == 'text/plain' &&
-            reference.name.split(".")[1] == "txt") && (system.mimetype == 'text/plain') ? true : false;
+            reference.name.split(".")[1] == "txt") ? true : false;
 
         }else {
             for(i=0;i<reference.length;i++){                

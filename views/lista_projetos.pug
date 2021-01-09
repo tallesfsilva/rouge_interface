@@ -3,7 +3,7 @@ extends layout
 block menu
   include menu  
 block content
-    div(style="display:flex; flex-direction:column; margin-left:55px;margin-right: 55px;")
+    div(class="p1-cont")
             if !success
                 div(style="display:block" class="alert alert-danger" role="alert")=message
             div(class="modal")

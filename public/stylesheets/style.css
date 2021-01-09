@@ -249,15 +249,26 @@ input[type="text"], input[type="number"], input[type="password"], input[type="em
 input[type="text"]:focus { 
   outline:none; 
 }
+
+.p1-cont{
+
+  display:flex; 
+  flex-direction:column;
+  margin-right: 55px;
+  margin-left: 55px;
+
+}
 .group            { 
   position:relative; 
   margin-bottom:35px; 
   margin-top:10px;
+  width: 100%;
+  margin-left: -5px;
 }
 .input_container{
 
 display: flex; 
-flex-direction: row"
+flex-direction: row;
 }
 .input_rouge{
 
@@ -370,6 +381,11 @@ select:disabled  {
   .modal-content{
     border-radius: 10px;
 
+  }
+
+  .p1-cont{
+    margin:5px;
+    
   }
   
 .input_container{
