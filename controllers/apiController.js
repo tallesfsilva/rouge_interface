@@ -370,7 +370,7 @@ function execRouge(projetoPath){
                             return;
                         }
                         if (stderr) {
-                            reject({success:false, message : "Não foi possível executar o ROUGE2", error: stderr})                    
+                            resolve({success:false, message : "Não foi possível executar o ROUGE2", error: stderr})                    
                         }
                         resolve({success:true, message : "ROUGE foi executado corretamente"})                      
                           //console.log(`stdout: ${stdout}`);                          
