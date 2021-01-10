@@ -1,23 +1,29 @@
 
-div(class="container" style="display:flex; flex-direction:column;")
-      div(class="container" style="background-color:#ececf7;")
-          p="Para que as medidas sejam geradas corretamente, o nome dos arquivos reference e system devem estar de acordo com o seguinte formato:"
-          span(style="font-weight:bolder") References:
-          p nomeTarefa_EnglishReference1 
-          b nomeTarefa: 
-          p nome do projeto
-          p EnglishReference1: 
-          p linguagem + nome da referência (se houver mais de uma referência para a mesma língua, deve-se acrescentar um contador - "nomeTarefa_FrenchReference1")
-          b é obrigatório o uso do "_" separando o nome da tarefa do nome da referência. 
-          b(style="color: #2F3962") 
-           p Tanto os arquivos references quanto os systems, devem seguir esse padrão para composição do nome do arquivo.
+div(style="display:flex; flex-direction:column; align-items: center")
+      div(  style="background-color:#ececf7;")
+          div
+            p="Para que as medidas sejam geradas corretamente, o nome dos arquivos reference e system devem estar de acordo com o seguinte formato:"
+          div
+            span(style="font-weight:bolder") References:
+            p nomeTarefa_EnglishReference1 
+          div
+            b nomeTarefa: 
+            p nome do projeto
+          div
+            p EnglishReference1: 
+          div
+            p linguagem + nome da referência (se houver mais de uma referência para a mesma língua, deve-se acrescentar um contador - "nomeTarefa_FrenchReference1")
+            b é obrigatório o uso do "_" separando o nome da tarefa do nome da referência. 
+            b(style="color: #2F3962") 
+            p Tanto os arquivos references quanto os systems, devem seguir esse padrão para composição do nome do arquivo.
       
       div(class="modal")
         div#loader(style="display: none") Gerando medidas...
       div(style="display:flex")
           form(method="POST" name="rouge" action="/novo_projeto" enctype="multipart/form-data")
             if message && !success
-              div(style="display:block" class="alert alert-danger" role="alert")=message
+              
+              div#modal-erro(style="display:block" class="alert alert-danger" role="alert")=message
             else
               div(style="display:none" class="alert alert-danger" role="alert")=message
             div(id="g" class="container-fluid" style="background-color: #ececf7;")
@@ -195,6 +201,8 @@ script.
           });
 
         });  
+
+  //  setTimeout(function(){op("#modal-erro").style.display = "none", 20000})
 
   $(window).on("load", function(){              
         if ($('#ngram').val())

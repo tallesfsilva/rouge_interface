@@ -162,7 +162,7 @@ exports.api_user_registrar_post =  [
                 body('nome', 'O nome deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
                 body('nome', 'Nome não pode ser vazio').trim().isLength(0).escape(),
                 body('email', 'Email inválido.').trim().isEmail().normalizeEmail(),
-                body('senha', 'Senha inválida. Mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+                body('senha', 'Senha inválida. Mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape() ||
                 body('senha_2', 'Senha inválida. Mínimo 5 caracteres').trim().isLength({ min: 5 }).escape(),
                 body('senha', "As senhas não são iguais").custom((value, {req}) => value === req.body.senha_2),
 
@@ -257,7 +257,7 @@ exports.api_session_criar = function ( req, res, next ) {
             res.setHeader('Content-Type', 'application/json');
             res.setHeader('Access-Control-Allow-Origin', '*');
         session.save(function(err){
-                if(err) return next(err); 
+                if(err) res.json({"success" : false, message : "Não foi possível salvar a sessão", erro: err});
                 //const id_usuario = session.usuario;
                 //console.log(id_usuario);//
                 //localStorage.setItem(session.usuario, refreshToken);
@@ -283,27 +283,27 @@ function geraAccessToken(user) {
   
 
 
-const rouge_properties = {
-            rougeType: properties.get("rouge.type"),
-            ngram : properties.get("ngram"),
-            stopwordsUse : properties.get("stopwords.use"),
-            stopwordsFile : properties.get("stopwords.file"),
-            stemmerUse : properties.get("stemmer.use"),
-            stemmerName : properties.get("stemmer.name"),
-            topicType : properties.get("topic.type"),
-            synonymsUse : properties.get("synonyms.use"),
-            synonymsDir : properties.get("synonyms.dir"),
-            beta : properties.get("beta"),
-            postaggerNam : properties.get("pos_tagger_nam")
-  }
 
-function formataRougeProperties(projetoPath, projetoOutput){
+
+function formataRougeProperties(arquivoProperties){
 
     return new Promise((resolve, reject) =>{
         try{
-            if(properties && projetoOutput && projetoPath){            
-                    properties.set('project.dir', path.join(process.cwd() +'/' + projetoPath));
-                    properties.set('outputFile', path.join(process.cwd() +'/' + projetoOutput + '/' + 'result.csv'));
+            if(properties && arquivoProperties){            
+                    properties.set('project.dir', path.join(process.cwd() +'/' + arquivoProperties.project_dir));
+                    properties.set('outputFile', path.join(process.cwd() +'/' + arquivoProperties.outputFile + '/' + 'result.csv'));
+                    properties.set('beta', arquivoProperties.beta);
+                    properties.set('ngram', arquivoProperties.ngram);
+                    properties.set('rouge.type', arquivoProperties.rouge_type);
+                    properties.set('stopwords.use', arquivoProperties.stopwords_use);
+                    properties.set('stopwords.file', arquivoProperties.stopwords_file);
+                    properties.set('topic.type', arquivoProperties.topic_type);
+                    properties.set('synonyms.use', arquivoProperties.synonyms_use);
+                    properties.set('pos_tagger_name', arquivoProperties.post_tagger);
+                    properties.set('stemmer.name', arquivoProperties.stemmer_name);
+                    properties.set('stemmer.use', arquivoProperties.stemmer_use);
+
+                    
                     //console.log("Projeto directório:" + properties.get('project.dir'));
             
                     let rougeProperties = JSON.stringify(properties._properties);
@@ -314,7 +314,7 @@ function formataRougeProperties(projetoPath, projetoOutput){
                 
                     try{
                         if(rougeProperties){
-                            fs.writeFileSync(projetoPath + '/rouge.properties', rougeProperties);                      
+                            fs.writeFileSync(arquivoProperties.project_dir + '/rouge.properties', rougeProperties);                      
                             resolve({success: true, message: "rouge.properties criado"})            
                         }
                     }catch(err){
@@ -325,7 +325,7 @@ function formataRougeProperties(projetoPath, projetoOutput){
                     reject({success: false, message: "Execução não foi possível"});
         }
  }).catch((err) => {    
-    reject({success: false, message: "Não foi possível iniciar a formatação do arquivo properties"});
+            reject({success: false, message: "Não foi possível iniciar a formatação do arquivo properties"});
 
 });
 }
@@ -333,7 +333,7 @@ function formataRougeProperties(projetoPath, projetoOutput){
 
 function criaDiretorios(idProjeto){
 
-   return new Promise(resolve =>{ 
+   return new Promise((resolve,reject) =>{ 
         try{
             if(idProjeto && idProjeto!=null && idProjeto!=undefined){
                     try{
@@ -342,14 +342,14 @@ function criaDiretorios(idProjeto){
                         fs.mkdirSync('projetos/' + idProjeto + '/system', { recursive: true });
                         resolve({success: true, message: "Diretórios results, reference e system criados"})
                     }catch(err){
-                        resolve({success: false, message: "Não foi possível criar os diretórios"})
+                        reject({success: false, message: "Não foi possível criar os diretórios"})
                     }                 
                 }
          } catch(err){
-                        resolve({success: false, message: "Não foi possível criar o diretório /system"})
+                        reject({success: false, message: "Não foi possível criar o diretório /system"})
                 }         
         }).catch(err =>{
-            resolve({success: false, message: "Nenhum diretório foi criado"});
+            reject({success: false, message: "Nenhum diretório foi criado"});
         });
 
 };
@@ -366,12 +366,10 @@ function execRouge(projetoPath){
                 if(rougeProperties){             
                         exec('java -jar -Drouge.prop=' + rougeProperties.toString() + ' ' + path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar'), (error, stdout, stderr) => {
                         if (error) {
-                            resolve({success:false, message : "Não foi possível executar o ROUGE2", error: error})
-                            return;
-                        }
-                        if (stderr) {
-                            resolve({success:false, message : "Não foi possível executar o ROUGE2", error: stderr})                    
-                        }
+                            reject({success:false, message : "Não foi possível executar o ROUGE2", error: error})
+                            
+                        }                      
+                        console.log(stdout);
                         resolve({success:true, message : "ROUGE foi executado corretamente"})                      
                           //console.log(`stdout: ${stdout}`);                          
                          });            
@@ -390,7 +388,7 @@ function execRouge(projetoPath){
 
 function gravaArquivos(reference,system, projetoPath){
 
-    return new Promise(resolve => {
+    return new Promise((resolve,reject) => {
         try{
             if(reference && system && projetoPath){
                 try{
@@ -406,19 +404,19 @@ function gravaArquivos(reference,system, projetoPath){
                 try{
                     for(let i=0;i<system.length;i++){
                         fs.writeFileSync(projetoPath +'/system/' + system[i].name , system[i].data, (err)=> {      
-                                if(err) return console.log(err);                                                
+                                if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
                         })
                     }
                 } catch(err){
                     reject({success: false, message: "Não foi possível gravar o arquivo system"});
 
                 }
-                    reject({success: true, message: "Arquivos system e reference gravados corretamente"});
+                    resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
             
             
             }
  } catch(err){
-            resolve({success: false, message: "Não foi possível gravar os arquivos"});
+            reject({success: false, message: "Não foi possível gravar os arquivos"});
         }
 })
 
@@ -499,13 +497,13 @@ let arquivoProperties = {
     stopwords_use: '',
     synonyms_use: '',
     stemmer_use: '',
-    route_type: '',
+    rouge_type: '',
     post_tagger: '',
     stemmer_name: '' ,
     project_dir : '',
     outputFile : '',
-    stopwords_file : "",
-    topic_type : "",
+    stopwords_file : '',
+    topic_type : '',
 }
 exports.api_rouge_prepara = (req,res,next) =>{ 
     if(req && req.user.name){
@@ -515,12 +513,15 @@ exports.api_rouge_prepara = (req,res,next) =>{
         arquivoProperties.rouge_type = req.body.rouge_type || properties.get('rouge.type');
         arquivoProperties.post_tagger = req.body.post_tagger || properties.get('pos_tagger_name');
         arquivoProperties.stemmer_name = req.body.stemmer_name || properties.get('stemmer.name');
-        arquivoProperties.synonyms_use = req.body.synonyms_use || properties.get('synonyms.use');
-        arquivoProperties.stemmer_use = req.body.stemmer_use || properties.get('stemmer.use');
-        arquivoProperties.stopwords_use = req.body.stopwords_use || properties.get('stopwords.use');
-        arquivoProperties.topic_type = req.body.topic_type || properties.get('topic.type');
+        arquivoProperties.synonyms_use = req.body.synonyms_use ? true : properties.get('synonyms.use');
+        arquivoProperties.stemmer_use = req.body.stemmer_use ? true : properties.get('stemmer.use');
+        arquivoProperties.stopwords_use = req.body.stopwords_use ? true :  properties.get('stopwords.use');
+        arquivoProperties.stopwords_file =  path.join(process.cwd() + '/'+'rouge/resources/stopwords-rouge-default.txt');
+        let topicArray = [];
+        //console.log(req.body.topic_type.length)
+        arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
         
-        console.log(arquivoProperties); 
+   
         let reference = req.files.reference;
         let system = req.files.system;         
         let ngramValida = formataNgram(arquivoProperties.ngram)
@@ -543,15 +544,13 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                 })
                                 projeto.save((err) =>{
                                     if(err) return console.log(err);                                
-                                                                                                                              
-                                  //  rouge_properties.rougeType = req.body.type_rouge;
-                                   // console.log(rouge_properties.rougeType);                                   
+                                                        
                                 
                                     let projetoPath = 'projetos/' + projeto._id;
                                     let projetoOutput = 'projetos/' + projeto._id + '/results';
                                     arquivoProperties.outputFile = 'projetos/' + projeto._id + '/results';                                
                                     arquivoProperties.project_dir = 'projetos/' + projeto._id;
-                                   
+                                    console.log(arquivoProperties);
                               
                                 //Verificar forma de parar execução caso retorno de sucesso de qualquer promise seja false
                                 //verificar porque promise não é retornada com a função de salvar    
@@ -559,7 +558,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                         let diretorio = await criaDiretorios(projeto._id);
                                         console.log({'Diretórios criados' : diretorio.success});                         
                                 
-                                        let rouge_properties = await formataRougeProperties(projetoPath, projetoOutput);   
+                                        let rouge_properties = await formataRougeProperties(arquivoProperties);   
                                         console.log({'rouge.properties alterado' : rouge_properties.success});                         
                                     
                                         let arquivos = await gravaArquivos(reference,system,projetoPath);
@@ -619,7 +618,7 @@ exports.api_perfil_post = [
     body('nome', 'O nome deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
     body('nome', 'Nome não pode ser vazio').trim().isLength(0).escape(),
     body('email', 'Email inválido.').trim().isEmail(),
-    body('senha', 'Senha inválida. Mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+    body('senha', 'Senha inválida. Mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape() || 
     body('senha_2', 'Senha inválida. Mínimo 5 caracteres').trim().isLength({ min: 5 }).escape(),
     body('senha', "As senhas não são iguais").custom((value, {req}) => value === req.body.senha_2),
 

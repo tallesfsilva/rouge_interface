@@ -258,6 +258,15 @@ input[type="text"]:focus {
   margin-left: 55px;
 
 }
+
+.labelP{
+
+    font-weight: bolder;
+    margin-right: 5px;
+
+}
+
+
 .group            { 
   position:relative; 
   margin-bottom:35px; 

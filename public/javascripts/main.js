@@ -65,11 +65,11 @@ c = () => {
     spinner.classList.add('loader');    
 
 
-    var timer = setTimeout(function(){
+   /* var timer = setTimeout(function(){
       spinner.classList.remove('loader');  
       modal.style.display="none";
       spinner.style.display = 'none';   
-    },3500)     
+    },3500) */    
   }
 }
  
