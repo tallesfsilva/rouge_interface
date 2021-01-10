@@ -355,6 +355,37 @@ function criaDiretorios(idProjeto){
 };
 
 
+
+
+
+
+/*
+function execRouge(projetoPath){
+
+    return new Promise((resolve,reject) =>{
+        try{       
+            const { spawnSync} = require("child_process");
+            let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
+            console.log(rougeProperties);
+            try{ 
+                if(rougeProperties){             
+                        const ls = spawnSync('java', ['-jar','-Xmx5048m','-Drouge.prop=' + rougeProperties.toString(), path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar')]);
+                        resolve({success:true, message : "ROUGE foi executado corretamente"});                                               
+                         }            
+                         
+            } catch(err){
+                reject({success:false, message : "Não foi possível executar o ROUGE2"})
+            }
+        } catch(err){
+            reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+  
+        }
+        
+  }).catch(err => {
+    reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+  });
+  }
+*/
 function execRouge(projetoPath){
 
     return new Promise((resolve,reject) =>{
@@ -364,15 +395,19 @@ function execRouge(projetoPath){
             console.log(rougeProperties);
             try{ 
                 if(rougeProperties){             
-                        exec('java -jar -Drouge.prop=' + rougeProperties.toString() + ' ' + path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar'), (error, stdout, stderr) => {
+                        const ls = exec('java -jar -Xmx4048m -Drouge.prop=' + rougeProperties.toString() + ' ' + path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar'), (error, stdout, stderr) => {
                         if (error) {
                             reject({success:false, message : "Não foi possível executar o ROUGE2", error: error})
                             
-                        }                      
-                        console.log(stdout);
-                        resolve({success:true, message : "ROUGE foi executado corretamente"})                      
+                        }                    
+                                            
                           //console.log(`stdout: ${stdout}`);                          
-                         });            
+                         }); 
+                         
+                        ls.on('exit', function (code) {
+                            resolve({success:true, message : "ROUGE foi executado corretamente"})
+                           
+                        });           
                      };
             } catch(err){
                 reject({success:false, message : "Não foi possível executar o ROUGE2"})
@@ -382,7 +417,10 @@ function execRouge(projetoPath){
 
         }
 
- });
+ }).catch(err => {
+    reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+
+});
 }
 
 

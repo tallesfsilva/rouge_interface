@@ -55,6 +55,53 @@ const { json } = require('express');
 
 
 
+
+function execRouge(){
+
+  return new Promise((resolve,reject) =>{
+      try{       
+          const { spawn} = require("child_process");
+          let rougeProperties = path.join(process.cwd() +'/' + 'projetos/5ffb561265dba11148a76314' + '/' + 'rouge.properties');
+          console.log(rougeProperties);
+          try{ 
+              if(rougeProperties){             
+                      const ls = spawn('java', ['-jar', '-Xprof', '-Xmx5048m','-Drouge.prop=' + rougeProperties.toString(), path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar')]);
+                      
+                      ls.stdout.on('data', (data) =>{
+                        console.log(`stdout: ${data}`);
+                      })
+                      
+                      ls.stderr.on('data', (data) => {
+                        console.error(`stderr: ${data}`);
+                      });
+
+                      ls.on('erro',(err) =>{
+                        reject({success:false, message : "Problema na execução do ROUGE"})
+
+                      })
+                      
+                      ls.on('close', (code) => {
+                             console.log(`child process exited with code ${code}`);
+                          resolve({success:true, message : "ROUGE foi executado corretamente"})
+                      });                       
+                       }            
+                   
+          } catch(err){
+              reject({success:false, message : "Não foi possível executar o ROUGE2"})
+          }
+      } catch(err){
+          reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+
+      }
+
+}).catch(err => {
+  reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+
+});
+}
+
+//execRouge();
+
 app.use(function(err, req, res, next) {
 
   res.locals.message = err.message;
