@@ -427,10 +427,8 @@ function execRouge(projetoPath){
 function gravaArquivos(reference,system, projetoPath){
 
     return new Promise((resolve,reject) => {
-        try{
-            console.log(reference.length)
-            console.log(system.length)   
-         if(reference.length==undefined){
+        try{           
+         if(reference.length==undefined && projetoPath){
             try{
                 fs.writeFileSync(projetoPath +'/reference/' +reference.name , reference.data, (err)=> {      
                     if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                           
@@ -438,7 +436,7 @@ function gravaArquivos(reference,system, projetoPath){
             } catch{
                 reject({success: false, message: "Não foi possível gravar o arquivo reference"});
             }
-            } else if(reference.length && projetoPath){
+            }else if(reference.length && projetoPath){
                 try{
                     for(let i=0;i<reference.length;i++){
                         fs.writeFileSync(projetoPath +'/reference/' +reference[i].name , reference[i].data, (err)=> {      
@@ -447,37 +445,30 @@ function gravaArquivos(reference,system, projetoPath){
                     };  
                 } catch(err){
                     reject({success: false, message: "Não foi possível gravar o arquivo reference"});
+                    }
                 }
-            }
-                if(system.length==undefined){
+                if(system.length==undefined && projetoPath){
                     try{
-
                         fs.writeFileSync(projetoPath +'/system/' + system.name , system.data, (err)=> {      
                             if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
                     })
                     }catch{
                         reject({success: false, message: "Não foi possível gravar o arquivo reference"});
-
                     }
-
                 } else if(system.length && projetoPath){
-
-                try{
-                    for(let i=0;i<system.length;i++){
-                        fs.writeFileSync(projetoPath +'/system/' + system[i].name , system[i].data, (err)=> {      
-                                if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
-                        })
+                    try{
+                        for(let i=0;i<system.length;i++){
+                            fs.writeFileSync(projetoPath +'/system/' + system[i].name , system[i].data, (err)=> {      
+                                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
+                            })
+                        }
+                    } catch(err){
+                        reject({success: false, message: "Não foi possível gravar o arquivo system"});
                     }
-                } catch(err){
-                    reject({success: false, message: "Não foi possível gravar o arquivo system"});
-
-                }
-                   
-            
                 }
                 resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
  } catch(err){
-            reject({success: false, message: "Não foi possível gravar os arquivos"});
+          return console.log(err);
         }
 })
 
