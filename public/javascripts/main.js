@@ -63,17 +63,10 @@ c = () => {
     spinner.style.display = 'flex';
     spinner.style.top = '50px';
     spinner.classList.add('loader');    
-
-
-   /* var timer = setTimeout(function(){
-      spinner.classList.remove('loader');  
-      modal.style.display="none";
-      spinner.style.display = 'none';   
-    },3500) */    
+   
   }
+  return true;
 }
- 
-
 
 
 /*

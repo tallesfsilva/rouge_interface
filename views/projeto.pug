@@ -40,7 +40,22 @@ block content
                             td=medidas.medidas[i]['Avg_F-Score']
                             td(style="text-align:center")=medidas.medidas[i]['Num Reference Summaries']
 
-                                            
+                            
+    script.
+            let spinner = op('#loader');
+            let modal = op('.modal');
+
+            if(modal!= null && modal!=undefined 
+                && spinner!=null 
+                && spinner!=undefined){
+
+                var timer = setTimeout(function(){
+                spinner.classList.remove('loader');  
+                modal.style.display="none";
+                spinner.style.display = 'none';   
+                },1500)     
+            }
+
                     
             
             

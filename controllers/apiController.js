@@ -400,8 +400,8 @@ function execRouge(projetoPath){
                             reject({success:false, message : "Não foi possível executar o ROUGE2", error: error})
                             
                         }                    
-                                            
-                          //console.log(`stdout: ${stdout}`);                          
+                        // console.log(`stderr: ${stderr}`);                
+                          console.log(`stdout: ${stdout}`);                          
                          }); 
                          
                         ls.on('exit', function (code) {
@@ -428,7 +428,17 @@ function gravaArquivos(reference,system, projetoPath){
 
     return new Promise((resolve,reject) => {
         try{
-            if(reference && system && projetoPath){
+            console.log(reference.length)
+            console.log(system.length)   
+         if(reference.length==undefined){
+            try{
+                fs.writeFileSync(projetoPath +'/reference/' +reference.name , reference.data, (err)=> {      
+                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                           
+            })
+            } catch{
+                reject({success: false, message: "Não foi possível gravar o arquivo reference"});
+            }
+            } else if(reference.length && projetoPath){
                 try{
                     for(let i=0;i<reference.length;i++){
                         fs.writeFileSync(projetoPath +'/reference/' +reference[i].name , reference[i].data, (err)=> {      
@@ -438,7 +448,20 @@ function gravaArquivos(reference,system, projetoPath){
                 } catch(err){
                     reject({success: false, message: "Não foi possível gravar o arquivo reference"});
                 }
-                
+            }
+                if(system.length==undefined){
+                    try{
+
+                        fs.writeFileSync(projetoPath +'/system/' + system.name , system.data, (err)=> {      
+                            if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
+                    })
+                    }catch{
+                        reject({success: false, message: "Não foi possível gravar o arquivo reference"});
+
+                    }
+
+                } else if(system.length && projetoPath){
+
                 try{
                     for(let i=0;i<system.length;i++){
                         fs.writeFileSync(projetoPath +'/system/' + system[i].name , system[i].data, (err)=> {      
@@ -449,10 +472,10 @@ function gravaArquivos(reference,system, projetoPath){
                     reject({success: false, message: "Não foi possível gravar o arquivo system"});
 
                 }
-                    resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
+                   
             
-            
-            }
+                }
+                resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
  } catch(err){
             reject({success: false, message: "Não foi possível gravar os arquivos"});
         }
@@ -464,12 +487,12 @@ const validaReference = (reference) => {
     if(reference){       
         if(!reference.length) {            
             return (reference.mimetype == 'text/plain' &&
-            reference.name.split(".")[1] == "txt") ? true : false;
+            reference.name.split(".")[1] == "txt" && reference.name.match(/\w_\w/g)) ? true : false;
 
         }else {
             for(i=0;i<reference.length;i++){                
                 if(reference[i].mimetype == 'text/plain' &&
-                        reference[i].name.split(".")[1] == "txt"){                         
+                        reference[i].name.split(".")[1] == "txt" && reference[i].name.match(/\w_\w/g)){                         
                 }else{
                 return false;
                  }
@@ -485,11 +508,11 @@ function validaSystem(system){
     if(system){
         if(!system.length){
             return (system.mimetype == 'text/plain' &&
-            system.name.split(".")[1] == "txt") ? true : false;
+            system.name.split(".")[1] == "txt" && system.name.match(/\w_\w/g)) ? true : false;
         }else{                 
                 for(i=0;i<system.length;i++){
                     if(system[i].mimetype == 'text/plain' &&
-                    system[i].name.split(".")[1] == "txt"){                                
+                    system[i].name.split(".")[1] == "txt" && system[i].name.match(/\w_\w/g)){                                
                     }else{
                         return false;
                     }
@@ -556,19 +579,21 @@ exports.api_rouge_prepara = (req,res,next) =>{
         arquivoProperties.stopwords_use = req.body.stopwords_use ? true :  properties.get('stopwords.use');
         arquivoProperties.stopwords_file =  path.join(process.cwd() + '/'+'rouge/resources/stopwords-rouge-default.txt');
         let topicArray = [];
-        //console.log(req.body.topic_type.length)
+       // console.log(req.body.topic_type.length)
+        //Implementar função que trate um elemento 
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
-        
+       
    
         let reference = req.files.reference;
         let system = req.files.system;         
         let ngramValida = formataNgram(arquivoProperties.ngram)
         let referenceValida = validaReference(reference)
-        let systemValida = validaSystem(system);    
+        let systemValida = validaSystem(system); 
+       
          if(!ngramValida){
             res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
          }else if(!referenceValida || !systemValida){        
-            res.render('rouge_page',{success : false,message :"Arquivos inválidos. Verifique se formato de arquivo é txt."});
+            res.render('rouge_page',{success : false,message :"Arquivos inválidos. Verifique se formato de arquivo é txt ou se o nome do arquivo é 'aaaaa_aaaaa'."});
          }else{ 
                 Usuario.findOne({'email' : req.user.name})
                 .exec((err,usuario)=>{
@@ -843,10 +868,10 @@ function formataResult(projetoOutput){
                         if(err) {
                             resolve({success: false, message :"Não foi possível gravar o arquivo results", erro : err});
                         }
-                    })                  
+                    })                 
                                           
                         
-                        resolve({success: true, message : "Arquivo result formatado e gravado"});
+                            resolve({success: true, message : "Arquivo result formatado e gravado"});
                         if(err){
                             resolve({success: false, message :"Não foi possível abrir o arquivo results", erro : err});
                         }
