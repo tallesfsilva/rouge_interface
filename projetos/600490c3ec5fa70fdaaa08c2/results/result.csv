@@ -1,2 +1,0 @@
-ROUGE-Type,Task Name,System Name,Avg_Recall,Avg_Precision,Avg_F-Score,Num Reference Summaries
-ROUGE-1-topic,PRIMEIRA-AVALIACAO-FRANCES,SUMARIO01.TXT,0.52174,0.01569,0.03047,1

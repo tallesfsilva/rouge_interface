@@ -33,6 +33,42 @@ div(style="display:flex; flex-direction:column; align-items: center")
                 span(style="color:#2F3962;font-size:18px;font-weight:bold; position:absolute;pointer-events:none;left:5px;top:-20px;text-align: center;") Usar padrão ROUGE
               div(class="input_container")
                   div(class="group")
+                    div(style="display: flex; flex-direction: column")    
+                      div(class="input_rouge" style="display: flex; margin-left: -5px; flex-direction: row")                   
+                            div(class="icon-info")        
+                              span(class="tooltiptext")
+                              svg(name="stemmer_name" style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                                path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
+                                circle(cx="8" cy="4.5" r="1")       
+                            div(style="margin-right:171px")
+                                span(class="label_form") Usar Corpus:  
+                      div 
+                        input#corpus(class="checkbox" type="checkbox" name="corpus")
+                    
+                      div(class="group")            
+                          div(style="display: flex; flex-direction: column; width: 310px")                              
+                              div(class="input_rouge" style="display: flex; flex-direction: row")                   
+                                div(class="icon-info")        
+                                  span(class="tooltiptext")
+                                  svg(name="corpus" style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                                    path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
+                                    path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
+                                    circle(cx="8" cy="4.5" r="1")       
+                                div(style="margin-right:171px")
+                                    span(class="label_form") Corpus dataset:    
+                              div(style="margin-right:70px;")                  
+                                select#corpus_dataset(disabled class="form-control" name="corpus_dataset")                   
+                                  option(value="corpus1") Corpus 1
+                                  option(value="corpus2") Corpus 2
+                                  option(value="Corpus3") Corpus 3                      
+                                  option(value="Corpus4") Corpus 4
+                                  option(value="Corpus5") Corpus 5
+                                  option(value="Corpus6") Corpus 6
+                                  option(value="Corpus7") Corpus 7
+             
+              div(class="input_container")              
+                  div(class="group")
                     input#projeto(type="text", required name="projeto")
                     label Nome do projeto: 
                     span(class="highlight")
@@ -40,7 +76,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                     -var ngram = "Ngram:  "
                     -ngram += "Opções:1,2,3,..N; S1,S2,S3...SN; SU1, SU2, SU3...SUN; L. Você pode especificar múltiplas métricas rouge, basta usar vírgula separando."
                   div(class="icon-info" style="top:22px" data-toggle="tooltip" title= ngram)         
-                    svg(name="ngram" style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                    svg(name="ngram" style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                       path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                       path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                       circle(cx="8" cy="4.5" r="1")
@@ -52,7 +88,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                       -var beta = "Beta: " 
                       - beta += "Este campo é usado para calcular o F-score. O valor beta '1' é equivalente à média harmônica entre 'precision' e 'recall'. Use um valor beta grande para dar mais peso para 'recall'. Definir um valor beta < 1, dá preferência ao 'precision'. Use 0.5 se você quiser dar mais peso ao 'precision'"
                   div(class="icon-info" style="top:22px" data-toggle="tooltip" title= beta)         
-                      svg(style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                      svg(style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                         path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                         path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                         circle(cx="8" cy="4.5" r="1")        
@@ -72,7 +108,6 @@ div(style="display:flex; flex-direction:column; align-items: center")
                       span(class="label_form_default" style="color:#2F3962") Arquivos system:          
                   div(class="group" style="margin-top:20px")            
                       input#system(type="file" class="form-control-file" required multiple=true name="system")
-                  
                   div(class="group" style="margin-top:-10px")            
                     div(style="display: flex; flex-direction: column")
                       div(class="input_rouge" style="display: flex; flex-direction: row")
@@ -80,7 +115,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                           -posTagger += "configurações de POS Tagging (necessário para opções topic e synonyms). "
                           -posTagger +="Observe que isto é baseado nos marcadores Stanford disponíveis. As versões em alemão e francês nesta distribuição parecem não funcionar."
                           div(class="icon-info" data-toggle="tooltip" title=posTagger)           
-                            svg(style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                            svg(style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                               path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                               path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                               circle(cx="8" cy="4.5" r="1")
@@ -98,7 +133,6 @@ div(style="display:flex; flex-direction:column; align-items: center")
                             option(value="german-dewac.tagger") german-dewac.tagger - podem não funcionar
                             option(value="german-fast.tagger") german-fast.tagger - podem não funcionar
                             option(value="german-hgc.tagger") german-hgc.tagger - podem não funcionar  
-
               div(class="input_container")
                 div(class="group")            
                   div(style="display: flex; flex-direction: column")
@@ -106,7 +140,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                       - var rougeType = "ROUGE Type: "
                       - rougeType += "opções: topic, topicUniq, normal. Não altere essa opção se você não tem certeza do que ela faz"
                       div(class="icon-info" data-toggle="tooltip" title=rougeType)
-                        svg(style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                        svg(style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                           path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                           path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                           circle(cx="8" cy="4.5" r="1")
@@ -123,7 +157,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                       - var rougeType = "Topic-Type: "
                       - rougeType += "opções: somente use essa opção se topic ou topicUniq estiver definido"
                       div(class="icon-info" data-toggle="tooltip" title=rougeType)
-                        svg(style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                        svg(style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                           path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                           path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                           circle(cx="8" cy="4.5" r="1")
@@ -141,7 +175,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
                           div(class="input_rouge" style="display: flex; flex-direction: row")                   
                             div(class="icon-info")        
                               span(class="tooltiptext")
-                              svg(name="stemmer_name" style="width=25px; heigth: 25px" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
+                              svg(name="stemmer_name" style="width=25px;" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16")
                                 path( fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z")
                                 path(d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z")
                                 circle(cx="8" cy="4.5" r="1")       
@@ -160,17 +194,17 @@ div(style="display:flex; flex-direction:column; align-items: center")
               div(class="input_container")
                 div(class="group")
                     div
-                      span(class="label_form") Usar Sinônimos    
+                      span(class="label_form") Usar Sinônimos:    
                     div(style="margin-top:20px")            
                       input#synonyms_use(class="checkbox" type="checkbox" name="synonyms_use")
                 div(class="group")
                     div
-                      span(class="label_form") Usar Stemmer    
+                      span(class="label_form") Usar Stemmer:    
                     div(style="margin-top:20px")            
                       input#stemmer_use( class="checkbox" type="checkbox" name="stemmer_use")  
                 div(class="group")
                     div
-                      span(class="label_form") Usar Stopwords     
+                      span(class="label_form") Usar Stopwords:     
                     div(style="margin-top:20px")            
                       input#stopwords_use(class="checkbox" type="checkbox" name="stopwords_use")  
 
@@ -221,16 +255,25 @@ script.
   op("#rouge_type").addEventListener("change", () =>{    
           0===0 ? pv() : null;                
     })
-  op("input[name='stemmer_use'").addEventListener("click", () =>{
-             0===0 ? b() : null;                
+  op("input[name='stemmer_use']").addEventListener("click", () =>{
+             0===0 ? b("#stemmer_name") : null;                
        })
 
-  op("form[name='rouge'").addEventListener('submit', () =>{    
-              "u+"==="u+" ? c() : null;  
-          
-              
-              
-              })
+  op("input[name='corpus']").addEventListener('click', () =>{      
+      if(op("input[name='reference']").disabled == false){
+
+        op("input[name='reference']").disabled = true
+        b("#corpus_dataset");
+      }else{
+        op("input[name='reference'").disabled = false;
+         b("#corpus_dataset");
+        
+      }
+  })
+
+  op("form[name='rouge']").addEventListener('submit', () =>{    
+              "u+"==="u+" ? c() : null;      
+ })
     
   $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();   

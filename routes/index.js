@@ -20,11 +20,12 @@ var api_controller = require('../controllers/apiController');
 //Refatorar incluir todos os cenários possíveis
 //Toda vez access token é gerado - corrigir isso
 function authenticateToken(req, res, next) {
-
+console.log(req.cookies.session);
  if(req.cookies.session){
-      const session_id = req.cookies.session;
-  Session.findOne({'_id' : session_id}) 
-    .exec(function(err,session) {
+      let cookie = JSON.parse(req.cookies.session);
+      const session_id = cookie.s_id;
+      Session.findOne({'_id' : session_id}) 
+      .exec(function(err,session) {
           if(session && session.refreshToken){
             console.log("Autenticação:" +  session)
               //Refatorar para função - toda geração do token tratato via backend
@@ -82,7 +83,7 @@ router.get('/home', authenticateToken, function(req, res, next) {
   });
 
 
-    router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
 
 
       res.redirect('/login'); 
@@ -92,7 +93,7 @@ router.get('/home', authenticateToken, function(req, res, next) {
 router.get('/login', api_controller.api_login_get) ;
 router.post('/login', api_controller.api_login_post) ;
 router.get('/logout', api_controller.api_logout) ;
-router.get('/novo_projeto', authenticateToken, api_controller.api_novo_projeto) ;
+router.get('/novo_projeto', authenticateToken, api_controller.api_novo_projeto);
 router.post('/novo_projeto', authenticateToken, api_controller.api_rouge_prepara) ;
 router.get('/perfil', authenticateToken, api_controller.api_perfil) ;
 

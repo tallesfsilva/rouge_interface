@@ -20,12 +20,12 @@ let result = []
 
 function authenticateToken(req, res, next) {
 
- 
     if(req.cookies.session){
-     const session_id = req.cookies.session;
-   
-     Session.findOne({'_id' : session_id}) 
-       .exec(function(err,session) {
+      let cookie = JSON.parse(req.cookies.session);
+      const session_id = cookie.s_id;   
+      console.log(cookie.s_id)
+      Session.findOne({'_id' : session_id}) 
+      .exec(function(err,session) {
              if(session && session.refreshToken){
                  //Refatorar para função - toda geração do token tratato via backend
                      fetch("http://localhost:"+port+"/api/token", {    
@@ -46,7 +46,7 @@ function authenticateToken(req, res, next) {
                   // console.log(err)
                    if (err) return res.sendStatus(403)
                    req.user = user;
-                   req.token =token;  
+                   req.token = token;  
                    req.idUser = session.usuario;
                  next()
              })

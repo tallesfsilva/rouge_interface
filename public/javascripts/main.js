@@ -15,10 +15,12 @@ pv = () =>{
   op("#topic_type").disabled = false : op("#topic_type").disabled = true  ;
 }
 
-b = () =>{
-  op("#stemmer_name").disabled==false ? 
-  op("#stemmer_name").disabled = true : 
-  op("#stemmer_name").disabled = false;                               
+b = (object) =>{
+  if(object){
+      op(object).disabled==false ? 
+      op(object).disabled = true : 
+      op(object).disabled = false;   
+  }                            
 
 }
 
@@ -65,12 +67,19 @@ c = () => {
     spinner.classList.add('loader');    
    
   }
-  return true;
+
 }
+/*
+Verificar com a Barbara o que ela acha
+window.addEventListener('beforeunload', (e) =>{
+
+  return 1===1 ? a() : null;           
+
+})*/
+
 
 
 /*
-
 window.addEventListener('load', function () {
   let spinner = op('#loader');
   let modal = op('.modal');
@@ -92,9 +101,6 @@ window.addEventListener('load', function () {
      modal.style.display="none";
 
     spinner.style.display = 'none';
-   
-
-
     },1500)   
   }
 

@@ -1,6 +1,7 @@
 
 require('dotenv').config()
 const fs = require('fs');
+const fse = require('fs-extra')
 const csv = require('csv-parser');
 var Usuario = require('../models/usuarios');
 var Session = require('../models/session');
@@ -30,18 +31,18 @@ exports.api_login_post = (req,res,next) =>{
 
   try{
     Usuario.findOne({'email': req.body.email})
-    .exec(function(err, results){
-        console.log(results);
+    .exec(function(err, results){ 
+        console.log(results);      
         if(err) return next(err);      
         if (results && (results.email == req.body.email)) {
              Session.findOne({'usuario' : results}) 
-             .exec(function(err,session) {  
+             .exec(function(err,session) {               
                 if(err) {
                     console.log(err);
                     res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema na conexão com o banco de dados"});
                  }
                  if((session==null || session==undefined) &&
-                         (md5(req.body.senha) ==results.senha)){
+                         (md5(req.body.senha) ==results.senha)){                         
                             fetch("http://localhost:"+port+"/api/session/", {
                                 method: 'POST',
                                 headers: {
@@ -51,10 +52,11 @@ exports.api_login_post = (req,res,next) =>{
                                 body : JSON.stringify({usuario:  results}),
                             })
                             .then (response => response.json())
-                            .then(data => {
+                            .then(data => {                               
+                                let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario});
                                res
                                .status(201)
-                               .cookie('session', data.session._id, {
+                               .cookie('session',cookieValue,{
                                /* expires: new Date(Date.now() + 8 * 3600000) ,*/ httpOnly: true
                                })                      
                                .redirect('home');     
@@ -64,7 +66,8 @@ exports.api_login_post = (req,res,next) =>{
                                 res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema no login. Por favor tente novamente"});
                             });
                 }else if ((session && session.refreshToken) 
-                            && (md5(req.body.senha) == results.senha)) {                                                                            
+                            && (md5(req.body.senha) == results.senha)) {   
+                                                                                                
                             fetch("http://localhost:"+port+"/api/token", {    
                                     method: 'POST',
                                     headers: {
@@ -80,11 +83,12 @@ exports.api_login_post = (req,res,next) =>{
                                 .then (token => {                                        
                                     let tokenTemp = session.refreshToken;
                                     delete session.refreshToken;
+                                    let cookieValue = JSON.stringify({'s_id': session._id, 'id': results._id});
                                     res
                                     .status(201)
-                                    .cookie('session',session._id, {
+                                    .cookie('session',cookieValue,{
                                     /*expires: new Date(Date.now() + 8 * 3600000),*/ httpOnly: true 
-                                    })                                   
+                                    })                                                               
                                     .redirect('home');     
                             
                                 }).catch (err => {                                    
@@ -108,7 +112,87 @@ exports.api_login_post = (req,res,next) =>{
 }
 
 exports.api_login_get = (req,res,next) =>{
-    res.render('login');    
+  
+       
+    if(req.cookies.session){
+        const sessionId = JSON.parse(req.cookies.session);
+        console.log(sessionId.id);
+        console.log(sessionId);
+        Session.findOne({'_id' : sessionId.s_id}) 
+        .exec(function(err,session) {  
+            console.log("session" +  session)      
+            if(err) return console.log(err)
+            if(session && session.refreshToken){
+                 console.log("Autenticação:" +  session)
+                //Refatorar para função - toda geração do token tratato via backend
+                    fetch("http://localhost:"+port+"/api/token", {    
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json',
+                        'Access-Control-Allow-Origin' : '*',
+                    'Content-Type': 'application/json',          
+                    },
+                    mode : 'cors',
+
+                    body : JSON.stringify({"refreshToken" : session.refreshToken}),
+            })
+            .then(response => response.json())
+            .then (token => {        
+          //console.log(token);
+          jwt.verify(token.accessToken, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+              //console.log(err)
+              if (err) return res.sendStatus(403)
+              req.user = user;
+              req.token =token;  
+              req.idUser = session.usuario;
+              res.redirect('/home');
+        })
+      }).catch(err => { console.log(err)});  
+    }else if((session==null || session==undefined)){ 
+        console.log("entrei aqui!")       
+            try{
+                console.log("entrei aqui!")  
+                Usuario.findOne({'_id': sessionId.id})
+                .exec(function(err, results){ 
+                console.log("usuario" + results);      
+                if(err) return next(err);      
+                if (results) {                                    
+                   fetch("http://localhost:"+port+"/api/session/", {
+                                    method: 'POST',
+                                    headers: {
+                                    'Content-Type': 'application/json',       
+                                    },
+                                    mode : 'cors',        
+                                    body : JSON.stringify({usuario:  results}),
+                                })
+                                .then (response => response.json())
+                                .then(data => {                               
+                                    let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario});
+                                   res
+                                   .status(201)
+                                   .cookie('session',cookieValue,{
+                                   /* expires: new Date(Date.now() + 8 * 3600000) ,*/ httpOnly: true
+                                   })                      
+                                   .redirect('home');     
+                                
+                                }).catch (err => {   
+                                    console.log(err);
+                                    res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema no login. Por favor tente novamente"});
+                                });      
+}else{
+    res.render('login'); 
+}
+})
+        }catch(err){
+            res.render('login');
+        }
+} else{
+    res.render('login'); 
+} 
+        });
+}else{
+    res.render('login'); 
+}
 }
 
 exports.api_user_registrar_get = (req,res,next) =>{
@@ -117,9 +201,10 @@ exports.api_user_registrar_get = (req,res,next) =>{
 }
 
 exports.api_logout = (req,res,next) => {
-    //Refatorar para tratar mais cenários de erros
+   
     if(req && req.cookies.session){
-        const session_id = req.cookies.session;
+        let cookie = JSON.parse(req.cookies.session);
+        const session_id = cookie.s_id;          
       
         Session.findOneAndDelete({'_id' : session_id}) 
           .exec(function(err,session) {
@@ -127,13 +212,13 @@ exports.api_logout = (req,res,next) => {
                 console.log(err)
                 res.redirect('login');
             } 
-              if(session){               
+              if(session){  
+                let cookieValue = JSON.stringify({'s_id': session._id, 'id': session.usuario});             
                   //console.log(session);
-                  res.redirect('login');
+                  res.cookie('session',cookieValue,{expires: new Date(Date.now())})
+                  .redirect('login');                  
               }
-
-})
-
+        })
     }
 }
 
@@ -325,7 +410,7 @@ function formataRougeProperties(arquivoProperties){
                     reject({success: false, message: "Execução não foi possível"});
         }
  }).catch((err) => {    
-            reject({success: false, message: "Não foi possível iniciar a formatação do arquivo properties"});
+    return console.log(err);
 
 });
 }
@@ -349,15 +434,10 @@ function criaDiretorios(idProjeto){
                         reject({success: false, message: "Não foi possível criar o diretório /system"})
                 }         
         }).catch(err =>{
-            reject({success: false, message: "Nenhum diretório foi criado"});
+           return console.log(err);
         });
 
 };
-
-
-
-
-
 
 /*
 function execRouge(projetoPath){
@@ -418,7 +498,7 @@ function execRouge(projetoPath){
         }
 
  }).catch(err => {
-    reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
+    return console.log(err);
 
 });
 }
@@ -428,7 +508,7 @@ function gravaArquivos(reference,system, projetoPath){
 
     return new Promise((resolve,reject) => {
         try{           
-         if(reference.length==undefined && projetoPath){
+         if(reference.length===undefined && projetoPath){
             try{
                 fs.writeFileSync(projetoPath +'/reference/' +reference.name , reference.data, (err)=> {      
                     if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                           
@@ -447,7 +527,7 @@ function gravaArquivos(reference,system, projetoPath){
                     reject({success: false, message: "Não foi possível gravar o arquivo reference"});
                     }
                 }
-                if(system.length==undefined && projetoPath){
+                if(system.length===undefined && projetoPath){
                     try{
                         fs.writeFileSync(projetoPath +'/system/' + system.name , system.data, (err)=> {      
                             if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
@@ -470,9 +550,53 @@ function gravaArquivos(reference,system, projetoPath){
  } catch(err){
           return console.log(err);
         }
+}).catch(err => {
+    return console.log(err);
 })
 
 }
+
+function gravaArquivosCorpus(system, corpus_dataset, projetoPath){
+
+    return new Promise((resolve,reject) => {
+        try{           
+         if(projetoPath && corpus_dataset){
+            try{
+                fse.copy(path.join(process.cwd().toString() + '/rouge/corpus/' + corpus_dataset +'/reference/'), projetoPath +'/reference/', err=>{
+                    if(err) reject({success: false, message: "Não foi possível gravar o corpus", erro: err});                                           
+                })                
+            
+            } catch{
+                reject({success: false, message: "Não foi possível corpiar o corpus - try"});
+            }
+            }
+                if(system.length==undefined && projetoPath){
+                    try{
+                        fs.writeFileSync(projetoPath +'/system/' + system.name , system.data, (err)=> {      
+                            if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
+                    })
+                    }catch{
+                        reject({success: false, message: "Não foi possível gravar o arquivo reference"});
+                    }
+                } else if(system.length && projetoPath){
+                    try{
+                        for(let i=0;i<system.length;i++){
+                            fs.writeFileSync(projetoPath +'/system/' +'C'+(i+1)+'_'+ system[i].name.split('_').join("") , system[i].data, (err)=> {      
+                                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
+                            })
+                        }
+                    } catch(err){
+                        reject({success: false, message: "Não foi possível gravar o arquivo system"});
+                    }
+                }
+                resolve({success: true, message: "Arquivos system e reference gravados corretamente"});
+ } catch(err){
+          return console.log(err);
+        }
+})
+
+}
+
 
 const validaReference = (reference) => {
     if(reference){       
@@ -558,7 +682,7 @@ let arquivoProperties = {
     topic_type : '',
 }
 exports.api_rouge_prepara = (req,res,next) =>{ 
-    if(req && req.user.name){
+    if(req && req.user.name && req.token){
         console.log(req.body);     
         arquivoProperties.ngram = req.body.ngram || properties.get('ngram');
         arquivoProperties.beta = parseFloat(req.body.beta) || parseFloat(properties.get('beta'));
@@ -573,13 +697,100 @@ exports.api_rouge_prepara = (req,res,next) =>{
        // console.log(req.body.topic_type.length)
         //Implementar função que trate um elemento 
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
-       
-   
+        let corpus = req.body.corpus;
+        let corpus_dataset = req.body.corpus_dataset;
+        console.log(corpus_dataset);
+        console.log(corpus);
+        //Verifica se usuário quer utilizar corpus
+        if(corpus && corpus!=null && corpus!=undefined && corpus_dataset 
+            && corpus_dataset!=undefined && corpus_dataset!=null){
+            let system = req.files.system;
+            let ngramValida = formataNgram(arquivoProperties.ngram);
+            let systemValida = validaSystem(system);        
+            console.log("Utilizando corpus");
+            if(!ngramValida){
+                res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
+             }else if(!systemValida){        
+                res.render('rouge_page',{success : false,message :"Arquivos inválidos. Verifique se formato de arquivo é txt ou se o nome do arquivo é 'aaaaa_aaaaa'."});
+             }else{ 
+                    Usuario.findOne({'email' : req.user.name})
+                    .exec((err,usuario)=>{
+                            if(err) console.log(err)                      
+                            if(usuario!=null && usuario!=undefined && 
+                            (req.body.projeto!=undefined && req.body.projeto!=null && req.body.projeto!="")
+                             ){                                                        
+                                    var projeto = new Projeto({                            
+                                        usuario : usuario,
+                                        nome:   req.body.projeto,
+                                    })
+                                    projeto.save((err) =>{
+                                        if(err) res.json({success : false,message :"Não foi possível salvar o projeto"});           
+                                                            
+                                    
+                                        let projetoPath = 'projetos/' + projeto._id;
+                                        let projetoOutput = 'projetos/' + projeto._id + '/results';
+                                        arquivoProperties.outputFile = 'projetos/' + projeto._id + '/results';                                
+                                        arquivoProperties.project_dir = 'projetos/' + projeto._id;
+                                        console.log(arquivoProperties);
+                                  
+                                    //Verificar forma de parar execução caso retorno de sucesso de qualquer promise seja false
+                                    //verificar porque promise não é retornada com a função de salvar    
+                                    async function callRougue(){
+                                            let diretorio = await criaDiretorios(projeto._id);
+                                            console.log({'Diretórios criados' : diretorio.success});                         
+                                    
+                                            let rouge_properties = await formataRougeProperties(arquivoProperties);   
+                                            console.log({'rouge.properties alterado' : rouge_properties.success});                         
+                                        
+                                            let arquivos = await gravaArquivosCorpus(system,corpus_dataset, projetoPath);
+                                            console.log({'Arquivos refence/system gravados' : arquivos.success});
+                                        
+                                            let executaRouge = await execRouge(projetoPath);
+                                            console.log({'Execução ROUGE concluída' : executaRouge.success});
+                                            
+                                            let result = await formataResult(projetoOutput);
+                                            console.log({'Resultado formatado' : result.success});                                            
+                                                
+                                            let json_result = await formatJSON(projetoOutput);
+                                            console.log({'JSON_Result' : json_result.success});
+    
+                                            //fse.removeSync(projetoPath+'/reference');
+                                                        
+                                            let resultado = new Resultado({
+                                                projeto : projeto,
+                                                medidas: json_result.result,                                            
+                                            })
+                                            resultado.save((err) => {
+                                                if(err) res.json({success : false,message :"Não foi possível salvar o resultado"});
+                                                    //console.log("Resultado salvo: " + resultado);
+                                                    console.log({success:true, message: "Resultado gravado corretamente"});
+                                                    if(req.headers['authorization']){                                         
+    
+                                                        res.json({projeto: projeto._id, resultado : resultado.medidas})
+                                                     } else    {   
+                                                       /* fs.writeFileSync(path.join(process.cwd() +'/' + projetoOutput+'/result.json'), json_result.result, (err)=> {      
+                                                        if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                                                                         
+                                                    })    */                   
+                                                        res.redirect('/projeto/' + projeto._id);
+                                                             }
+                                             });                                                               
+                                                                            
+                                }
+                                callRougue().catch(err => console.log(err));     
+            })                       
+          
+        }else{        
+            res.json({success : false,message :"Request não disponível. Nome do projeto não pode ser nulo"});
+        }
+    });                 
+ }
+    //Usuário não utilizará corpus
+    } else{   
         let reference = req.files.reference;
         let system = req.files.system;         
-        let ngramValida = formataNgram(arquivoProperties.ngram)
-        let referenceValida = validaReference(reference)
-        let systemValida = validaSystem(system); 
+        let ngramValida = formataNgram(arquivoProperties.ngram);
+        let referenceValida = validaReference(reference);
+        let systemValida = validaSystem(system);
        
          if(!ngramValida){
             res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
@@ -588,18 +799,17 @@ exports.api_rouge_prepara = (req,res,next) =>{
          }else{ 
                 Usuario.findOne({'email' : req.user.name})
                 .exec((err,usuario)=>{
-                        if(err) console.log(err)                      
+                        if(err) console.log(err);                      
                         if(usuario!=null && usuario!=undefined && 
                         (req.body.projeto!=undefined && req.body.projeto!=null && req.body.projeto!="")
-                        && req.files.reference!=null && req.files.system!=!null ){                                                        
+                         ){                                                        
                                 var projeto = new Projeto({                            
                                     usuario : usuario,
                                     nome:   req.body.projeto,
                                 })
                                 projeto.save((err) =>{
-                                    if(err) return console.log(err);                                
-                                                        
-                                
+                                    if(err) res.json({success : false,message :"Não foi possível salvar o projeto"});           
+                                                     
                                     let projetoPath = 'projetos/' + projeto._id;
                                     let projetoOutput = 'projetos/' + projeto._id + '/results';
                                     arquivoProperties.outputFile = 'projetos/' + projeto._id + '/results';                                
@@ -633,16 +843,12 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             medidas: json_result.result,                                            
                                         })
                                         resultado.save((err) => {
-                                            if(err) console.log(err);
-                                                //console.log("Resultado salvo: " + resultado);
+                                            if(err) res.json({success : false,message :"Não foi possível salvar o resultado"});
                                                 console.log({success:true, message: "Resultado gravado corretamente"});
                                                 if(req.headers['authorization']){                                         
 
                                                     res.json({projeto: projeto._id, resultado : resultado.medidas})
-                                                 } else    {   
-                                                   /* fs.writeFileSync(path.join(process.cwd() +'/' + projetoOutput+'/result.json'), json_result.result, (err)=> {      
-                                                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo reference", erro: err});                                                                                         
-                                                })    */                   
+                                                 } else {            
                                                     res.redirect('/projeto/' + projeto._id);
                                                          }
                                          });                                                               
@@ -653,10 +859,10 @@ exports.api_rouge_prepara = (req,res,next) =>{
       
     }else{        
         res.json({success : false,message :"Request não disponível. Nome do projeto não pode ser nulo"});
+        }
+    });
+ }
     }
-});
-
-         }
  }else{
      res.json({success : false,message :"Não foi possível iniciar o processo"});
  }
@@ -664,10 +870,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
 
 exports.api_perfil_post = [
 
-    //Se usuário quiser atualizar somente um dos campos
-    //Verificar retorno de mais um erro sendo que é o mesmo:
-    //Ex: senha menor que 5 caracteres 
-    
+    //Se usuário quiser atualizar somente um dos campos    
 
     body('nome', 'O nome deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
     body('nome', 'Nome não pode ser vazio').trim().isLength(0).escape(),
@@ -703,24 +906,17 @@ exports.api_perfil_post = [
 
 exports.api_sobre = (req,res,next) =>{
 
-
             res.render('sobre');
-
-
 }
 
 exports.api_novo_projeto = (req,res,next) => {
 
-
-
         res.render('rouge_page');
 
-
-
 }
-
+//Função implementada direto no template. Avaliar forma de reduzir código
+/*
 function formataData(value){
-
     
     for(let i=0;i<value.length;i++){
         if(value){
@@ -730,7 +926,7 @@ function formataData(value){
     }
     return value;
    
-}
+}*/
 
 exports.api_projeto = (req,res,next) => {
 
@@ -872,7 +1068,7 @@ function formataResult(projetoOutput){
             resolve({success: false, message :"Erro ao executar operação de leitura", erro : err});
         }
     }).catch((err) =>{
-        resolve({success: false, message :"Não foi possível iniciar o processo", erro: err});
+        return console.log(err);
 
     })
 }
@@ -908,8 +1104,7 @@ function formatJSON(projetoOutput){
                         }       
                 
             }).catch(err =>{
-
-                    resolve({success:false, message :"Não possível converter"});
+                return console.log(err);
             })
 
 };
