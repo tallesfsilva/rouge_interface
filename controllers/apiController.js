@@ -205,7 +205,7 @@ exports.api_logout = (req,res,next) => {
     if(req && req.cookies.session){
         let cookie = JSON.parse(req.cookies.session);
         const session_id = cookie.s_id;          
-      
+         
         Session.findOneAndDelete({'_id' : session_id}) 
           .exec(function(err,session) {
             if(err){
