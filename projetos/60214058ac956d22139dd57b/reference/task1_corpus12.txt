@@ -1,0 +1,987 @@
+INTRODUÇÃO 
+Pode-se, a partir de um primeiro contato, perceber que as histórias em quadrinhos são um gênero de texto que requer uma leitura peculiar, visto que a união da imagem com o texto escrito amplia o universo de percepção do leitor. Diante da voz do texto escrito e da imagem, como realizar a tradução de uma história em quadrinhos? De certa forma, há uma ampliação dos recursos que serão aplicados na tradução: o autor utilizou a imagem que deve ser considerada pelo tradutor como chave de leitura. 
+A partir dos elementos presentes na linguagem dos quadrinhos, o trabalho do tradutor dessas histórias não se restringe ao texto escrito é preciso levar em conta outros desafios que vão desde uma linguagem icônica até as várias normas linguísticas incidentes no texto. 
+No gênero quadrinhos, os balões expressam a fala de cada personagem e os autores usam os recursos gráficos para expressar a oralidade na escrita, o que leva o pesquisador (e, por conseguinte, o tradutor) a rever os conceitos de língua falada e língua escrita bem como suas inter-relações. Nas histórias em quadrinhos (daqui em diante HQ) toda representação escrita de usos supostamente orais será sempre um fingimento, impossível de escapar do hibridismo que caracteriza todo e qualquer uso da língua. 
+O texto traduzido de HQ é influenciado por uma grande variedade de normatizações. Em geral, as escolhas do tradutor buscam corresponder ao gênero do texto, ao público alvo e às normas editoriais impostas pelos agentes normatizantes. A relação entre língua falada/escrita é muito estreita e a linguagem dos quadrinhos oferece uma característica essencial a mais: a oralidade fingida. 
+Alguns autores consideram, ainda hoje, as HQ um gênero paraliterário, outros como um suporte para o texto narrativo ou literário. No entanto, o gênero quadrinhos é altamente representativo da cultura contemporânea e ocupa um espaço cada vez maior no campo editorial. 
+As características de linguagem empregada fazem do discurso dos quadrinhos um gênero à parte principalmente pela presença essencial da imagem, pela linguagem icônica, oralidade fingida e o uso abundante dos diálogos. 
+1 
+A unificação da imagem e do texto escrito apresenta algumas peculiaridades na leitura das HQ. O autor de quadrinhos usa a imagem para descrever personagens, ilustrar situações narrativas e localizar espacialmente as histórias, o que resulta em um texto escrito com frases curtas, ausência de explicações textuais e descrições limitadas, já que os desenhos esclarecem elementos importantes para o continuísmo da narrativa quadrinhística. A imagem substitui parte do conteúdo linguístico gerando um texto híbrido de imagem e linguagem escrita. 
+A linguagem icônica dos quadrinhos é a representação gráfica da linguagem por meio de imagens, símbolos ou ilustrações. Imagens de rabiscos ou traçados irregulares podem expressar ideias de dor ou palavras de difícil compreensão. Um símbolo convencional pode substituir uma descrição que exigiria um extenso texto escrito. O tamanho da letra ou sua forma de apresentação (negrito, itálico ou sublinhado) expressam sentimentos como raiva, tristeza ou intolerância. As onomatopeias são também um exemplo de linguagem icônica porque cumprem a função de representar graficamente um som de fala. 
+Nos textos das HQ estão presentes recursos da oralidade fingida que são uma tentativa de representar a fala espontânea por meio da linguagem escrita. Essa representação da fala artificialmente construída na oralidade fingida é aceita com naturalidade, no gênero quadrinhos, pelos leitores. 
+O uso abundante de diálogos tem uma estreita relação com a oralidade fingida e as normas que incidem sobre o texto traduzido. A oralidade fingida influencia na forma de apresentação dos diálogos que precisam parecer o mais espontâneos possível. As normas da língua falada espontânea incidem sobre o texto dos diálogos que são representados pela língua escrita. Por fim, o texto do tradutor passa por agentes normatizantes antes da publicação que também adicionam ao conjunto suas normas, tornando o texto final um exemplo híbrido de texto normatizado. 
+O romance gráfico Persépolis, de Marjane Satrapi, traduzido do francês para o português brasileiro por Paulo Werneck, é o corpus dessa pesquisa. É um romance gráfico (daqui em diante RG), porque conta uma história em quadrinhos longa e em forma de livro. A iraniana Marjane Satrapi usou o gênero quadrinhos para contar sua biografia desde sua infância em Teerã até sua partida definitiva do Irã para a França. 
+Analisaremos as representações de normas presentes no RG por meio de exemplos de oralidade fingida com vistas à análise linguística das normas que incidiram sobre o texto final 
+2 
+traduzido, dando ênfase aos traços gramaticais do português brasileiro (daqui em diante PB): demonstrativos esse/este, formas do imperativo, relações pronominais você/te, emprego dos verbos ter e haver, emprego de nós e a gente. 
+Os objetivos a serem alcançados são:
+• Analisar a linguagem verbal/não verbal e a representação de marcas de normas 
+linguísticas presentes na oralidade fingida no texto final traduzido de Persépolis para o PB. •Analisar algumas ocorrências de oralidade fingida na tradução dos quadrinhos;
+• Identificar alguns fatos gramaticais presentes no texto do RG. 
+Pretendemos com essa pesquisa responder às perguntas: que representações de normas linguísticas do português brasileiro estão presentes no texto final traduzido de Persépolis? Quais são os traços de oralidade fingida presentes no texto traduzido para o PB? Como o tradutor Paulo Werneck e os agentes normatizantes trabalharam as representações de norma e qual delas privilegiaram no seu texto final traduzido de Persépolis? Como a oralidade fingida foi considerada para a tradução dos balões que representam nas HQ a fala de cada personagem? 
+Para tanto, no Capítulo 1 apresentamos as características do gênero quadrinhos e uma definição de sua linguagem. Fazemos uma análise do percurso dos quadrinhos até a atualidade com o fim de mostrar sua importância enquanto gênero textual, buscando como referencial as obras de quadrinistas, linguistas e estudiosos do gênero. Trabalhamos termos próprios das HQ para conceituá-los e esclarecer seus significados e importância na construção de uma linguagem específica das HQ. Discorremos sobre a tradução de quadrinhos e a oralidade fingida. Para encerrar o capítulo, trabalhamos o conceito de romance gráfico e as características de Persépolis enquanto gênero quadrinhos. 
+No Capítulo 2, apresentamos a relação entre norma linguística e tradução buscando referencial em linguistas e estudiosos. Levantamos questionamentos sobre a relação da língua falada com a língua escrita para compreender suas representações de normas. Empregamos o conceito de português brasileiro contemporâneo e justificamos as marcas de normas linguísticas analisadas na tradução do romance gráfico Persépolis para o PB. 
+3 
+O Capítulo 3 traz um panorama da estrutura do RG Persépolis. Apresentamos algumas ocorrências de oralidade fingida e sua relação com as normas linguísticas. Fazemos também um levantamento comparativo do panorama descrito pelos especialistas – gramáticos e linguistas – sobre as representações das normas nas ocorrências dos fatos gramaticais do RG Persépolis selecionados para essa pesquisa. 
+O Capítulo 4 apresenta os fatos linguísticos tabelados quantitativamente e uma análise linguística detalhada da oralidade fingida e dos fatos gramaticais selecionados de três pranchas narrativas. 
+Por fim, seguem-se as considerações finais sobre esse trabalho. 
+4 
+1. A LINGUAGEM DOS QUADRINHOS 1.1. Introdução 
+Ao pensarmos em história em quadrinhos, vêm à tona os elementos de um texto lúdico, uma linguagem simplificada especialmente direcionada para um público que busca facilidade e leitura banal. 
+Cirne (2000) explica que as histórias em quadrinhos (daqui em diante HQ), em seus primórdios, foram consideradas por muitos estudiosos e psicólogos textos nocivos à formação dos jovens, histórias escritas sem nenhuma expressividade artística ou textual. Esse novo tipo de texto, considerado confuso, que era o novo suporte dos quadrinhos, foi apresentado ao público pelos especialistas da época como uma mídia popular de pouca importância e sem nenhum atrativo intelectual. 
+Para muitos psicólogos, os malefícios da leitura de quadrinhos eram surpreendentemente maiores do que a total ausência de leitura, já que viciava o cérebro em uma “estranha e limitada” forma de escrever, fato explicado por Anselmo: 
+Durante muito tempo as HQ, apontadas como prejudiciais ao desenvolvimento intelectual das crianças, sem qualquer fundamento científico, foram somente objeto de estudos de cunho histórico e artístico. (ANSELMO, 1975, p. 32). 
+Anselmo retrata uma triste realidade do nascimento das HQ: o preconceito que recebeu sua linguagem. As acusações que recebia o conjunto texto/figura iam desde desenvolvimento da preguiça mental em seus leitores até a apresentação de material escrito ou tipográfico falho. Mas o maior “crime” cometido pelas HQ se referia à influência negativa de suas histórias e personagens, principalmente com o aumento da violência entre os jovens após a Segunda Guerra Mundial. 
+Quanto à linguagem das HQ, Anselmo afirma: 
+Coupière (1970) transcreve a atitude hostil de outro expert que assim se expressou: “eu desprezo os comics porque eles não têm nenhuma sutileza, nenhuma beleza. Tornam as coisas demasiadamente fáceis. Em lugar de boa descrição, colocam o mau desenho. Reduzem as maravilhas da linguagem a grosseiros monossílabos e a narração não passa de um filme impresso. Detesto sua falta de estilo e de moral, o seu apelo ao analfabetismo e à má gramática. Abomino sua fatigante dureza, suas sensações fáceis e seu humorismo imbecil.” (ANSELMO, 1975, p. 90). 
+5 
+Apesar de todos os descaminhos, os quadrinhos conseguiram se firmar, nos anos 1980, como nona arte, antecedidos pelas oito primeiras que são a Arquitetura, a Pintura, a Escultura, a Gravura, o Desenho, a Fotografia, o Cinema e a Televisão. 
+Com a linguagem oral mais estudada e valorizada, os textos de diálogos, tão utilizados em quadrinhos, são enriquecidos por estruturas mais próximas da língua falada caracterizando personagens e proporcionando variações dos universos linguísticos aos seus leitores. Sendo assim, a tão repudiada linguagem das HQ se transforma em um caminho plural de teorias e reflexões. 
+1.2. Linguagem? Que linguagem? 
+As HQ nasceram como um documento expressivo, textos repletos de uma linguagem peculiar: junção entre imagem e texto verbal. União que se transformou em uma linguagem específica, segundo Eisner: 
+Em sua forma mais simples, os quadrinhos empregam uma série de imagens repetitivas, e símbolos reconhecíveis. Quando são usados vezes e vezes para expressar ideias similares, tornam-se uma linguagem – forma literária se quiser. E é aplicação disciplinada que cria a ‘gramática’ da Arte Sequencial. (EISNER, 1995, p. 08) 
+Mesmo com críticas contrárias, são consideradas um gênero literário de grande acesso. Uma mídia popular extremamente requintada em alguns aspectos, que, ao contrário de limitar a capacidade de desenvolvimento da leitura, contribuiu para um acesso mais popularizado e lúdico às obras literárias clássicas, como a famosa reescrita em quadrinhos da obra Auto da barca do inferno de Gil Vicente, que conserva todos os diálogos do texto original de 1517, adaptação que foi feita para a linguagem dos quadrinhos pelo cartunista Laudo Ferreira (1977). Esse é somente um dos vários exemplos de obras literárias clássicas reescritas em quadrinhos, realizando, na prática, o que é denominado nos estudos da tradução como tradução intersemiótica, definida em Plaza (2001): 
+Os quadrinhos como tradução são um produto da tradução intersemiótica e demonstram que a linguagem das HQ transporta a literatura para outro campo semiótico: o 
+6 
+A tradução intersemiótica ou “transmutação” foi definida por Roman Jakobson como sendo aquele tipo de tradução que “consiste na interpretação dos signos verbais por meio de sistemas de signos não verbais”, ou “de um sistema de signos para outro, por exemplo da arte verbal para música, a dança, o cinema ou pintura”, ou vice-versa, poderíamos acrescentar.(PLAZA, 
+2001, p. XII) 
+indissociável conjunto imagem/texto verbal da linguagem quadrinhística, como afirma Guerini: 
+Para que os quadrinhos sejam observados como um suporte de tradução, Guerini destaca as características da linguagem dos quadrinhos cuja compreensão passa tanto pela linguagem verbal como pela linguagem visual, as quais, como sistemas semióticos, trabalham conjuntamente na produção dos sentidos. Faremos, então, um direcionamento terminológico sobre qual conceito de linguagem será usado na determinação de uma linguagem dos quadrinhos. 
+A linguagem é de domínio individual e de domínio social, ela não se classifica unicamente em uma categoria dos fatos humanos, dificultando a definição de sua unidade. Em cada texto está um sistema de linguagem. Sendo assim, cada texto é único e singular, e é escrito com uma intenção específica. 
+Eisner explica o conceito de quadrinhos como arte sequencial e trata das temáticas implícitas no universo artístico daqueles que trabalham com a linguagem especializada das HQ: 
+A arte sequencial, particularmente como é aplicada às histórias em quadrinhos, destina-se essencialmente à reprodução. Portanto, devem visar quase simultaneamente à estética e às técnicas. Há poucas oportunidades para se improvisar nesta disciplina. A arte sequencial, especialmente nas histórias em quadrinhos, é uma habilidade estudada, que pode ser aprendida, que se baseia no emprego imaginativo do conhecimento da ciência e da linguagem, assim como da habilidade de retratar ou caricaturar e de manejar as ferramentas do desenho. (EISNER, 1995. p.144) 
+As situações comunicativas em que as linguagens especializadas estão inseridas também cabem no universo de produção das HQ. Em geral quem procura informações mais específicas sobre a produção das HQ é um público que pretende aprender mais sobre a nona arte e tem um interesse explícito em suas técnicas e estruturas peculiares. 
+7 
+Na transposição de um lugar (a literatura) para outro (HQ) torna-se imperativo conseguir no texto alvo aquilo que se realizou imagética e poeticamente no texto de partida. (GUERINI, 
+2013, p.16) 
+1.3. De desenhos em quadrinhos a arte sequencial: elementos gráficos dos quadrinhos 
+As HQ apresentam um texto com intenções deliberadas de representar a fala, mas é possível reconhecer que, no início, principalmente na era de ouro dos quadrinhos, os anos 1930, surgiram clássicos do gênero como Flash Gordon de Alex Raymond que tem em sua linguagem um delineamento narrativo, envolvendo “pranchas”, conceito gráfico assim explicado por Mota: 
+A prancha – a página desenhada – é hoje também uma unidade de significação desta forma de linguagem. Frequentemente, faz-se corresponder à duração de uma cena com dimensões de prancha.
+Em primeiro lugar, é possível conceber-se um tipo de prancha em que existe autonomia entre texto e imagem e a narrativa é dominante. (MOTA, 2000, p. 27) 
+Nos valendo da definição de prancha enquanto bloco narrativo, é importante destacar a diferença entre um momento de representação oral da linguagem dos quadrinhos e um momento especificamente narrativo. 
+Relativamente aos quadrinhos e à sequência tempo/espaço o autor se torna impessoal, fato que segundo McCLoud desencadeia um processo criativo significante: 
+Em relação à narrativa e às pranchas, Mota insiste na dependência entre texto e imagem: 
+A relação de dependência pode surgir entre imagem e texto resultando a composição num domínio de elemento visual. A narrativa surge quase como uma consequência necessária e lógica da organização (gráfica) da prancha. Nesta hipótese, a principal consequência reflecte-se ao nível do sentido de leitura, que é posto em causa. A leitura, tal como conhecemos, é desestabilizada, criando-se uma linguagem multimedia, com diferentes sentidos narrativos. 
+O peculiar relacionamento entre imagem na banda desenhada vai ser relevante na própria planificação da história, para lá da mera construção da vinheta, da sequência ou da prancha. (MOTA, 2000, p. 33). 
+À medida que os quadrinhos passaram a fazer parte do cotidiano social, em sua elaboração se tornaram dispensáveis as explicações sobre as imagens, e para seu público a automatização da compreensão da linguagem indissolúvel entre imagem e texto escrito foi a consequência inevitável. 
+Mesmo quando o autor da HQ disponibiliza somente o recurso do diálogo, apresentando um texto premeditadamente com intenção da oralidade, se houver uma relação 
+8 
+O quadrinista aprende a enxergar além das técnicas de diagramação e roteiro pra ver a imagem como um todo: ritmo, drama, humor, suspense, composição, tema. Logo, isso tudo está sob seu comando! (McCLOUD, 1995, p. 45) 
+profunda entre a imagem e o texto, os quadrinhos são considerados uma arte sequencial da narrativa: 
+As HQ são uma arte da narrativa construída por meio de mecanismos específicos que devem ser examinados sem jamais negligenciar como eles participam na narração1. (COUPERIE, 1967, p. 7) [tradução nossa] 
+Um plano de imagem nas HQ será só um desenho, se não houver um sentido narrativo em seu texto. Entra em cena, então, o papel das sarjetas. Assim definidas por McCloud: 
+O espaço entre os quadros é o que os aficionados das histórias em quadrinhos chamam de sarjeta. Apesar da denominação grosseira, a sarjeta é responsável por grande parte da magia e mistério que existem na essência dos quadrinhos!
+É aqui, no limbo da sarjeta, que a imaginação humana capta duas imagens distintas e as transforma em uma única ideia. 
+Nada é visto entre os dois quadros, mas a experiência indica que deve ter alguma coisa lá! (McCLOUD, 2005, p. 66) 
+Esse espaço entre os requadros, que caracteriza as HQ, é o elo entre a compreensão das técnicas de narração dos quadrinhos e a continuidade da história. Por causa das sarjetas, o título de Arte Sequencial foi dado aos quadrinhos, arte da sequência é também a arte dos cortes. Saber espaçar uma ideia e lançar mão do recurso das sarjetas são recursos comunicativos preciosos, como explica Cirne: 
+Ousamos dizer: o corte – que é, por essência crítica, um corte gráfico – será uma das marcas registradas da especificidade quadrinhística, naquilo que semioticamente constitui a sua narrativa. Isto é, nos quadrinhos, o espaço narracional se demarca pelo lugar do corte. Um não dito que pode ser preenchido pela imaginação do leitor a cada momento, a cada impulso, a cada vazio – o vazio que antecede a nova imagem. (CIRNE, 2000, p. 13) 
+Sendo assim, as sarjetas variam de acordo com o objetivo narrativo. Sem um corte a mensagem poderia ser prejudicada em sua continuidade. Deste modo, os autores variam as regras da narração, aqui vistas em seu conceito descritivo, relacionadas à imagem e ao verbal que tecem o texto. A continuidade está principalmente nos brancos entre as imagens, cada retângulo tem seu valor. O trabalho com a dosagem de informação nos quadros mede de forma importante o nível de interesse das informações: muita informação, menos interesse na ação. O dinamismo das imagens e dos textos caracteriza, em geral, a teia da ação e da compreensão do leitor. Resnais, falando sobre cinema, completa: 
+1 La BD est un art du récit qui se construit au moyen de mécanismes spécifiques dont on doit faire l’examen sans jamais négliger d’observer comment ils participent à la narration. (COUPERIE, 1967, p. 7) 
+9 
+A continuidade está nas lacunas entre os quadros de um filme. É quase a mesma história em quadrinhos, especialmente nas HQ de ação e aventura, nas quais cada requadro é significativo. O desenho em si não é tão importante como o ritmo que vem da supressão do que acontece entre duas imagens ou dois requadros. Para a diegese, o que acontece entre os requadros é tão importante como o teor desses. O filme, como a história em quadrinhos, pode perder muito do seu valor se muitas imagens são inseridas entre os intervalos. Cada requadro deve desfrutar do privilégio de construir uma corrente contínua com o seguinte2. ( RESNAIS, 1972, p. 44) [tradução nossa] 
+Para estabelecer uma linguagem das HQ é preciso haver uma conceituação mínima, tentar responder o que é este labirinto semiótico da arte sequencial. Falar somente de um texto com desenhos não atribui à nona arte sua verdadeira função enquanto linguagem. A definição de Cirne deixa claro o lugar relevante das sarjetas nessa caracterização da linguagem da arte sequencial: 
+Quadrinhos são uma narrativa gráfico-visual, impulsionada por sucessivos cortes, cortes estes que agenciam imagens coladas, rabiscadas, desenhadas e/ou pintadas. O lugar significante do corte – que chamaremos de corte gráfico – será sempre de um corte espácio-temporal, a ser preenchido pelo imaginário do leitor. Eis aqui a sua especificidade: o espaço de uma narrativa gráfica que se alimenta de cortes igualmente gráficos. (CIRNE, 2000, p. 23) 
+A linguagem especializada das HQ tem termos que são empregadas com significados específicos. O termo balões, por exemplo, para os profissionais dos quadrinhos, é um recurso gráfico que apresenta a fala dos personagens. 
+No início da história das HQ a inserção do texto nas imagens não ocorria da mesma maneira, mas em 1896, a partir da reunião dos notáveis em Lucca na Itália, o uso do balão foi o marco da estrutura de linguagem dos quadrinhos como conhecemos hoje. Mota define os balões, a partir de suas características, da seguinte forma: 
+O balão torna visível o som. O balão normal não compromete. O balão-bolha (ou balão-nuvem) reflecte não uma fala, mas um pensamento. O balão eléctrico é normalmente utilizado para sons provenientes de aparelhos. O balão “fala-baixo” exprime um sussurro. A enorme variedade de balões enquadra-se nas regras da leitura. Os cartuchos são explicações do narrador. (MOTA, 2000, p. 113) 
+2 La continuité réside dans les blancs entre les images d’un film. Il en est presque de même des bandes dessinées, surtout dans les B.D. d’action et d’aventure, où chaque rectangle est signifiant. Le dessin même n’est pas aussi important que ce rythme qui naît de la supression de ce qui se passe entre deux images et ou deux rectangles. Pour la diégèse, ce qui se passe entre les rectangles est aussi important que le contenu des rectangles mêmes. Le film, comme la B.D., peut perdre beaucoup de son intérêt si trop d’images sont insérées entre les cadres. Chaque rectangle doit jouir du privilège d’enchaîner en continu avec le suivant. (RESNAIS, 1972, p. 44) 
+10 
+A especificidade de características do termo balão na área de especialidade das HQ reafirma sua linguagem especializada, bem como estrutura a temática de inserção do texto escrito na unidade imagem-texto da arte sequencial. 
+As palavras da linguagem comum têm estatuto terminológico na área específica das HQ e, no plano conceitual da especialidade instaurado pela comunicação especializada e divulgada através dos textos, elas traduzem perfeitamente a linguagem especializada da arte sequencial. 
+1.4. A linguagem dos quadrinhos e a tradução: olhos de ler e ver 
+É possível, a partir de um primeiro contato, perceber que as histórias em quadrinhos são um suporte semiótico que proporciona uma leitura diferente, na medida em que sua linguagem resignifica a noção tradicional de ‘texto’, pois inclui em seu conceito não só o verbal, mas também o visual. Sendo assim, a tradução de HQ também apresenta importantes aspectos a serem considerados. 
+Se para o leitor comum, aquele que faz das HQ um meio de entretenimento ou de leitura preferida e tem como acesso a esta mídia a tira diária do jornal e a revista, é preciso exercer sobre a leitura da arte sequencial habilidades interpretativas, visuais e verbais, atribuídas principalmente pelo código único entre texto e imagem (EISNER, 1995, p.8), para o tradutor de HQ, as habilidades necessárias estão contidas principalmente na consideração de que a linguagem verbal e a linguagem visual são indissociáveis e formam uma unidade a ser considerada na tradução dos balões, que são os objetos da tradução nos quadrinhos. 
+Para uma compreensão da linguagem das HQ, Cirne caracteriza a mídia dos quadrinhos por meio de seus elementos semióticos fazendo uma ponte entre a estética e a semiótica, disciplinas que, embora representem campos distintos, colaboram entre si na consolidação da linguagem das HQ como uma nova estética: 
+A rigor, a estética e a semiótica são campos distintos, mas ousemos pensar suas problematizações. Qualquer nova perspectiva estética, inclusive, só existe na medida em que uma conquista semiótica, experimental ou não, se consolida formalmente enquanto signo capaz de investir, do social ao cultural, na aventura do imaginário: a descoberta de novos caminhos significantes, como no dadaísmo, como na antropofagia, como no neoconcretismo. Como no poema/processo. (CIRNE, 2000, p. 26) 
+11 
+Ao se deparar com as imagens, o tradutor tem uma ampliação dos recursos que serão aplicados na arte de traduzir: o autor utilizou a imagem como código de leitura e essa deve ser considerada pelo tradutor. 
+Há também a caracterização imagética, na maioria dos textos em quadrinhos, da personalidade das personagens e, em alguns casos, da linguagem cômica/humorística, jogo de palavras, expressões idiomáticas, gírias, ironia, dentre outras que exigem do tradutor uma sensibilidade para a seleção de recursos com a finalidade de utilizar adequadamente as imagens na realização de seu texto final. 
+De acordo com Rosas (2003), a tradução do humor/ironia requer um conhecimento das culturas de cada idioma, pois tanto o texto original de partida quanto o texto traduzido têm imagens próprias para sua leitura. 
+Se acrescentarmos ao debate a necessidade do conhecimento da linguagem especializada das HQ pelo tradutor, a tradução da arte sequencial se torna ainda mais peculiar, pois as sugestões imagéticas e a narração dos textos em quadrinhos precisam ser consideradas como um discurso especializado. 
+Pode ser simples a ideia de que o tradutor só traduz o texto dos balões e seus cartuchos e, porque não traduz as imagens, essas são irrelevantes no processo tradutório. No entanto, a imagem e o texto são indissociáveis na linguagem dos quadrinhos e a escolha do tradutor ao traduzir um balão sempre estará associada às imagens do quadro e à estrutura narrativa que configuram a peculiaridade da linguagem das HQ. 
+Para Meschonnic a tradução de textos é uma tradução de discurso e não de língua: “Não se traduz mais a língua. Ou, então, desconhece-se o discurso e a escritura. É o discurso, e a escritura, que é preciso traduzir.” (MESCHONIC, 2010, p. 20) 
+Considerando que a unidade da linguagem, para Meschonnic , não se resume só à unidade da palavra, a unidade passa a ser o discurso, todo o sistema do discurso (p. 31), o que se traduz é discurso. A partir dessa afirmação, a linguagem dos quadrinhos, que tem um discurso próprio, precisa ser bem conhecida para ser traduzida. 
+Os quadrinhos se revelam como uma linguagem específica que tem um discurso específico. Ao traduzir um balão, o tradutor precisa conhecer as características do discurso quadrinhístico e a partir deste conhecimento estruturar suas escolhas, sempre respeitando a indissociabilidade entre o verbal e a imagem. 
+Há uma tendência natural em interpretarmos as imagens apenas como uma ilustração da realidade. No entanto, mais do que “imagens de coisas”, as ilustrações representam, na 
+12 
+maioria das vezes, um conceito ou uma ideia. Nos quadrinhos elas compõem o discurso do autor, tanto quanto o texto verbal. 
+Vejamos as pranchas a seguir da historia Love story do romance gráfico Persépolis em francês e em português brasilero de Satrapi (2007/2011): a imagem da personagem atada aos locais no primeiro requadro sugere a divisão de tempo de Marjani entre os amigos e outras atividades. Na sentença em francês a autora usa a voz ativa: “ses amis anarchistes m’adoptèrent” que poderia ser facilmente traduzida por uma sequência direta: “seus amigos anarquistas me adotaram”, no entanto, por conta da imagem representar uma atitude pouco ativa da personagem, o tradutor, Paulo Werneck, optou pela voz passiva no português: “fui adotada pelos anarquistas amigos dele.” A imagem de uma ação sem a participação da personagem sugeriu uma opção verbal que também demonstrasse a passividade. 
+13 
+No primeiro requadro percebemos que o tradutor manteve o nome da escola em francês Lycée français de Vienne. Esses elementos visuais-textuais que, nos quadrinhos, não são nem cartuchos narrativos e nem fala dos personagens são denominados inscrições. As inscrições em Persépolis aparecem tanto em farci como em francês e alemão e, na maioria das vezes, o tradutor optou por não traduzi-las. A razão dessa opção parece estar ligada ao idioma falado no momento em que essas inscrições aparecem. O tradutor precisava passar a ideia de que, naquele momento, a personagem conversava, lia ou ouvia o farsi, francês ou alemão. 
+Em Persépolis há uma presença marcante das onomatopeias, que para Saussure (1995), diferente de outras categorias linguísticas, representam signos motivados. Na prancha abaixo, aparecem representados sintomas de uma bronquite: chiados, tosse, espirro e tosse com sangue. 
+Na versão francesa os sons são representados pela relação letra/fonema/pronúncia do francês. Algo que, por semelhança, represente o ícone referencial do som de uma tosse. O tradutor, a partir das imagens presentes na HQ, precisou buscar equivalentes onomatopeicos na relação letra/fonema/pronúncia no português: som da tosse no francês: MPF KKOF KOF por outro lado no português: MPF COFF COF. O espirro no francês: KEUH KEUH, no Português TXIM TXIM. 
+14 
+15 
+Para Santaella (2005) existem três tipos de signos icônicos, a saber: a imagem, o diagrama e a metáfora. Quando tratamos de onomatopeia, que é a representação de sons por meio de palavras ou letras, a autora cita Anderson e sua obra Uma gramática do Iconismo (1999) para explicar que, ao se aprofundar nos conceitos sobre os signos motivados, Anderson demonstra que há uma padronização de sons repetidos que representam fenômenos idênticos ou similares. No caso das onomatopeias representadas na prancha de Persépolis, considerando que os sons de cada letra em idiomas diferentes também são pronunciados de acordo com sua própria convenção, as escolhas do tradutor estão relacionadas diretamente à imagem e ao que ela representa enquanto mensagem icônica. 
+Em seu artigo “A imagem enformada pela escrita”, Anne Marie Christin discorre sobre o emprego da imagem, no início da escrita, como um símbolo dos pensamentos e não só como uma utilização banal da representação do concreto. Para tanto, Christin recorre ao emprego da ideia humana de combinar figuras-símbolos com o fim de que o produto final fosse compreendido pelo leitor como um conjunto que produzisse um sentido, previamente concebido pelo autor, imaginado e ordenado premeditadamente (CHRISTIN, 2004, p. 65). 
+Nas HQ, as imagens representam o texto em si, que pode ou não ter como outro recurso a linguagem verbal. A imagem em um nexo narrativo conta uma história implícita no universo dos desenhos, como afirma Barboza: 
+E ainda que numa HQ se recupere todo um romance sem se fazer uso de uma palavra sequer, ainda assim, a fala subliminar do inventor da trama, rede textual repleta de frutos colhidos no mar da poesia, no silêncio gritará.( BARBOZA, 2004, p. 11) 
+Para o tradutor de HQ é preciso considerar que os ícones presentes no desenho têm relação intrínseca com o símbolo das palavras e que há uma premeditação do emprego das imagens com os desenhos. Relacionando sempre imagem e texto como indissociáveis, o tradutor das HQ recebe dos desenhos informações icônicas que determinam suas escolhas, a partir de uma análise cultural, linguística e/ou imagética do texto das HQ, como no exemplo anterior da tradução das onomatopeias. 
+Atentando para a observação de Anne-Marie Christin (2006) de que é dando privilégio, na análise da imagem, ao seu suporte que será possível encontrar as premissas icônicas da escrita, o tradutor poderá optar por soluções significativas em suas opções ao traduzir os textos das HQ, sempre relacionando imagem e texto, sem perder de vista as estruturas lexicais mais evidentes no discurso intrínseco e peculiar da linguagem dos quadrinhos. 
+Isso implica em uma ratificação de que os quadrinhos têm um discurso especializado e, portanto, quando traduzido, trará no texto em outro idioma um discurso também especializado que leva em conta tanto as palavras dos balões como as imagens e as características narrativas presentes em seus textos. 
+Para o tradutor, além de ter em mente uma definição da linguagem dos quadrinhos, é preciso reconhecer nas HQ seu suporte artístico de grande importância, principalmente pelo seu alcance enquanto texto, literatura e produto da mídia de massas. Já em 1975, Anselmo afirmava que as HQ deveriam ser classificadas como meio de comunicação de massa (MCM) porque tinham características essenciais como: 
+Envolvimento com máquinas de mediação da comunicação, a impressão, por exemplo; atinge vasta audiência em breve período de tempo; as mensagens originam-se de uma ampla organização de profissionais e divisão de trabalho; reflete a educação de um povo; difundem instantânea e rapidamente mensagens; estendem a informação, a diversão e o ensino ao homem comum, combatendo privilégios no acesso à informação. (ANSELMO, 1975, p. 23) 
+16 
+Reportando a importância que a leitura de quadrinhos tem para a educação do leitor e também para a formação do hábito de leitura, é sempre pertinente lembrar que os quadrinhos se tornaram textos preferidos de crianças e adolescentes, alcançando os adultos de forma definitiva com o surgimento dos romances gráficos (daqui em diante RG). 
+Os RG (em inglês grafic novel) são, segundo Braga, livros que contam uma história longa por meio da arte sequencial. O termo é usado para definir as distinções subjetivas entre um livro e outras histórias em quadrinhos (BRAGA & PATATI, 2006, p. 67). Foi Will Eisner quem popularizou o termo romance gráfico, que apareceu na capa de seu livro A contract with God (1978). No entanto, o formato de histórias em quadrinhos mais extensas e com temáticas sociais ou filosóficas tem como precursor Richard Kyle que usou o termo nos anos 1960 (BRAGA & PATATI, 2006, p. 68). Atualmente, o termo se aplica a edições encadernadas publicadas para estruturar uma história longa em quadrinhos. 
+1.5. A oralidade fingida e os quadrinhos: do falado ao escrito representando o falado 
+Em geral, elementos da fala são transcritos para um texto em passagens de diálogos com objetivos variados, dentre eles o de caracterizar as personagens, sua personalidade, sua classe social, seu grau de instrução. Brumme (2008) conceitua a oralidade fingida como a variedade de manifestações orais que se pretende refletir no texto escrito e que são confrontadas com problemas como as diferenças culturais, a relação norma-uso, a relação oral-escrito e os recursos de uma língua para outra. A oralidade fingida também pode ser classificada como construída, já que há uma ilusão de que é uma representação fiel da linguagem falada na escrita. 
+As histórias em quadrinhos são textos que, por causa de seus recursos gráficos representados pelos requadros, balões e sarjetas, têm uma estrutura híbrida de gênero textual na qual estão presentes normas da linguagem oral e escrita. Os símbolos, imagens, expressões das personagens e características da fala estruturam uma oralidade fingida (fictive orality), conceito assim definido por Sinner: 
+A oralidade fingida é uma variedade linguística situacional que difere da fala espontânea em vários aspectos. A fala na ficção é o produto de recriação ou evocação estilizada por parte de um autor. Embora o realismo e a autenticidade possam ser as qualidades mais celebradas, em última instância, as funções literárias e a dimensão semiótica do diálogo impõem restrições 
+17 
+significativas sobre as decisões tomadas tanto pelos autores do texto-fonte como pelo tradutor3. (SINNER, 2009, p. 436) [tradução nossa] 
+Sinner chama a atenção para uma análise da oralidade fingida com o intuito de observar a representação de norma específica: 
+Na maioria dos estudos sobre oralidade fingida – realizados sob uma perspectiva translatológica – se enfoca a distância da oralidade real para determinar os padrões e as convenções da representação do oral na ficção – supondo, como já assinalei, que não coincidem com a própria natureza do fictício4. (SINNER, 2009, p. 437) [tradução nossa] 
+Na narrativa contada em quadrinhos, cada personagem assume um estilo oral. Há uma espécie de marca da oralidade. Como a linguagem das HQ é composta por recursos especiais, termos especiais e ainda sofre certa oscilação dependendo das personagens, a oralidade fingida é ainda mais marcante. 
+Segundo Guilhelm Naro (2008, p. 107), as HQ são um gênero excepcional de oralidade fingida porque constituem uma representação do oral que é aceita pelos leitores. Há marcas profundas da oralidade nas HQ e os balões são uma representação gráfica do falar. As onomatopeias, o jogo de palavras e até as interpretações de estruturas completamente inventadas, como a linguagem de animais, caracterizam a linguagem das HQ e suas especificidades. 
+Além desses fatores, a história em quadrinhos tem a mensagem visual, que de forma definitiva é parte integrante do corpus da mensagem. O tradutor precisa levar em consideração o elo indissolúvel entre texto e desenho, fato que condiciona suas escolhas ao traduzir. 
+Pensando na tradução e no tradutor, a predominância da representação oral na escrita das histórias em quadrinhos necessita de uma atenção especial. Uma ironia em francês pode não representar o mesmo efeito quando traduzida para o português brasileiro 
+3 The fictive orality, a situational linguistic variety, differing from spontaneous speech in various respects. Speech in fiction is the product of stylised recreation or evocation by an author. While realism and authenticity may be the most celebrated qualities, ultimately, the literary functions and the semiotic dimension of dialogue place significant constraints on the decisions taken both by the source text authors and the translator. (Sinner, 2008, p.436) 
+4 En el grueso de los estudios de la oralidad fingida — se han realizado muchos trabajos recientemente desde una perspectiva translatológica — se enfoca la distancia de la oralidad real, para determinar las pautas y convenciones de la representación de lo oral en la ficción — suponiendo, como he señalado, que no coinciden por la propia naturaleza de lo ficticio. (Sinner, 2009, p. 437) 
+18 
+(daqui em diante PB). Além do mais, apesar dos balões representarem a fala dos personagens, essa representação está efetivada em um texto escrito, que limita muitos aspectos reais da oralidade. 
+Nos requadros abaixo, que fazem parte da prancha narrativa La fête (A festa) de Persépolis aparece um ditado infantil em francês que tem rimas: sors de ta cachètte, ne sois pas mauviètte! No texto traduzido para o PB por Paulo Werneck, o ditado não foi escrito com rimas e nem mesmo pareceu uma quadrinha infantil: sai do esconderijo, não seja frouxo! As escolhas do tradutor não consideraram a rima. O tradutor também não buscou expressões no PB que refletissem um ditado popular ou infantil como no texto em francês: 
+Na tradução desses requadros, Werneck considerou a espontaneidade da fala das crianças e optou pelo adjetivo frouxo que poderia ter sido traduzido por covarde. Outra observação diz respeito à norma do modo imperativo: conforme já é habitual no PB, há o uso 
+19 
+simultâneo de formas atribuídas pela norma-padrão tradicional ao pronome tu (‘sai’) e ao pronome você (‘seja’). Cabe lembrar que a forma prevista por essa norma-padrão para o pronome tu (‘sê’) é totalmente desconhecida dos falantes do PB. 
+Esse hibridismo de normas é denominado “terceiro código” por Baker, que assim o explica: 
+O conceito de terceiro código deve ser mais explorado se quisermos explicar as peculiaridades da língua de tradução de uma forma mais matizada, como um fenômeno distinto. Por exemplo, é inegável que a copresença de códigos não é a única restrição em vigor na tradução: outras pressões podem ocorrer e contribuir para a estrutura distintiva do texto traduzido. Além disso, a própria natureza dessa copresença de códigos tem de ser esclarecida. Esta exigência surge do fato de que a mera presença de dois códigos em um único evento não é suficiente para distinguir a tradução de outros processos, tais como em um enunciado ou texto escrito de um aluno de uma segunda língua nos quais se reconhece igualmente que o aprendiz emprega conscientemente dois códigos5. (BAKER, 1998, p. 3) [tradução nossa] 
+Para Baker, o tradutor utiliza um terceiro código linguístico nas traduções. Esse código é um processo consciente ou inconsciente de representações do idioma de chegada. Variações lexicais e de normas são processadas e aparecem de forma marcante no texto traduzido. 
+1.6. O romance gráfico Persépolis 
+Persépolis é uma série de quatro histórias em quadrinhos autobriográfica e histórica realizada em preto e branco por Marjane Satrapi e tem características de um romance gráfico. A autora retrata as etapas marcantes de sua infância e adolescência em Teerã até sua difícil entrada na vida adulta. Essa série é um grande sucesso de edição mundial e em 2003 vendeu sessenta mil exemplares de seus três primeiros livros, o sucesso se manteve até 2007 quando a obra foi adaptada para o cinema por Vincent Paronnaud e pela própia autora, quando obteve o prêmio do festival de Cannes. Foi traduzida para o PB por Paulo Werneck e editada pela Companhia da Letras em 2007. 
+5 La notion de troisième code doit être examinée plus à fond si nous voulons rendre compte des particularités de la langue de traduction d'une façon plus nuancée en tant que phénomène distinct. Par exemple, il est indéniable que la coprésence de codes n'est pas la seule contrainte à jouer en traduction : d'autres contraintes s'exercent et contribuent à la structuration distinctive du texte traduit. De plus, la nature même de cette coprésence de codes demande à être clarifiée. Cette exigence découle de ce que la simple présence de deux codes dans un même événement ne suffit pas à distinguer la traduction d'autres processus, tels un énoncé ou le texte écrit par un apprenant de langue seconde, où on reconnaît également que l'apprenant ou l'interlocuteur emploie consciemment deux codes. (Baker, 1998, p.3) 
+20 
+Persépolis apresenta em seu texto recursos linguísticos bem característicos que enfatizam a ironia, pois é uma história política e religiosa com facetas de crítica social à revolução islâmica que ocorreu no Irã no fim da década de 1970. Por ser uma narrativa em quadrinhos, apresenta uma linguagem específica na qual o verbal e o imagético são indissociáveis. 
+A opção de Satrapi foi pelo desenho em preto e branco em tons de cinza, sem o rebuscamento gráfico de algumas HQ. Os desenhos têm traços arredondados e não têm tridimensionalidade. A distribuição das histórias na obra não tem numeração de páginas e na versão francesa está dividida em livros. Persépolis foi publicada aos poucos e está organizada em blocos numerados de um a quatro. No interior dos livros são apresentadas pranchas desenhadas com títulos que procuram demonstrar a ideia principal de cada bloco narrativo. 
+Pensando na oralidade representada nos textos escritos das HQ, se verifica a necessidade de se considerar o texto de Persépolis, em sua maioria, como uma representação escrita da fala. Para Bagno (2012b), as semelhanças entre língua escrita e língua falada são significativas e por isso devem ser valorizadas enquanto texto com parâmetros e registros semelhantes de uso. Os textos carregam em si um hibridismo de gêneros. Nos quadrinhos a oralidade e a escrita convivem de forma a caracterizar e estruturar uma manisfestação semioticamente híbrida, assim explicada por Bagno: 
+Toda produção textual na atualidade, falada e/ou escrita, se configura inexoravelmente como uma manifestação semioticamente híbrida que mobiliza os multimeios sonoros visuais, gráficos, tridimensionais etc. que as novas tecnologias de comunicação e informação têm colocado ao nosso dispor. (BAGNO, 2012b, p. 347) 
+A linguagem dos quadrinhos em Persépolis corresponde a um gênero híbrido textual que intenta representar a fala através de textos escritos e demonstra com marcas específicas a oralidade fingida. Elementos da comunicação oral são transcritos para o texto com objetivos variados, dentre eles caracterizar as personagens, sua personalidade, sua classe social, seu grau de instrução. 
+Nos próximos requadros, retirados da prancha La fête (A festa) de Persépolis, temos exemplos da intenção de representar a fala a partir das características dos personagens com elementos da oralidade fingida e representação de normas. Na fala da repórter de televisão o tradutor buscou estruturas linguísticas mais monitoradas como: recusou-se a dar asilo ao Xá e 
+21 
+sua família e quem vai recebê-lo , já na fala da criança: quem é esse aí?, a espontaneidade prevalece. 
+No RG Persépolis existe a presença marcante de gírias para os jovens, termos políticos para os adultos ditos engajados, termos específicos para os revolucionários e também, nos textos narrativos, em que os balões da oralidade não aparecem frequentemente, nos deparamos com termos históricos. 
+O idioma de partida, no caso o francês, recebe a influência de gírias, expressões idiomáticas, ironia, regionalismos, e no caminho para a chegada ao idioma alvo, o PB, o tradutor busca os mesmos efeitos na língua alvo com o objetivo de transmitir a mensagem atrelada aos ícones dos desenhos. 
+Podemos observar que as sarjetas em Persépolis são bem definidas, há espaços brancos largos que delimitam a narrativa quadrinhística, proporcionando ao leitor uma organização na continuidade narrativa. A presença de onomatopeias, os desenhos de bocas e olhos nas personagens demonstram a intenção icônica de ilustrar as reações emocionais das personagens. 
+22 
+Na análise do texto traduzido de Persépolis é preciso considerar que a autora, Marjani Satrapi, não tem como língua materna o francês, e sim o farsi, principal língua do Irã. Satrapi nasceu em Rasth, no Irã, e aprendeu francês no Liceu Francês de Teerã. Publicou Persépolis em francês, que deve ser considerado como um texto híbrido, já que não é produto de um falante nativo da língua. É possível que, para a versão final de seu texto, Satrapi tenha recorrido a revisores e falantes nativos. Ao escrever em francês as falas de iranianos, a autora recorre à oralidade fingida, na medida em que aparecem nos diálogos em francês aspectos “traduzidos” do discurso de cada personagem. Bagno enfatiza o processo pelo qual passa um texto traduzido antes de sua publicação e explica: 
+Por fim, é preciso recordar que, entre a tradução feita pelo profissional e a chegada de um livro (ou outra forma de suporte) à publicação (impressa ou on-line), o texto passa por diversas etapas de retextualização, constituídas pelos trabalhos de revisão, preparação, diagramação, copydesk etc. Em cada uma dessas etapas estará em ação, inevitavelmente, a representação de norma própria a cada um desses profissionais. (BAGNO, 2012a, p. 30) 
+No caso de Persépolis, tanto o texto em francês como o texto traduzido para o PB passaram por essas instâncias de normatização. Para o texto em francês o intuito é de normatizar o francês de Satrapi que não é falante nativa e, para o texto em PB, normatizar as escolhas do tradutor Paulo Werneck. 
+Em entrevista dada por Paulo Werneck para esse trabalho (anexo), o tradutor afirma que as intervenções dos editores em seu trabalho com Persépolis foram bem-vindas, abaixo o trecho completo da resposta de Werneck. 
+h) Em seu texto traduzido final, houve muita interferência da editora antes da publicação? Você considera essa interferência como um grau muito ou pouco alto? 
+Houve, mais do que uma interferência, uma interlocução de alto nível com a Marcia Copola, que é uma das profissionais de texto mais competentes e sensíveis do país. Ela fez a preparação de texto, que, para além das questões técnicas, de padronização, é uma experiência de interlocução intelectual, de leitura cerrada. A Companhia das Letras tem uma cultura intervencionista, à americana, na qual me criei e que julgo necessária. Sem ela, o tradutor fica sozinho tomando decisões solitárias e difíceis. Ter um interlocutor nessa hora é um privilégio. Eu já trabalhava cotidianamente com a Marcia, observava o trabalho dela, mas ser editado por ela foi muito importante. O trabalho dela é uma coisa que ainda precisa de um reconhecimento mais amplo. O Milton Hatoum, se não me engano, abriu para pesquisa os originais de livros dele preparados por ela. Elio Gaspari fez uma nota sobre ela que diz tudo sobre esse participante secreto da edição de livros. Ela ainda preparou o texto do Bernardo Carvalho e muitos outros grandes autores. (Entrevista com Paulo Werneck, 12/09/2013, anexo) 
+Pela resposta do tradutor, é inegável a comprovação de que as traduções são o resultado de um hibridismo de normas que incluem as regras ditadas por agentes normatizantes influentes. 
+23 
+2. NORMA LINGUÍSTICA E TRADUÇÃO 2.1. A norma linguística 
+As normas têm em seu histórico terminológico significados abrangentes que envolvem uma obrigação, um caminho estabelecido anteriormente ou numerosas regras e princípios. 
+Moisés, personagem bíblico, revelou os Dez mandamentos no livro do Êxodo. Eram normas sociais e morais que detiveram os desmandos do povo judeu que não conhecia a vida seus algozes egípcios. Por meio de dez normas de conduta moral e comportamental, o povo ali reunido conseguiu uma organização social sustentável. Na Política, Aristóteles definiu configurações sociais como cidade, família, democracia, e determinou normas rígidas para que cada instituição política, organizacional ou social contivesse os preceitos, por ele definidos, que coubessem nos conceitos ideais por ele estabelecidos como, por exemplo, o conceito de governo doméstico: 
+Vimos que o governo doméstico divide-se em três partes ou poderes: o do senhor, do qual acabamos de tratar, o do pai e o do marido. O chefe da casa governa sua mulher e seus filhos como seres livres, mas não da mesma maneira: relativamente à sua mulher, o poder é político, relativamente aos seus filhos, o poder é de um rei. Pois, embora haja exceções antinaturais, na ordem natural o macho é mais talhado para o comando que a fêmea, do mesmo modo que o mais velho, que atingiu seu desenvolvimento completo, é superior ao mais jovem e imaturo. (ARISTÓTELES, 2006, cap. XII) 
+Ao levarmos em conta o tempo em que essas normas eram consideradas pertinentes, ficamos aliviados com a existência de normas sincrônicas e anacrônicas em nossa sociedade, e percebemos que uma norma não cabe para todos, ao mesmo tempo e em um mesmo espaço. Ainda, no mundo contemporâneo, muitas mulheres são submetidas ao governo doméstico masculino, mas a regra ocidental de governo do lar envolve uma mulher que é capaz de liderar tranquilamente um núcleo familiar. Os mais velhos ainda têm influência na família, mas os jovens exercem cada vez mais seu poder filial na organização de uma casa. 
+As normas linguísticas refletem essa dinâmica social, assim explicitada por Faraco: 
+Por isso é que tendemos a dizer hoje, nos estudos científicos da linguagem verbal, que uma língua é uma entidade cultural e política e não propriamente uma entidade linguística. Ou seja: não há uma definição de língua por critérios puramente linguísticos, mas fundamentalmente por critérios políticos e culturais. (FARACO, 2009, p. 32) 
+A partir de critérios culturais é possível determinar as normas linguísticas de um idioma e trabalhar com as variações de normas presentes no uso de uma língua. As variações 
+24 
+podem ser diatópicas ou diastráticas. As variações diatópicas envolvem o uso do mesmo idioma em lugares específicos: inglês britânico X inglês americano. As variações diastráticas incluem as variações de normas em grupos sociais específicos como variedades da classe média X variedades da classe operária. 
+Em uma comunidade linguística coexistem várias normas, que estão relacionadas ao modo peculiar do falar. Segundo Faraco “o comportamento normal do falante é variar sua fala de acordo com a comunidade de prática que ele/ela fala.” (2009, p. 38). É mais uma vez o critério cultural ou social que influencia a constituição da norma linguística com variações diastráticas, evidenciando a importante relação entre norma linguística e normas sociais. 
+Um “falar correto” evidencia uma posição social diferente do “falar errado”. Seguir as normas prestigiadas demonstra escolaridade, conhecimento e acima de tudo poder social. Ao dizermos: “Me dá licença?” fica claro o desconhecimento ou o conhecimento sem aplicação da regra-padronizada de que é considerado errado começar uma sentença com pronome oblíquo átono. Para aqueles que adotam essa regra padronizada como critério de correção, a fala: “Me dá licença?” estigmatiza o falante e define sua posição intelectual inferior diante do conhecimento das normas do idioma. Da mesma forma, para algumas comunidades linguísticas dizer: “Dê-me licença?” ou “Dá-me licença?” parecem escolhas pedantes do falante. 
+Para Bagno, a língua é para o falante mais do que um instrumento de comunicação, há 
+no discurso do falante um comprometimento humano e social evidente: 
+A língua é nossa faculdade mais poderosa, é nosso principal modo de apreensão da realidade. Vivemos mergulhados na linguagem, não conseguimos nos imaginar fora dela – estamos mais imersos na língua do que peixes na água. (BAGNO, 2012b, p. 75) 
+Pensando nessa relação entre língua e falante, entre normas linguísticas e sociedade, o conceito de norma linguística evoca também elementos sociais de mudança. Reportando a definição inicial de Aristóteles sobre o governo doméstico, é preciso considerar a posição feminina na sociedade da época. As mulheres gregas eram submissas? Elas viviam a expensas do marido? Elas podiam trabalhar? Elas podiam aprender uma atividade econômica? Todos esses questionamentos respondem à demanda para o entendimento das normas sociais impostas por Aristóteles em seu texto. 
+Da mesma forma, muitas perguntas precisam ser respondias quando se pensa em norma linguística: em que usos linguísticos está baseada essa norma? Como posso reconhecer meu discurso nessa imposição? O que é imposto? O que é natural na aplicação da norma? O que é artificial? 
+25 
+Bagno, para explicitar a duplicidade de sentido encontrada nos conceitos de norma descritos nos dicionários, discute o contraste entre “normal” e “normativo”. Incluídos na dinâmica da norma, esses conceitos oferecem um contraste claro entre os usos intuitivos e normatizados da língua. O “normal” é de uso corrente, é real, remete a comportamento e observação em situações objetivas. O “normal” é medido por média estatística de frequência e há uma tendência geral e habitual no uso das normas. Em contraste, o “normativo” impõe preceitos e descreve uma língua ideal. A aplicação das normas é consciente e exige elaboração com intenções subjetivas em conformidade com juízos de valor para uma finalidade designada. 
+A gramática é o suporte que descreve as normas de uma língua: quando se dedica a investigar e apresentar os usos normais, ela é chamada de gramática descritiva; quando se interessa por estabelecer e fixar normas, mesmo que não sejam de uso frequente, é chamada de gramática normativa ou prescritiva. Com a preocupação cada vez mais crescente de uma descrição gramatical que tem como fonte o normal, têm surgido gramáticas baseadas na realidade do uso, abandonando a análise do discurso literário como modelo da norma padrão. É possível encontrar descrições variadas de usos linguísticos que têm como exemplo gêneros textuais variados e que demonstram as transformações do discurso. No Brasil, livros como Gramática do português brasileiro de Mário Perini e Nova gramática do português brasileiro de Ataliba de Castilho são, segundo Bagno: 
+Uma radical mudança na história das publicações gramaticais brasileiras. Além de trazer no título o nome de nossa língua, tal com vem sendo usado em pesquisas mais avançadas sobre a realidade linguística brasileira, essas duas obras rompem com a tradição de vincular sempre o estudo gramatical da língua da maioria dos brasileiros à comparação entre essa língua e a língua dos portugueses (e sempre sob a perspectiva literária, como se sabe). (BAGNO, 2012b, p. 25) 
+O mesmo autor explica que “contra a mudança linguística não há nada que se possa fazer: ela é inevitável, é da própria natureza das línguas” (p.27), assim como a mudança social acontece, a mudança linguística também é um processo inevitável e por isso as normas precisam ser descritas acompanhando essas mudanças. 
+Considerando a necessidade de conceituar norma linguística dentro desse universo social e dinâmico, Faraco define: 
+É possível, então, conceituar tecnicamente norma como determinado conjunto de fenômenos linguísticos (fonológicos, morfológicos, sintáticos e lexicais) que são correntes, costumeiros, habituais numa dada comunidade de fala. Norma nesse sentido se identifica com normalidade, 
+26 
+ou seja, com o que é corriqueiro, usual, habitual, recorrente (“normal”) numa certa comunidade de fala. (FARACO, 2009, p. 35) 
+O normal é a palavra-chave do conceito e expressa bem os usos habituais de uma comunidade linguística. 
+Assim como as regras sociais mudam e as pessoas precisam se adaptar a essas mudanças,as normas linguísticas também passam por mudanças inevitáveis que transformam os usos linguísticos de toda uma comunidade, como afirma Bagno: 
+A pressão da mudança – que se processa na sociedade impulsionada pelos falantes em suas interações – acaba por transformar uma forma linguística inovadora num uso tão normal que, mesmo enfrentando a reação de uma minoria (os gramáticos mais prescritivistas, os puristas, os reacionários em geral), acaba por se impor ao conjunto da sociedade. (BAGNO, 2012b, p.33) 
+Reações contrárias a usos linguísticos costumeiros da comunidade falante se baseiam no conceito de norma padrão. A norma padrão é descrita como um modelo artificial de preceitos institucionalizados que representam uma classe social específica e que Bagno afirma ser “um padrão: um modelo artificial, arbitrário, construído segundo critérios de bom gosto vinculados a uma determinada classe social, a um determinado período histórico e num determinado lugar.” (BAGNO, 2003, p. 65) 
+A norma padrão representa uma força social minoritária que exclui as mudanças de uma língua em constante transformação. Por utilizar exemplos de usos descontextualizados em sua descrição, a norma padrão, em geral, se afasta do discurso real do falante de um determinado idioma e serve muito mais como um controle de casta social do que como uma descrição científica das normas de uma língua. 
+A norma culta também tem em seu histórico terminológico muitas discussões. Por trás do termo norma culta estão dois conceitos que para Bagno (2003) são totalmente opostos: “um modelo de atividade escrita inspirado nos usos que aparecem nas grandes obras literárias criando um padrão a ser observado por qualquer falante” (p. 43) e outro conceito que “se refere à linguagem concretamente empregada pelos cidadãos que pertencem aos segmentos mais favorecidos da nossa população” (p. 51). 
+Em contraste com as duas normas anteriores – padrão e culta – temos a norma popular, termo que designa uma norma linguística sem regras específicas ou que não segue nenhuma regra. Bagno explica que a norma popular designa “as variedades linguísticas relacionadas aos falantes sem escolaridade superior completa, com pouca ou nenhuma 
+27 
+escolarização, moradores da zona rural ou das periferias empobrecidas das grandes cidades” (p. 59). 
+Tanto norma culta como norma popular expressam conceitos com problemas de definição. Para tanto, Bagno (2003) propõe uma nova terminologia: (1) norma padrão – porque exprime verdadeiramente seu sentido: um ditame, uma lei artificial e arbitrária; (2) variedades prestigiadas – porque variam e enfatizam que o que está em jogo não é a língua propriamente dita, mas sim o prestígio social dos falantes (p. 65); (3) variedades estigmatizadas – porque variam e caracterizam os grupos sociais desprestigiados do Brasil (p. 67). 
+Na Gramática pedagógica do português brasileiro (2012), Bagno retoma o conceito de norma culta com o intuito de abranger as variedades urbanas de prestígio e adota a terminologia português brasileiro contemporâneo, por considerar que: 
+É uma língua plena, perfeita para atender a todas as necessidades da interação social e da construção da identidade dos cidadãos de uma nação soberana, rica e importante. Temos que estudar e ensinar a nossa língua com base no que ela é aqui e agora, no Brasil do século XXI. (BAGNO, 2012b, p. 111) 
+Com a mudança inevitável das regras linguísticas e a adoção dessas mudanças como uma modalidade aceitável de normas, o falante se identifica com as variedades e reconhece nelas uma dinâmica sem artificialismos ou heranças normativas impostas. 
+Descrever uma língua é uma atividade que parte do uso dessa língua no discurso dos falantes. Uma norma linguística nasce e se impõe na interação incessante entre discurso e regras gramaticais que para Bagno são indissociáveis. 
+Para a análise de normas linguísticas nesse trabalho usaremos o referencial do português brasileiro contemporâneo explicitado por Bagno, cujas características serão apresentadas no item 4 desse capítulo. Para o momento, é preciso adiantar que a base das conclusões está ligada à ideia de que a relação norma/língua terá como ponto de partida “as formas genuinamente brasileiras de falar e escrever.” (BAGNO, 2012b, p. 33). 
+28 
+2.2. Norma linguística e tradução 
+A tradução interlingual (entre línguas diferentes), vista a partir da definição de Baker (1998) como um “evento comunicativo, que é moldado por suas próprias metas, pressões e contexto de produção6” (p. 175) [tradução nossa], implica na análise de normas que acompanham o ato de traduzir. A tradução é um fenômeno comunicativo influenciado pelas restrições normatizantes que emergem tanto do texto a ser traduzido como das escolhas do tradutor. 
+Para Baker (1998), o confronto entre o texto fonte e a língua alvo gera, durante o processo tradutório, um terceiro código: o código da tradução. Esse código é criado na tradução porque o ato de traduzir deve ser considerado como um processo comunicativo único e não porque o texto traduzido final deve estar conforme a norma. Seguindo o caminho das normas, Baker afirma que há uma copresença de códigos, uma espécie de hibridismo, que contribui para a estruturação distintiva de um texto traduzido. 
+Em geral, os tradutores utilizam inconscientemente estruturas linguísticas que estejam de acordo com as expectativas dos leitores e críticos e também selecionam as normas consideradas por ele mesmo, tradutor, como corretas ou mais bem aceitas em sua opinião. 
+Baker lista em seu estudo algumas tendências observadas nas traduções para o inglês a partir de corpus como: 
+simplificação da língua alvo; 
+normatização da pontuação quando o texto da língua fonte foi pontuado de forma experimental; 
+finalização de sentenças que são deixadas em suspenso no texto de língua fonte; 
+omissões de hesitações ou enunciados fora do contexto gramatical no texto fonte. 
+Ao observar essas tendências, Baker percebe um terceiro código evidente presente nos textos que tende a normatizar as traduções: 
+Esta tendência a "normatizar" a linguagem da tradução e acompanhar de perto as convenções da língua-alvo sugere, mais uma vez, que os tradutores respondem inconscientemente à 
+6 “communicative event which is shaped by its own goals, pressures and context of production” (BAKER, 1998 , p. 175). 
+29 
+percepção que têm do status do texto ou do enunciado que eles produzem.7 (BAKER, 1998, p. 4) [tradução nossa] 
+O tradutor, de forma consciente ou não, normatiza seu texto final com vistas ao idioma alvo, mesmo que o texto fonte não siga a mesma variedade da língua. 
+Schaffner (1998) descreve essa relação norma/tradução como um fenômeno ligado aos conceitos de exatidão, precisão, boa formação e relacionamento com a qualidade da tradução. Nas traduções, as normas desempenham um papel importante e representam o conceito de correto a partir das variedades cultas ou estigmatizadas. Partindo de estudos comparados com intuito de criar mecanismos de princípios normativos na tradução, Schaffner discute a ideia de que as normas do idioma de partida alcançam o idioma de chegada. 
+As normas e convenções nas abordagens da linguística textual definem o texto como unidade básica de comunicação e, portanto, como o objeto principal da pesquisa. 
+Para os estudos de tradução, isso significa que o texto em si é considerado como a unidade de tradução. A tradução não é mais definida como transcodificação de signos linguísticos e sim como texto reescrito. Meschonnic (2010) se refere ao ato de traduzir como uma reelaboração de texto. A tradução não deve ser considerada como um meio de se atingir a língua de chegada no texto da língua de partida. Há nesse círculo vicioso, segundo Meschonnic (2010), uma valorização do signo em detrimento do discurso. A equivalência signo/signo é mais valorizada do que o discurso final do texto traduzido. O autor considera que esse “olhar sobre a língua de partida é um olhar em direção à forma” (p. 14) e complementa: 
+Claro, o problema teórico não é negar que a cada vez há uma língua de partida e uma língua de chegada, mas que esta posição do problema é totalmente viciosa, porque conhece apenas a noção de língua e a noção de signo. (MESCHONNIC, 2010, p. 27) 
+Relativamente às normas, o tradutor percebe a norma linguística do texto inicial da língua de partida, mas em geral suas escolhas estarão mais influenciadas pela normatização mais aceita no idioma de chegada, isso principalmente pelos julgamentos do público e das 
+7 Cette tendance à «normaliser» la langue de traduction et à suivre de près les conventions de la langue cible laisse croire, encore une fois, que les traducteurs répondent inconsciemment à la perception qu'ils ont du statut du texte ou de l'énoncé qu'ils produisent. (BAKER, 1998, p. 4 ) 
+30 
+normatizações mercadológicas, aqui incluídas as regras das editoras em relação à publicação das traduções. 
+Refletindo sobre o uso desses conceitos na tradução de quadrinhos, ainda é preciso considerar a questão de que a especificidade da linguagem das HQ está na ideia de que o tradutor traduzirá o texto dos balões aliado à imagem indissociável. Os balões são estratégias de representação da oralidade que Ramos (2012) chama de turnos conversacionais (p. 63) segundo o conceito de unidade conversacional de Urbano: “Unidade conversacional é uma unidade estrutural que se define como aquela em que o falante diz alguma coisa durante uma abordagem interativa continuada” (RAMOS, 2012, p. 91). 
+Há na linguagem dos quadrinhos uma oralidade representada a partir de recursos gráficos e linguísticos específicos. 
+Nos recursos gráficos e icônicos encontraremos balões com linhas contínuas ou descontínuas designados como balão-fala, balão-pensamento, balão-cochicho, balão-berro, balão-sonho (RAMOS, 2012, p. 37). Estará presente também o negrito nas fontes, letras com tamanhos variados para indicar uma entonação diferente na fala ou volume de voz mais elevado (RAMOS, 2012, p. 57). 
+Quanto aos recursos linguísticos, a pontuação diferenciada sem pausas ou com muitas reticências pode indicar uma forma rápida de falar. A repetição de sílabas ou palavras pode indicar engasgos ou reformulação de pensamentos. Há ainda a escolha do vocabulário que será feita com base na caracterização de cada personagem. 
+Considerando que, na maioria dos casos, as HQ são textos que representam uma oralidade conversacional, a questão das normas para o tradutor recai sobre os conceitos muito explorados de língua escrita e língua falada e suas normas. 
+2.3. Língua falada/ língua escrita: mais um caso de hibridismo 
+Ao tratar de língua falada e língua escrita, convém mencionar que há uma tendência tradicional a evidenciar suas diferenças primordiais. A língua falada é considerada mais informal e caótica, enquanto a língua escrita é vista como mais formal e estruturada. Para Roberts & Street (1997) há uma posição alternativa que põe em relevância os sentidos de um 
+31 
+texto nas práticas sociais e no discurso e não nas propriedades formais da língua (p. 169). A partir dessa posição, o foco da análise de língua falada e língua escrita deixa de ser suas diferenças e passa a ser os sentidos construídos por elas, oferecendo assim uma possibilidade de análise contextualizada de cada uma delas. Roberts &Street complementam: 
+A aplicação dessa perspectiva às práticas orais e letradas desloca o foco da preocupação tradicional com as diferenças entre os canais para lançá-lo sobre os modos como os sentidos são construídos localmente dentro de contextos particulares. Também sinaliza que os sentidos no discurso oral e escrito são processos estruturadores que se nutrem de formações sociais mais amplas. (ROBERT & STREET, 1997, p. 168) 
+O conceito de práticas letradas, para o estudo da relação entre língua oral e língua escrita, tem como base os estudos de letramento em referência às práticas de leitura e escrita, segundo Corrêa (2010). O autor define práticas letradas em seu sentido restrito como: 
+[...] proponho lidar com dois sentidos de “letramento”, que convivem em vários trabalhos sobre o assunto, os quais, porém, têm sido reduzidos a um deles, a saber o que chamarei sentido restrito. Nesse sentido restrito, letramento designa a condição do indivíduo que exerce, direta ou indiretamente, práticas de leitura e escrita. (CORRÊA, 2001, p. 137) 
+Esse sentido de letramento traz a alfabetização como característica essencial para um letramento formal desenvolvido e não considera as práticas de letramento que envolvem a tradição oral e que nem por isso desmerecem o título de letradas. Há, no entanto, uma análise mais ampla de letramento para Corrêa (2001), a saber: 
+O sentido mais amplo do letramento, muito menos explorado nas pesquisas linguísticas que lidam com essa questão, designa um outro aspecto da escrita. Nesse segundo sentido, letramento liga-se ao caráter escritural de certas práticas, presente mesmo em comunidades classificadas como de oralidade primária (aquelas que não tiveram contato algum com a escrita tal como a conhecemos). Esse tipo de registro que aparece nas práticas orais apresenta um caráter de permanência no tempo semelhante ao que normalmente se atribui à escrita. (CORRÊA, 2001, p.137) 
+Partindo, assim, de uma análise mais ampla do letramento que confere à fala um caráter permanente – característica atribuída anteriormente só à escrita – a relação língua falada/língua escrita pode ser vista mais pelas suas características comuns do que pelas diferenças apontadas. Já que tanto as práticas orais quanto as escritas são manifestações de uma mesma língua, o recurso de aproximá-las, ampliando o conceito de letramento, oferece uma ponte metodológica mais coerente para uma aceitação de que língua falada e escrita têm 
+32 
+mais semelhanças do que diferenças. A partir desse sentido amplo é possível usar o termo letramento no plural, aceitando que não há só um conceito para os possíveis letramentos. 
+A relação entre oralidade e letramento faz justiça a uma demanda de vários estudiosos da língua que pretendem mostrar que a escrita é uma manifestação do oral em seus diversos registros de usos. 
+Bagno (2012b) se refere aos estudos sobre a língua falada e a língua escrita demonstrando que é necessário comparar registros de modalidades orais e escritas de usos semelhantes: fala espontânea com escrita espontânea ou fala formal com escrita formal. A partir dessa comparação com níveis de registros semelhantes, será possível perceber os pontos em comum presentes no registro falado e no escrito (p. 347). 
+A valorização excessiva da língua escrita na doutrina gramatical tradicional é, segundo Bagno, o fator gerador de pressupostos falsos para uma visão deturpada das normas da língua falada. Dois pressupostos surgem dessa valorização: o primeiro diz respeito à mudança linguística e o segundo, à ideia de que a língua falada é caótica e desregrada (p. 345). 
+O equívoco que surge dessa afirmação é que seria preciso evitar que elementos da língua falada estivessem presentes na língua escrita, como se esses elementos fossem “contaminar” a língua escrita com suas normas supostamente caóticas. Essa mentalidade criou uma barreira muito grande para manifestações artísticas que utilizam como base em seus escritos variantes características de registros orais menos monitorados, como a literatura de cordel e os próprios quadrinhos, que durante anos foram considerados paraliteraturas . 
+Retomamos, então, o conceito de hibridismo para concluir que existem na língua escrita elementos da língua falada e vice-versa. Bagno entende que não há como separar uma da outra e conclui: 
+Nem mesmo as diferenças devidas ao gênero textual e à variação estilística podem servir hoje de argumento para qualquer tipo de distinção nítida entre fala e escrita. Toda produção textual na atualidade, falada ou escrita, se configura inexoravelmente como uma manifestação semioticamente híbrida que mobiliza os multimeios sonoros, visuais, gráficos, tridimensionais etc. que as novas tecnologias de comunicação e informação têm colocado ao nosso dispor . (BAGNO, 2012b, p. 347) 
+As HQ são um exemplo de hibridismo entre língua falada e escrita que se manifesta de forma clara no conceito de oralidade fingida. Lembrando que os balões expressam a fala de 
+33 
+cada personagem e que os autores usam os recursos gráficos para expressar a oralidade na escrita, toda representação escrita de usos supostamente orais será sempre um fingimento, impossível de escapar do hibridismo. 
+Para a análise das representações das normas linguísticas no texto traduzido para o PB de Persépolis tomaremos como base os traços de oralidade fingida do texto e também as normas do português brasileiro descritas na Gramática pedagógica do português brasileiro de Bagno (2012b), na Gramática do português brasileiro de Castilho (2010) e na Gramática Houaiss da língua portuguesa de Azeredo (2008). 
+Uma vez que consideramos a gramática de Bagno como a mais completa, vamos utilizá-la para esboçar um breve panorama do que é o português brasileiro contemporâneo, principalmente em suas variedades urbanas de prestígio. 
+2.4. Português brasileiro contemporâneo – um conceito 
+A Gramática pedagógica do português brasileiro de Bagno (2012b) é apresentada pelo autor como “uma gramática que pretende examinar e descrever o funcionamento de uma língua específica: o português brasileiro contemporâneo” (p. 13). 
+Mais adiante, Bagno define sua obra como político-pedagógica e explica que ela: 
+milita a favor do reconhecimento do português brasileiro como uma língua plena, autônoma, que deve se orientar por seus próprios princípios de funcionamento e não por uma tradição gramatical voltada exclusivamente para o português europeu literário antigo. (BAGNO, 2012b, p. 14) 
+Dentro dessas premissas, explica que sua obra é pedagógica porque é a primeira gramática propositiva de uma pedagogia do português brasileiro e explicita que ela se dirige especificamente “à prática docente com o intuito de demonstrar os principais traços característicos do português brasileiro contemporâneo” (p. 21). 
+Para tanto, é preciso tomar algumas decisões, que o autor caracteriza como políticas: considerar o português brasileiro uma língua plena e autônoma, assumir como válido e aceitável o vernáculo geral brasileiro e postular que o ensino de língua se faça com base nessa norma urbana culta real (p. 21). 
+Em nossa análise das normas no texto traduzido para o PB de Persépolis tomaremos a decisão política de assumir o vernáculo geral brasileiro (daqui em diante VGB) e trataremos 
+34 
+as representações de normas linguísticas na tradução de Persépolis com base na norma urbana culta real do PB. 
+Vernáculo é um termo que tem na sociolinguística características próprias como o fato de “ser falado, espontâneo, informal e não monitorado” (BAGNO, 2012b, p. 104). Para a descrição do PB, o autor utiliza “as principais características do VGB, dos usos que ocorrem em todas as variedades” (p. 108). Dentro dessa descrição, o conceito de português brasileiro oferece um contrate com português do Brasil porque: 
+é o reconhecimento do PB como uma língua plena, perfeita para atender a todas as necessidades de interação social de construção da identidade dos cidadãos de uma nação soberana, rica e importante. (BAGNO, 2012b, p. 111) 
+Aliando o conceito de oralidade fingida com as normas específicas do PB, a análise do texto traduzido de Persépolis refletirá as opções do tradutor em relação às normas linguísticas, a influência das normas impostas pelos dos agentes normatizantes editoriais e também mostrará a estreita relação entre língua falada e língua escrita e suas semelhanças. 
+2.5. Marcas de normas linguísticas analisadas na tradução do romance gráfico Persépolis para o PB 
+Os agentes normatizantes de um texto traduzido - aqui definidos como aqueles que determinam a finalização do texto traduzido antes de sua publicação – influenciam, com seu trabalho uma grande variedade de normatizações. Em geral, as escolhas do tradutor buscam corresponder ao gênero do texto, suas características, ao público alvo e às normas editoriais impostas pelos agentes normatizantes. No caso das HQ, a relação entre língua falada/escrita é muito estreita e a linguagem dos quadrinhos oferece uma característica essencial a mais: a indissociabilidade da imagem e do texto escrito. 
+A análise das representações de norma linguística no texto traduzido de Persépolis tem o intuito de verificar, levando em consideração descrições do PB, os traços de oralidade fingida e principalmente as representações de norma sintetizadas no texto final publicado. 
+Bagno (2012a) enfatiza o processo pelo qual passa um texto traduzido antes de sua publicação e explica: 
+Por fim, é preciso recordar que, entre a tradução feita pelo profissional e a chegada de um livro (ou outra forma de suporte) à publicação (impressa ou on-line), o texto passa por diversas etapas de retextualização, constituídas pelos trabalhos de revisão, preparação, diagramação, copydedesk etc. Em cada uma dessas etapas estará em ação, inevitavelmente, a representação de norma própria a cada um desses profissionais. (Bagno, 2012a, p. 29) 
+35 
+Verificando as ocorrências de demonstrativos esse/este, das formas do imperativo, das relações pronominais como você/te, do uso dos verbos ter e haver e do emprego de nós e a gente é possível entender a relação entre o normal e normativo estabelecendo um eixo com os conceitos gramaticais. 
+Em seu artigo “Norma linguística, hibridismo & tradução”, Bagno (2012b) chama a atenção para a dificuldade de separação entre normal e normativo e especifica a necessidade de analisar um texto traduzido com base em uma norma híbrida, já que há uma incidência clara de diferentes normas em um mesmo texto. O hibridismo tem a ver também com a mescla das representações de norma que cada agente responsável pela produção final do texto fez incidir sobre ele. Em Persépolis, esse hibridismo das normas linguísticas se explica pela característica primordial dos textos das HQ que tenta representar a oralidade das personagens. Cada personagem, representado pela sua variedade linguística suposta, utiliza uma representação de norma associada a essa variedade. A análise considera as características individuais de cada personagem respeitando a norma empregada na fala de um jovem político engajado ou de um trabalhador rural, analisando, assim, a oralidade fingida do texto traduzido. 
+Pensando na tradução e no tradutor, a predominância da representação oral na escrita das histórias em quadrinhos necessita de uma atenção especial. A oralidade fingida apresenta características diferentes em idiomas distintos. O uso de gírias, representações de normas e suas variedades e ironias em francês, por questões culturais, não têm o mesmo efeito quando traduzidos para o PB. Os textos escritos dos balões limitam os efeitos dos textos orais da fala. 
+Ramos (2012) apresenta em seu livro sobre a leitura de quadrinhos os resultados da pesquisa de Preti (1973) sobre como ocorrem os níveis de fala nas HQ. Ao analisar 37 edições da revista Mônica de Maurício de Souza, Preti percebeu contrastes facilmente detectáveis com relação à caracterização das personagens e seus níveis de fala. A personagem Tina, uma hippie, nas edições iniciais tinha suas falas normatizadas pela norma considerada culta na época, o que se chocava com a caracterização da personagem. 
+Ainda nesse capítulo sobre os níveis de fala, Ramos apresenta a pesquisa de Lauand (2006) sobre tradução de quadrinhos e níveis de fala. Lauand (2006) comparou histórias diferentes da série Tio Patinhas e dos Índios Nanicós publicada pela Editora Abril em momentos diferentes: 1958, 1967, 1982, 1988, 2004. As mudanças constatadas foram: 
+36 
+• havia tendência de eliminação de pronomes átonos (“Diga-lhes”, em 1958 e 1967;; “Diga a eles”, em 2004);; 
+• identificou o uso de locuções verbais (“Terão de respeitar o direito de propriedade” em 1958 e 1967;; “Vão ter de respeitar o direito de propriedade” a partir de 1982); 
+• constatou a mudança lexical (“Após o cachimbo dos nanicós, esse ar parece ambrosia”, em 1958;; “Após o cachimbo dos nanicós, esse ar parece perfume” em 2004;; “Rapaz! Milhões de lagos”, em todas as edições, exceto a de 2004;; “Vejam! Milhões de lagos”, em 2004). (RAMOS, 2012, p.62) 
+Fica claro em pesquisas sobre tradução de quadrinhos que as normas respeitadas pelos tradutores variam de acordo com as que estão vigentes no tempo das publicações e que a oralidade fingida influencia nas escolhas das representações de normas das publicações. 
+37 
+3. CORPUS DA PESQUISA E PRESSUPOSTOS PARA ANÁLISE 3.1. A estrutura do romance gráfico Persépolis de Marjane Satrapi 
+O conceito de romance gráfico envolve uma visão dinâmica dos quadrinhos representada por várias fases criativas pelas quais as HQ passaram. Fases que determinaram denominações como HQ, arte sequencial, histórias em requadros, álbum de histórias em quadrinhos, etc. O romance gráfico tem uma estrutura narrativa quadrinhística peculiar porque conta uma história longa por meio da linguagem dos quadrinhos, é possível dizer que esse conceito surgiu pela necessidade de diferenciar historietas em quadrinhos de livros completos com histórias longas. 
+Persépolis é um romance gráfico (RG) que foi publicado, em um primeiro momento, em partes separadas. A obra original em francês está dividida em livros que vão de um a quatro. Em 2003 a editora L’Association reuniu as quatros histórias e lançou a coleção completa do RG. O livro traduzido por Paulo Werneck para o PB foi publicado com o título de Persépolis completo. 
+Ao compararmos as duas edições, em francês e em PB, é possível observar algumas características diferenciadoras. O título Persépolis em francês não tem acento, embora devesse ter, para indicar a pronúncia [e], isto é, “e fechado” da vogal da segunda sílaba, e é assim que o nome vem grafado oficialmente, por exemplo, em livros de História em francês. O título em PB apresenta o acento, o que indica uma marca da tradução para o português brasileiro. Para esclarecer a pronúncia correta do título, a palavra recebeu um acento agudo na antepenúltima sílaba, conforme a ortografia oficial do português que impõe acentuação gráfica em toda palavra proparoxítona. 
+Não há nenhuma explicação na edição em francês sobre o significado do título. A hipótese é que o público europeu conheça a história da dominação árabe na Pérsia em 642 d. C., que mudou de nome para Irã em 1925, até a revolução islâmica de 1979. Persépolis era a antiga capital do Império Persa, localizada aproximadamente 70 km a nordeste de Shiraz, próximo aos rios Pulwar e Kur (Kyrus). 
+A partir de 522 a.C., foi a capital do Império Aquemênida, que na Antiguidade dominou a região do Oriente Médio. A cidade de Persépolis se localizava no atual Irã, e foi a capital religiosa dos Aquemênidas. 
+38 
+Em 1931, foram encontradas ruínas de um enorme palácio que muitos especialistas julgaram que eram estruturas arquitetônicas avançadas e devido a essa descoberta Persépolis passou a ser um sítio arqueológico muito importante remontando ao Império Persa. Foi encontrada uma quantidade significativa e variada de artefatos como cerâmica e restos de demolição de construções. Persépolis foi declarada Patrimônio da Humanidade pela UNESCO em 1979. (INFOPEDIA, 2003-2013) 
+Na versão traduzida para o PB aparece um breve prefácio explicativo do editor de L’Association, Pierre-François David Beauchars, que assina seus trabalhos como David B. e também é autor francês de HQ. Para muitos críticos, David B. é autor da obra em quadrinhos francesa mais importante dos anos 1990, intitulada L'Ascension du Haut Mal (A ascensão do grande mal [tradução nossa]) que foi publicada em seis volumes entre 1996 e 2003. O livro é um romance gráfico autobiográfico que descreve a infância e a juventude de David B. e todos os problemas originados na família pela doença de seu irmão, uma epilepsia grave sem chances de cura. 
+No prefácio de Persépolis traduzido para o PB, David B. explica, resumidamente, a história da Pérsia e esclarece: “Essa é a grande história. Marjane herdou tudo isso, e fez seu primeiro álbum de história em quadrinhos iraniano” (SATRAPI, 2007, p. 4). A partir da leitura do prefácio explicativo fica mais clara a razão do título que representa a cidade mais importante da Pérsia, hoje Irã. 
+As capas das edições em francês e PB são completamente diferentes na composição gráfica. Na versão francesa da obra completa, aparece o desenho de uma menina, com traços fisionômicos de apreensão em um fundo preto, acompanhado de formas geométricas amarelas, vermelhas e azuis. O título em francês aparece em branco. 
+Na versão brasileira, há um fundo alaranjado e a imagem da capa apresenta uma mulher vestida de negro, com um lenço na cabeça, de olhos fechados e uma fisionomia tranquila, apesar de, acima dela, aparecerem imagens de uma cidade bombardeada. A informação inicial na capa brasileira deixa clara a relação entre o título e uma personagem de origem estrangeira, bem como alguma situação relacionada à guerra. Já na capa francesa há uma liberdade de interpretação que através dos ícones só nos faz concluir ser uma criança a provável personagem principal da história. 
+39 
+40 
+A distribuição das histórias nas obras não tem numeração de páginas e na versão francesa está dividida em quatro livros. A história é contada em primeira pessoa e os fatos sempre estão ligados com a personagem principal que é a própria autora. 
+No interior dos livros são apresentadas pranchas desenhadas com títulos que procuram demonstrar a ideia principal de cada bloco narrativo. 
+Na prancha Os F-14, estão presentes aspectos tanto narrativos quanto de diálogo e é um bom exemplo das imagens do RG: 
+41 
+Nos quadrinhos, a oralidade fingida aparece em aspectos específicos, já que há uma tentativa do autor de expressar por meio da língua escrita a língua falada espontânea. 
+3.2. A oralidade fingida em Persépolis 
+É possível perceber que o discurso das HQ é sintético, tem frases curtas porque muitas palavras são eliminadas a partir da leitura das imagens que trazem em si a complementação do verbal. Muitas explicações são desnecessárias quando a imagem dos quadrinhos é interpretada. Recursos como onomatopeias e sinais gráficos de pontuação podem substituir muitas páginas de textos verbais. 
+Outra característica marcante no discurso dos quadrinhos é a presença da oralidade fingida. A linguagem das HQ inclui o uso abundante de diálogos que geralmente intentam reproduzir a língua falada influenciada por modificações imprescindíveis a fim de gerar um efeito de naturalidade. 
+Naro (2008) em seu artigo “Las marcas de oralidad en el cómic Iznoug y su traducción del francés al español” (in La oralidad fingida: descripción y traducción) explica que a oralidade fingida imita a fala dos personagens, mas se modifica sutilmente para parecer real. Naro afirma que para dar efeito de oralidade fingida o autor de HQ “limita as hesitações, os silêncios, as interjeições, os suportes dos gestos à palavra, uma vez que a transcrição da oralidade literal pode ser, paradoxalmente, nada natural8” (p. 89) 
+No texto das HQ a oralidade fingida se expressa por meio de coloquialismos, idiomatismos, vulgarismos, gírias e jargões próprios dos personagens. Tem a presença de frases muito curtas e muitas vezes inacabadas e também palavras interrompidas, além de marcas fonéticas como sotaques, falas infantis ou imitações de problemas de fala. Com o emprego da oralidade fingida, a personalidade do personagem fica explícita nas falas, sem a necessidade de descrições ou caracterizações. Além disso, tem como objetivo ambientar a história, contextualizando os personagens em um determinado espaço físico ou cultural. 
+8 “se limitan las vacilaciones, los silencios, las interjecciones, el apoyo gestual a la palabra , puesto que una transcripición literal del discurso oral podría resultar, paradójicamente, antinatural.” (NARO, 2008, p. 89) 
+42 
+Na tira anterior do RG Persépolis aparece um recurso típico da oralidade fingida. Para dar a impressão de que estariam falando algo que Marjane não pudesse entender, talvez outro idoma, um rabisco foi escrito no lugar das palavras. É uma representação icônica de cochicho ou palavra ininteligível. 
+A linguagem icônica (representação gráfica da linguagem mediante imagens, símbolos não linguísticos ou ilustrações) também faz parte do discurso da oralidade fingida nos quadrinhos. Esse recurso icônico sustenta o conceito de uma linguagem sintética das HQ, já que um símbolo convencional pode expressar uma ideia que exigiria muitos caracteres linguísticos. O emprego de diversos tamanhos de letras, o negrito, o itálico, o uso de símbolos de admiração ou interrogação são recursos linguísticos iconizados que também produzem um efeito de oralidade fingida no texto das HQ. E não podemos esquecer das onomatopeias, representação intencional de sons, que é um recurso linguístico, mas se comporta como um ícone verbal, na medida em que representa, pela imitação de sons, uma linguagem. 
+Outra análise importante diz respeito à oralidade fingida e às normas linguísticas. Para caracterizar os personagens, além de um vocabulário específico , os escritores de HQ, no intuito de manter a oralidade fingida, aplicam normas linguísticas híbridas em seu conjunto textual. Um personagem infantil pode falar com erros de concordância ou aplicar regras menos prestigiadas em sua fala. Da mesma forma, um adulto caracterizado como letrado, em situações formais na história, pode usar uma fala culta. 
+Na próxima prancha, que compõe a história Le vin (O vinho), aparece um exemplo de normas aplicadas à oralidade fingida. O pronome vous, em francês, pode ser usado para tratamento formal. Na cena, um menino do exército do Irã aborda o pai de Marjani que é bem mais velho. Pelas convenções de uso do francês, ele deveria tratá-lo por vous. No entanto a situação é de revolução política, por isso é comum a quebra das convenções sociais. O rapaz, por ser do exército revolucionário, não quer seguir as regras de polidez que caracterizam o antigo regime, marcado pelas divisões sociais mais estritas; com a revolução, todos os cidadãos são considerados em pé de igualdade, chamados de ‘camaradas’, ‘irmãos’, ‘companheiros’ etc., por isso. Além do tratamento agressivo, o soldado, para demonstrar derespeito, usa a segunda pessoa do singular tu. A mãe de Marjani, por sua vez, procurando evitar uma tragédia, usa vous ao falar com o adolescente,demonstrando temor. 
+43 
+44 
+Na tradução para o PB, a opção para demonstrar o temor da mãe de Marjane diante do adolescente soldado foi uma construção bem formal: desculpe-o, com licença, eu poderia. 
+Yvette Bürki (2008) em seu artigo “La representación de la oralidad bilingüe” apresenta as estratégias utilizadas para encaminhar a oralidade na literatura: signos gráficos que marcam pronúncias ou reações humanas, formas de escrita como um dialeto visual com acentos fonéticos e que conscientemente se desviam das normas escritas com propósitos de caracterizar variações linguísticas, um vocabulário marcado pela presença de gírias ou outros dialetos sociais e, por fim, uma sintaxe textual que esteja distante do padrão normativo recriando construções próprias de outros gêneros textuais (p. 36). A partir dessas estratégias, é possível afirmar que as representações de normas também fazem parte do processo de construção da oralidade fingida, já que, para a estruturação de uma intenção de representar a língua falada na escrita com a caracterização do personagem, as normas consideradas mais típicas da fala também ratificam a naturalidade intentada na oralidade fingida. 
+Na prancha narrativa seguinte, retirada da história La cellule d’eau, p. 19 (A cela de água), aparece no primeiro requadro o pronome on que é uma marca de oralidade nas construções em francês, mas nesse caso o pronome tem a função de indefinição e não de pronome de tratamento. Apesar de haver entre os personagens uma certa distância social, representada pelas roupas e objetos, nos requadros 1-7 um dos personagens, o civil, trata o 
+militar por tu . Está implícito na prancha que o civil procura persuadir o militar a se tornar imperador, por isso há no discurso do civil uma espécie de bajulação com segundas intenções, no caso um cargo político e o petróleo. O tratamento informal visa a representação de uma intimidade necessária aos propósitos do civil. 
+45 
+Aparece no requadro 8 o pronome nous que é utilizado na fala seguindo a norma da gramática francesa e não foi substituído por on que é uma marca de informalidade, talvez para deixar bem claro que Rezah não precisa fazer nada; o uso de on muitas vezes, como o a gente em PB, inclui o interlocutor; aqui o nous exclui, porque Rezah não precisa fazer nada, a não ser dar o petróleo aos ingleses/americanos. 
+Outro ponto a ser considerado para a análise da oralidade fingida no RG Persépolis é o uso do tempo verbal passé simple nas falas dos personagens. 
+No último requadro aparece o emprego da forma verbal succéda nos balões. Essa escolha da autora pode ser explicada porque o passé simple é um tempo que, segundo as gramáticas francesas, representa um passado histórico e o pai de Marjania está na prancha contando um momento histórico do Irã que foi a coroação do rei. Esse aspecto não faz nenhuma diferença na tradução do PB, já que tanto o passé simple como o composé são traduzidos do francês como pretérito perfeito, mas no texto em francês é uma forte representação de oralidade fingida se considerarmos a intenção de Satrapi. 
+3.3. Normas das ocorrências linguísticas no português brasileiro 
+Para a análise dos fatos linguísticos desse trabalho, faremos um pequeno panorama de como esses fatos foram descritos pelos especialistas – gramáticos e linguistas – com o objetivo de estabelecer uma comparação das formas usadas no texto traduzido de Persépolis e como ocorreu o processo de normatização. 
+Os fatos gramaticais que analisaremos sob a perspectiva de representação da norma são: 
+1. Demonstrativos esse/este; 
+2. Formas do imperativo; 
+3. Relações pronominais você/te; 
+4. Emprego dos verbos ter e haver; 
+5. Emprego de nós e a gente. 
+Selecionamos quatro gramáticas para a análise dos fatos gramaticais: Nova gramática do português contemporâneo de Celso Cunha e Lindley Cintra, Moderna gramática 
+46 
+portuguesa de Evanildo Bechara, Gramática Houaiss da língua portuguesa de José Carlos de Azeredo e Gramática pedagógica do português brasileiro de Marcos Bagno. 
+3.3.1. Nova gramática do português contemporâneo (1985)
+As características dessa gramática são definidas pelos autores, Celso Cunha e Lindley 
+Cintra, no prefácio: 
+Uma tentativa de descrição do português atual na sua forma culta, isto é, da língua como a têm utilizado os escritores portugueses, brasileiros e africanos do romantismo pra cá, dando naturalmente uma situação privilegiada aos autores de nossos dias. (CUNHA & CINTRA, 1985, p. XIII) 
+Essa gramática ainda é referência em bibliografias de concursos vestibulares e para cargos públicos. Todos os exemplos para aplicação das normas foram retirados de textos literários e pretendem “mostrar a superior unidade da língua portuguesa dentro e sua natural diversidade” (p. XIV). Os autores destacam os usos variados dos fatos gramaticais, procurando comparar as normas do português de Portugal, da África, da Ásia, da Oceania e do Brasil sempre com exemplos de usos literários. 
+Os pronomes demonstrativos são apresentados em um capítulo específico e aparecem em suas formas variáveis, invariáveis e neutras (p. 319): 
+47 
+Variáveis 
+Invariáveis 
+Masculino 
+Feminino 
+este/estes 
+esta/estas 
+isto 
+esse/esses 
+essa/essas 
+isso 
+aquele/aqueles 
+aquele/aquelas 
+aquilo 
+No que diz respeito aos demonstrativos, vamos nos deter na análise da primeira e segunda pessoas com foco nas formas -ss- (esse, essa e flexões) e nas formas -st- (este, esta e flexões). 
+As explicações que se seguem a essa tabela trazem o emprego e valores dos demonstrativos, considerando as pessoas do discurso e a posição no tempo ou no espaço dos termos, objetos ou pessoas demonstradas. Este, esta e isto indicam o que está perto da pessoa 
+que fala (1a pessoa) e o tempo presente em relação a quem fala. Esse, essa e isso designam o que está perto da pessoa a quem se fala (2a pessoa) e o tempo passado ou futuro com relação à época em que se coloca a pessoa que fala (1a pessoa). 
+Quanto ao emprego, Cunha & Cintra explicam que o sistema ternário dos demonstrativos em português não é respeitado rigorosamente na prática e com exemplos de textos literários descrevem o uso dos demonstrativos em contextos variados (p. 322). 
+Ao falar sobre o modo imperativo, explicam os autores que para as segundas pessoas do singular e plural (tu e vós) o imperativo tem formas próprias e que para as outras pessoas todas correspondem ao presente do subjuntivo. Em relação ao imperativo negativo, todas as formas são tiradas do presente do subjuntivo. Não há nenhuma referência sobre a pessoa você, mas na p. 389 aparece um quadro de conjugação que mostra o verbo ter conjugado no imperativo e você se apresenta na forma do subjuntivo tenha (você). 
+Em um item à parte, a gramática apresenta os pronomes de tratamento tu e você. O pronome tu é considerado de intimidade e seu uso é restringido ao extremo Sul do Brasil. Os autores explicam que tu foi substituído em quase todo o território brasileiro pelo você em situações de tratamento de igual para igual ou superior para inferior. Em uma pequena nota de rodapé da p. 284 os autores ressaltam: “o emprego das formas te, ti, contigo apresenta uma difusão bastante maior”. Não aparece nenhum comentário sobre a relação você→te em um mesmo contexto de uso. 
+Os verbos ter e haver são apresentados juntos como verbos auxiliares em locuções verbais na p. 383. Ambos são descritos como formadores de tempos compostos na voz ativa conjugados com o particípio. Para exprimir obrigatoriedade os verbos ter e haver são conjugados com o infinitivo. 
+O verbo haver tem na gramática um capítulo à parte intitulado “Sintaxe do verbo haver” (p. 525). Ali os autores descrevem que o verbo haver pode ser usado em todas as pessoas ou apenas na 3a pessoa do singular. Quando tem valor de auxiliar, seu sentido equivale a ter. Aparece uma observação sobre o verbo haver no sentido de “existir” e não tem nenhum comentário sobre o verbo ter usado com esse sentido. 
+Sobre as formas de representação da primeira pessoa, nós e a gente, os autores explicam que “no colóquio normal, emprega-se a gente por nós e, também por eu” (p. 288). É 
+48 
+preciso lembrar que colóquio normal significa uma conversação informal, o que restringe o uso de a gente só à língua falada. 
+3.3.2. Moderna gramática portuguesa (1999) 
+No prefácio da 37a edição dessa gramática, Evanildo Bechara explica que a primeira edição foi em 1961 e que a edição atual está revista, ampliada e atualizada. Esclarece que a obra traz “uma proposta de reformulação da teoria gramatical”. Mais adiante reitera: 
+Especialmente quando aplicada a uma obra da natureza desta Moderna Gramática Portuguesa, que alia a preocupação de uma científica descrição sincrônica a uma visão sadia da gramática normativa, liberada do ranço do antigo magister dixti e sem baralhar os objetivos das duas disciplinas. (BECHARA, 1999, p.20) 
+Bechara encerra seu prefácio afirmando que muito ainda pode ser revisto e pede aos colegas que se pronunciem caso tenham algo a acrescentar. 
+O prefácio da 1a edição também aparece na atual. Foi na primeira edição que Bechara falou sobre o objetivo de sua gramática que é o de, a partir de uma linguagem simples, “levar ao magistério brasileiro o resultado dos progressos que os modernos estudos de linguagem alcançaram no estrangeiro e em nosso país.” (p. 21). No mesmo parágrafo o gramático explica que sua preocupação não residiu no rompimento com a tradição secular clássica, mas sim na doutrina. 
+Quando apresenta os demonstrativos, é o sistema ternário que aparece como em Cunha & Cintra. A definição de Bechara para pronomes demonstrativos é: “São os que indicam a posição dos seres em relação às três pessoas do discurso.” (p. 167). E complementa: 
+Esta localização pode ser no tempo, no espaço ou no discurso: 1a pessoa: este, esta, isso
+2a pessoa: esse, essa, isso
+3a pessoa: aquele, aquela, aquilo 
+Este é o livro que está perto da pessoa que fala: esse livro é o que está longe da pessoa que fala ou perto da pessoa com quem se fala; aquele livro é o que se acha distante da 1a e da 2a pessoa. (BECHARA, 1999, p. 167) 
+49 
+Pouco depois de definir e apresentar os demonstrativos o gramático explica que o uso não é tão rigoroso porque pode sofrer a interferência de “situações especiais que escapam à disciplina da gramática.” (p. 167). Logo abaixo dá exemplos de usos, todos retirados de escritores consagrados da Língua Portuguesa. 
+Com relação ao modo imperativo, Bechara também repete a normatização de Cunha & Cintra. Explica que o português só tem formas próprias para as segundas pessoas, no caso de tu elas vêm do presente do indicativo sem a desinência de pessoa -s. Todas as outras pessoas são supridas pelos correspondentes do presente do subjuntivo. Deixa claro que não existe modo imperativo na primeira pessoa e sobre as terceiras pessoas explica: 
+As terceiras pessoas do imperativo se referem a você, vocês e não a eles. Também não se usa o imperativo nas orações negativas; neste caso empregam-se as formas correspondentes do presente do subjuntivo. (BECHARA, 1999, p. 237) 
+No capítulo sobre pronomes aparece um subitem sobre pessoas do discurso. Adiante, Bechara explica quais são as formas de tratamento e inclui você na classificação de formas substantivas de tratamento ou formas pronominais de tratamento. Em um item à parte de observações, o uso de você é assim descrito: 
+3.a) Você, hoje usado familiarmente, é a redução da forma de reverência Vossa Mercê. Caindo o pronome vós em desuso, só usado nas orações e estilo solene, emprega-se vocês como plural de tu. (BECHARA, 1999, p. 166) 
+Não aparece nenhuma observação sobre a relação pronominal você→te. Quanto ao pronome te, aparecem algumas explicações sobre seu emprego como objeto indireto, mas nenhuma relação com seu uso em um contexto onde você apareça. 
+Os verbos ter e haver só são tratados em conjunto quando aparecem como verbos auxiliares. Embora Bechara introduza o assunto verbo explanando aspectos da teoria de Jakobson, que considera os aspectos do ato da fala e as funções verbais, não aparece nenhuma observação sobre o uso de ter no sentido de existir. 
+O uso de a gente surge em uma pequena observação sobre seu emprego em um contexto de linguagem familiar: 
+4a.) O substantivo gente, precedido do artigo a em referência a um grupo de pessoas em que se inclui a pessoa que fala, ou a esta sozinha, passa a pronome e se emprega fora da linguagem cerimoniosa. Em ambos os casos o verbo fica na 3a pessoas do singular. (BECHARA, 1999, p. 166) 
+50 
+3.3.3. Gramática Houaiss da língua portuguesa (2008) 
+No texto de apresentação, José Carlos de Azeredo afirma que objeto de sua gramática é a “variedade padrão escrita do português em uso no Brasil” (p. 25). 
+O autor apresenta os cinco fatores que nortearam o planejamento e a redação da gramática: a tradição descritiva que apoia a análise do ensino do português escrito no Brasil; os estigmas indevidos a que estão sujeitos os “erros gramaticais” em construções regulares empregadas nos textos formais de circulação pública no Brasil; o reconhecimento pelos compêndios escolares da língua dos jornais, revistas e obras não literárias como expressão de uso padrão; a atividade discursiva como centro das preocupações de algumas vertentes da linguística contemporânea influentes no meio acadêmico; a perda do status da oração como unidade máxima de análise (p. 26) 
+Com base nesses cinco fatores, Azeredo conclui: 
+Respaldados nessas premissas, buscamos com a presente proposta um ponto de equilíbrio entre a tradição e a renovação, seja na ordenação e articulação dos assuntos, seja nos conceitos teóricos e descritivos, seja ainda na seleção de exemplos. O enfoque adotado é essencialmente descritivo, sem prejuízo, contudo, de considerações de ordem normativa, sempre que oportunas, tendo em vista a vocação desta obra para ser também uma fonte sistematizada sobre o português padrão do Brasil. (AZEREDO, 2008, p. 26) 
+Os pronomes demonstrativos, segundo o autor, “servem para localizar, em relação às pessoas do discurso, os objetos (seres, coisas e noções) que entram no conteúdo de nossos enunciados” (p. 177). 
+Segue explicando, com base no sistema ternário clássico nas três pessoas do discurso, que os âmbitos se referem aos limites nos quais os enunciados situam os objetos. No âmbito da 1a pessoa se usa: este/esta/estes/estas/isto; no âmbito da segunda esse/essa/esses/essas/isso; no âmbito da não pessoa (terceira pessoa): aquele/ aquela/aqueles /aquelas/aquilo. Acrescenta que os pronomes demonstrativos “adicionam ao substantivo o mesmo conteúdos que os advérbios aqui/agora, aí/então, lá/então” (p. 178). 
+51 
+Azeredo apresenta o quadro resumo do uso dos demonstrativos: 
+52 
+Quadro resumo 
+I (padrão, exclusivo da modalidade escrita formal) 
+Masculino 
+Feminino 
+Neutro 
+Sing 
+PL. 
+Sing. 
+PL. 
+1a p. 
+Este 
+Estes 
+Esta 
+Estas 
+Isto 
+2a p. 
+Esse 
+Esses 
+Essa 
+Essas 
+Isso 
+3a p. 
+Aquele 
+Aqueles 
+Aqueles 
+Aquelas 
+Aquilo 
+II (próprio da modalidade falada) 
+Âmbito da interação face a face: 
+Masculino 
+Feminino 
+Neutro 
+Sing.(PL.) 
+Sing.(PL.) 
+1a p. 
+Este(s) / esse(s) (aqui) 
+Esta(s)/ essa(s) (aqui) 
+Isto / isso 
+2a p. 
+Este(s) /esse(s) (aí) 
+Esta(s)/ essa(s) (aí) 
+Isto/ isso (aí) 
+3a p. 
+Aquele(s) (lá/ali) 
+Aquela(s) (lá/ali) 
+Aquilo (lá/ali) 
+No item “Determinação dêitica e remissiva: os demonstrativos” o autor explica que esse quadro resumo “é mais teórico que real” e completa que o emissor e o destinatário estão ambos no âmbito da interlocução (p.248). 
+No capítulo sobre verbos, a formação do imperativo afirmativo aparece como um tempo derivado no presente do indicativo: 
+b) Imperativo afirmativo. Forma-se do tema da segunda pessoa do singular e do plural, com desinência número-pessoal zero no singular (canta (canta + 0), vive (vive + 0) dize (dize + 0), dorme (dorme+0) e desinência -i ou -de no plural (cantai (canta + i); vivei (vive + i); ide (i + de), tende (tem + de). A única exceção é o verbo ser, cujo imperativo afirmativo é sê (tu) / sede (vós); (AZEREDO, 2008, p. 185) 
+Mais adiante, quando fala sobre a “Deixis e as relações de tempo expressas por meio do verbo”, o gramático define o imperativo como um modo verbal que “se usa em frases com que o enunciado expressa uma ordem, uma exortação, um pedido” (p. 210). 
+Então, há a observação sobre as diferenças entre o modo imperativo e o indicativo. O autor explica que o imperativo tem características próprias: são invariáveis quanto ao tempo e são exclusivas do uso da língua em que o enunciador se dirige ao seu interlocutor. 
+Com relação aos verbos ter e haver a gramática apresenta os dois como auxiliares de tempos compostos gramaticalizados morfossintaticamente. Sobre o uso do verbo ter com sentido de existir o autor faz uma pequena observação quando trata de língua comum e língua padrão. Ao analisar uma crônica de Cláudio Paiva da revista O Globo, Azeredo comenta: 
+O discurso é informal, como convém à natureza do texto. O vocabulário é de domínio corrente e tipicamente coloquial: o verbo ter com sentido de existir; o substantivo sujeito significando pessoa, a contração pro por para o. (AZEREDO, 2008, p. 66) 
+Segue o autor explicando que a construção da crônica tem marcas de normas variadas, já que o escritor usou outras ocorrências mais conservadoras. Azeredo termina a análise do texto afirmando que “tudo se encaixa bem nele. É o conjunto da peça que importa” (p. 66). 
+Sobre as relações pronominais você→te, Azeredo apresenta você como uma pessoa do discurso: segunda pessoa (p. 174) e como forma de tratamento (p. 264). Explica que a forma vós é ignorada na língua corrente. Você/vocês são formas pronominais da interlocução coloquial na maior parte do território brasileiro. No Sul e em algumas regiões do Nordeste se usa mais tu. No Rio de Janeiro, tu e você são combinados com a forma na 3a pessoa (tu é/ você é) e enfatiza o autor que por isso a combinação se você quiser eu te empresto o carro é possível e amplamente empregada. 
+Em função da combinação você→te ser mais frequente, as combinações você→o e você→lhe têm pouco uso no português brasileiro atual. 
+Com relação ao uso de nós e a gente Azeredo afirma: 
+Os brasileiros empregam em geral a forma a gente, especialmente na língua falada semiformal e informal, como equivalente de nós, seja como valor genérico/ indeterminado (como do pronome se: não se sabe/ a gente não sabe), seja para referência dêitica (ver 8.6) situacionalmente identificada. (AZEREDO, 2008, p. 176) 
+Dêitica vem do termo dêixis e Azeredo explica: 
+Essa maneira de significar recebe o nome de dêixis (termo derivado de uma palavra grega que significa ‘indicar, mostrar’), e as categorias gramaticais de pessoa e tempo – por tomarem o enunciador e o momento da enunciação – se dizem categorias dêiticas. (AZEREDO, 2008, p. 204). 
+53 
+3.3.4. Gramática pedagógica do português brasileiro (2012b) 
+A Gramática pedagógica do português brasileiro de Bagno (2012b) é apresentada pelo autor como “uma gramática que pretende examinar e descrever o funcionamento de uma língua específica: o português brasileiro contemporâneo” (p. 13). Mais adiante, Bagno define sua obra como político-pedagógica e explica que ela é pedagógica porque é a primeira gramática propositiva de uma pedagogia do português brasileiro e se dirige especificamente “à prática docente com o intuito de demonstrar os principais traços característicos do português brasileiro contemporâneo” (p. 21). O autor considera válido e aceitável o vernáculo geral brasileiro e postula que o ensino de língua se faça com base nessa norma urbana culta real (p. 21). 
+Bagno chama a atenção sobre a trivisão clássica dosdemonstrativos e dos advérbios de lugar presente nas gramáticas, ilustrada pela tabela abaixo: 
+54 
+PESSOA 
+DEMONSTRA TIVO 
+PESSOA 
+ADVÉRBIO 
+1a ESTE(S)/ ESTAS(S)/ ISTO 1a AQUI/ CÁ 
+2a ESSES(S)/ ESSAS(S)/ ISSO 2a AÍ 
+NP AQUELE(S)/ AQUELA(S) /AQUILO NP ALI/LÁ 
+O autor alerta que os próprios gramáticos normativos consideram que as regras dos demonstrativos não são obedecidas e que, mesmo na modalidade literária, a relação com as pessoas do discurso ou localização não são respeitadas (p. 792). Ao considerar a língua falada, o autor destaca que a distinção entre as formas -ss- e -st- já “deixou de existir há muito tempo, no que foi acompanhada - explicam as gramáticas normativas - pela escrita literária” (p. 793). 
+A explicação para o fenômeno de uso único das formas -ss- no português brasileiro parte de razões de ordem fonéticas. Bagno alerta que: “o grupo -st- presente em este/esta/isto tende a sofrer assimilação. A sibilante [s], em diversos casos na história da formação da língua, promoveu esse ataque assimilatório à consoante vizinha” (p. 793). Para compensar a anulação da diferença entre esse e este os advérbios entram em ação, localizando os elementos demonstrados, combinando as formas -ss- com advérbios como aqui e aí respectivamente. Para marcar a diferença entre o que está perto da pessoa com quem se fala e de quem se fala 
+em PB, empregamos aquele/aquela/aquilo, quase sempre seguido do advérbio lá/ali Para o PB a trivisão proposta por Bagno é: 
+55 
+PESSOA 
+DEMONSTRA TIVO 
+1a ESSE/ ESSA/ ISSO + AQUI 
+2a ESSE/ ESSA/ ISSO + AÍ 
+3a AQUELE/ AQUELA/ AQUILO + LÁ/ ALI 
+O modo imperativo é outra especificidade do PB abordada por Bagno. Na tradição gramatical do português (daqui em diante TGP) aparece um quadro de formação do imperativo que não corresponde, segundo o autor, “à realidade do PB falado e escrito nos dias de hoje” (p. 566). A explicação principal diz respeito ao apego da TGP à descrição dos usos de tu e vós. 
+Na TGP o imperativo afirmativo na 2a pessoa do singular é formado pela retirada do -s final da conjugação do presente do indicativo: tu estudas, no presente, se conjuga no imperativo estuda [tu]. Com o pronome você, o imperativo virá da terceira pessoa do singular (ele) do subjuntivo presente: [que] ele fale no presente do subjuntivo, se conjuga fale você no imperativo. 
+Bagno explica que o uso da segunda pessoa do singular tu é uma marca de variedade regional. O você é uma forma não marcada de tratamento usada pela maioria dos falantes do PB. O uso do tu no Brasil, na maioria dos casos, vem acompanhado de uma morfologia verbal que não corresponde à conjugação clássica (tu estudas) e sim à forma não monitorada que corresponde à pessoa de você (tu fala). Por questões diversas em relação ao uso do imperativo no PB, Bagno conclui que: 
+O que as pesquisas revelam é que as formas do imperativo no português brasileiro contemporâneo seguem regras bem mais complexas do que as que aparecem nos livros didáticos e nas gramáticas, regras que não são exclusivamente linguísticas, mas em que entram também elementos sociais, culturais, geográficos, interacionais etc. (BAGNO, 2012b, p. 567) 
+A partir dessa afirmação, Bagno explica o fenômeno da inversão da regra tradicional do uso do imperativo prescrito pela TGP. Em lugares onde se usa o tu o imperativo é empregado nas formas do subjuntivo como em: Tu é meu amigo, fale (você) com ela! 
+Com relação ao imperativo na primeira pessoa do plural, o autor afirma que as formas previstas na TGP não são seguidas na língua falada espontânea. Nesses casos o imperativo é sempre feito a partir da formação: verbo ir seguido de infinitivo, como no exemplo vamos estudar. 
+Nos índices de segunda pessoa do plural é a forma vocês que prevalece como falem vocês, mas essa forma de imperativo é usada principalmente em situações de fala/escrita bastante monitoradas. Bagno esclarece que é de uso mais frequente o singular como: sai da chuva todo mundo, já (p. 570). 
+Quanto ao pronome vós, o linguista esclarece que não é usado nas línguas derivadas do português clássico há séculos, mas é preciso apresentar aos alunos o índice vós e suas formas verbais, sempre explicando que são arcaicas ou extintas (p. 570). 
+No que se refere ao imperativo negativo, com relação ao pronome tu, Bagno deixa claro que nenhum falante do PB emprega a regra prevista pela TGP. O emprego comum varia de acordo com a região, com o uso escrito ou falado, não com o índice de pessoa. As outras regras são válidas tanto para o afirmativo quanto para o imperativo negativo. 
+A partir dessas observações Bagno sintetiza suas ideias no seguinte quadro: 
+56 
+MODO IMPERATIVO NO PORTUGUÊS BRASILEIRO 
+AFIRMATIVO 
+NEGATIVO 
+TU 
+FALA 
+TU
+VOCÊ
+O SENHOR A SENHORA 
+[NU] NÃO FALA [NÃO] SSE [NU] NÃO FALE [NÃO] NNE NÃO FALE GTM 
+VOCÊ
+O SENHOR A SENHORA 
+FALA SSE FALE NNE 
+NÓS 
+VAMO(S) FALA(R) VGB FALEMOS GTM 
+NÓS 
+[NU] NÃO VAMOS FALAR [NÃO] VGB NÃO FALEMOS GTM 
+VOCÊS 
+FALEM GTM 
+VOCÊS 
+NÃO FALEM GTM 
+GENTE PESSOAL, ETC. 
+FALA VGB 
+GENTE PESSOAL, ETC. 
+[NU] NÃO FALA [NÃO] VGB 
+[GTM: gêneros textuais mais monitorados; NNE: Norte-Nordeste; SSE: Sul-Sudeste; VGB: Vernáculo geral brasileiro] 
+As relações pronominais entre você e te passam pelo conceito de neutralidade do pronome você. Bagno explica que tu é “uma forma marcada porque está associada a regiões e /ou classes sociais específicas e você é não-marcada” (p. 759). O caráter neutro de você é 
+explicado por fatores de ordem política e socioeconômica porque a região Sudeste dita, por questões de poderio financeiro e político, a “variedade normal brasileira”. Por ser uma variedade de prestígio, ela é usada na televisão, na publicidade etc.. Nessa variedade aparece o emprego de você acompanhado de te e com o imperativo conjugado na forma do indicativo. Para Bagno é impossível ir contra esse fenômeno e impor formas prescritas pela gramática normativa, então é legítimo aceitar construções do tipo: você sabe que eu te amo ao invés da artificial você sabe que eu o amo. 
+A “mistura de tratamento”, que é a liberdade que os brasileiros têm de usar um índice de pessoa sujeito diferente do índice de pessoa complemento, é uma denominação pejorativa que não deve ser considerada. Muitos equívocos surgem quando se afirma que usar te em correlação com você é uma representação da linguagem coloquial, pois os índices de pessoas tu e você são apenas parte de um contexto informal de tratamento. Para concluir, Bagno afirma: “Ora, se assim é, fica incoerente distinguir uma ‘linguagem formal’ de uma ‘linguagem coloquial’ quando o assunto é interlocução de pessoas íntimas” (p. 758) 
+O emprego dos verbos ter e haver é outra especificidade do PB a ser examinada. Com relação a haver, Bagno afirma que esse verbo já foi extinto do vernáculo geral brasileiro (VGB) e só se conserva por causa do “policiamento normativo e do patrulhamento purista” (p. 609). Haver foi substituído por ter no PB “nas suas funções apresentacionais e como verbo auxiliar na formação dos tempos compostos” (p. 609) 
+O verbo ter é apresentado por Bagno como pleno (quando o contexto possibilita a interpretação de seu sentido etimológico), apresentacional (verbos impessoais, não concordam com o sintagma nominal que eles introduzem) e existencial (verbos que indicam existência). O verbo ter é o verbo desses dois últimos tipos mais utilizado no PB. O autor explica que os puristas condenaram o uso de ter como existencial porque os portugueses não o usam com esse significado. Mas no PB, é muito usado: tem duas cadeiras nessa sala. No contraste entre o uso de haver ou de ter não tem nenhuma razão para evitar o ter com sentido de existir. 
+Com relação ao emprego de a gente e nós como sujeito é possível encontrar prescrições tradicionais que, com base na variação estilística, afirmam que o uso de a gente ocorre em contextos menos monitorados. No entanto, Bagno explica que por causa da ascensão da nova classe média muitas mudanças nas variedades urbanas de prestígios 
+57 
+acontecerão. É importante destacar que a conjugação de a gente com o verbo no plural: a gente vamos é muito pouco frequente e o que discutimos aqui é o emprego cada vez maior de a gente e verbo no singular em lugar de nós com verbo no plural. 
+No próximo capítulo nos dedicaremos a analisar a tradução de Persépolis a partir das representações das normas do PB e das marcas de oralidade fingida apresentadas nesse capítulo. 
+58 
+4. A REPRESENTAÇÃO DE NORMA E OS TRAÇOS DE ORALIDADE FINGIDA NA TRADUÇÃO DE PERSÉPOLIS 
+4.1. O hibridismo inevitável das HQ e normas que se misturam 
+O hibridismo é uma característica marcante no gênero quadrinhos. Na linguagem das HQ se observa o hibridismo na união entre o verbal e o não verbal. A imagem não é só um apoio gráfico da palavra, mas sim parte integrante do texto, que leva ao surgimento de um conjunto híbrido. O autor dos quadrinhos, muitas vezes, não escreve só os balões ou os cartuchos, ele também é o autor dos desenhos, seu texto é um todo configurado, hibridamente construído. 
+A marca de oralidade fingida presente nos quadrinhos é uma característica de hibridismo na medida em que há uma tentativa de reproduzir a fala espontânea na língua escrita, trazendo em seu contexto recursos icônicos da modalidade da fala para a modalidade da escrita. A presença de idiomatismos, gírias, variedades linguísticas, caracteriza uma linguagem, na maioria das vezes informal, que quando é reproduzida em diálogos está repleta de frases feitas e outras marcas da língua falada. 
+O hibridismo nos quadrinhos também aparece na variedade de gêneros textuais presentes nas HQ. Narração, descrição, diálogos, textos informativos, propagandas etc. são parte integrantes das HQ e tem no suporte dos quadrinhos um espaço diversificado de empregos e funções. 
+As normas linguísticas nos textos das HQ também são híbridas. Na medida em que os autores procuram caracterizar personagens através das falas e também precisam submeter seu texto a uma aceitação editorial para publicação, incidem sobre o texto dos quadrinhos variadas representações de normas. A oralidade fingida e os agentes normatizantes influenciam nesse hibridismo de normas, tão evidente no discurso dos quadrinhos. 
+O hibridismo no texto dos quadrinhos influencia, inevitavelmente, a tradução desse gênero. Para o tradutor é preciso considerar as características híbridas do discurso quadrinhístico e ainda enfrentar alguns desafios decorrentes da linguagem das HQ. 
+Os ícones nos quadrinhos são um desafio importante a ser enfrentado pelo tradutor de HQ. A pontuação é um exemplo. Nem sempre uma interrogação, um ponto final ou uma exclamação são usados da mesma forma em idiomas distintos. Tem também o negrito, o itálico, as letras maiúsculas que em alguns casos expressam ideias diferentes de idioma para idioma. O tradutor enfrenta essa mudança de interpretação icônica ao traduzir o texto dos 
+59 
+quadrinhos e precisa estar atento ao significado de cada convenção em cada cultura específica para fazer suas escolhas. 
+Outra dificuldade se refere à linguagem sintética das HQ. O autor das HQ é, quase sempre, quem escreve e ilustra. Todo espaço dos requadros é calculado em função dos desenhos e do espaço reservado aos cartuchos e balões. O tradutor não pode aumentar o tamanho do texto escrito sem modificar a distribuição do desenho no espaço. Então, é preciso que o tradutor esteja atento ao tamanho de seu texto traduzido para evitar a descaracterização do espaço dos desenhos nos requadros. Para Paulo Werneck esse foi um dos desafios na tradução de Persépolis: 
+k) Que diferenças há, em sua opinião, na tradução de histórias em quadrinhos e outros gêneros de texto? 
+Os quadrinhos são o teste fatal do diálogo e da síntese: a fala precisa caber no balão, de preferência sem perder conteúdo. Muito tradutor tarimbado tropeça justamente no diálogo (que existe também em literatura) e no poder de síntese. (entrevista com Paulo Werneck, 12/09/2013, anexo I) 
+Em Bagno as características de hibridismo avançam sobre o conceito de gêneros textuais e desconsideram suas diferenças como marca de especificidade. A presença de traços da fala na escrita ou vice-versa impossibilita uma rígida separação entre texto falado e texto escrito: “Nem mesmo as diferenças devidas ao gênero textual e à variação estilística podem servir hoje de argumento para qualquer tipo de distinção nítida entre fala e escrita” (Bagno, 2012b, p. 347). 
+Considerando que o hibridismo está presente também nos usos das normas linguísticas do texto traduzido de Persépolis para o PB, analisaremos agora como esse hibridismo aparece sob a perspectiva de representação da norma e nos traços de oralidade fingida a partir dos seguintes fatos gramaticais: 
+1. Demonstrativos formas -ss- e -st- ; 
+2. Formas verbais no imperativo: indicativo e subjuntivo; 
+3. Relações pronominais você/te, você/o/a e você/lhe; 
+4. Uso dos verbos ter e haver 
+5. Uso de nós e a gente 
+60 
+4.1. O português da tradução de Persépolis 4.2.1. Metodologia da análise 
+O RG Persépolis está dividido em quatro livros na publicação em francês, sem numeração de páginas. No texto traduzido não aparece essa divisão por livros e, para facilitar a análise dos dados, numeramos manualmente as páginas. A numeração começa na primeira página da prancha de abertura O véu (p. 1) e vai até a última página da prancha O fim (p. 354). 
+Os dados quantitativos foram tabelados por ocorrências na obra toda e fizemos um levantamento por amostragem de três pranchas das quais retiramos as transcrições para demonstrar a metodologia de análise. 
+As três pranchas das quais retiramos as ocorrências para uma análise mais detalhada foram Moscou, A sopa e Love story. 
+Apresentaremos as normas das ocorrências linguísticas do PB analisadas tendo como referencial o português brasileiro contemporâneo a partir de uma relação norma/língua que descreve “as formas genuinamente brasileiras de falar e escrever” (BAGNO, 2012b, p. 33). 
+4.2.2. Pronomes demonstrativos – formas -ss- e -st- 
+O pronomes demonstrativos aparecem em Persépolis nas duas formas -ss- (isso,essa e flexões) e -st- (isto,esta e flexões). A tabela abaixo apresenta o levantamento quantitativo das ocorrências no texto de Persépolis em PB, essas ocorrências foram consideradas tanto nos balões como nos cartuchos: 
+-st- 
+TOTAL 
+61 
+FORMAS 
+No 
+% 
+-ss- 
+196 
+84 
+37 16 
+233 100 
+A preferência pelas formas -ss- é evidente ao considerarmos o número de ocorrências. Em algumas situações aparecem as duas formas em uma mesma prancha e até mesmo em uma mesma situação de distância do objeto em relação ao falante. 
+Com facilidade encontramos pranchas completas sem nenhuma ocorrência da forma - st- e em outras, quando o interlocutor aponta o objeto a ser demonstrado, não tem distinção de norma no uso das formas -ss- e -st-. 
+62 
+Prancha 
+Ocorrências 
+Texto em PB 
+Moscou 
+Formas -ss- 
+a) Fereidum nomeou a si mesmo ministro da justiça dessa pequena república (p. 51 RQ 3) b) Isso, mesmo! (p. 51 RQ. 4)
+c) Estou convencido disso, tio. (p. 51 RQ 4) d) Isso é hora pra você vir com essas conversas (p.53 RQ 1) 
+e) Isso! (p. 54 RQ 3)
+f) Você tem mais histórias como essa. (p. 54 RQ 9)
+g) Se eu te conto tudo isso. (p. 56 RQ 7) 
+Formas -st- Nenhuma ocorrência 
+Legenda - RQ requadro 
+Na p. 51 o emprego da forma dessa no requadro 3, isso no requadro 4, disso no requadro 5 evidencia a preferência pelas formas -ss-. No primeiro requadro as falas vê se não chateia e tá bom, pode ir são traços de oralidade fingida, pois são expressões que fazem parte da fala espontânea. No segundo requadro a interjeição uau! expressa a admiração de Marjane e também é um traço de oralidade fingida. 
+No requadro 4 a linguagem icônica aparece em um balão no formato de explosão e evidencia a irritação e o grito do personagem. 
+63 
+O tradutor Paulo Werneck comentou em entrevista que uma das dificuldades encontradas na tradução do RG Persépolis está relacionada à necessidade de rebaixar a grandiloquência do francês: 
+j) Quais foram os principais desafios observados na tradução de Persépolis? 
+O texto francês, mesmo informal como o de quadrinhos, tem uma grandiloquência que sempre acho necessário rebaixar um pouco em português. A língua francesa é um patrimônio em que expressões que soam literárias na verdade são corriqueiras; traduzi-las diretamente deixaria o texto empolado. Isso se observa também em construções sintáticas mais tortuosas, elípticas. São construções tortuosas, mas que você vê no jornal de lá, por exemplo, então são “normais”. A construção da frase não pode roubar totalmente a atenção, o que importa é o que está sendo dito. Essas questões marcaram a tradução dos livros da Marjane Satrapi. (Entrevista com Paulo Werneck, 12/09/2012, anexo I) 
+Para comparação trazemos a tira a seguir que é o texto em francês das tiras anteriores da p. 51 em PB. No requadro 2 da p. 5, aparece um exemplo dessa dificuldade configurada na marca de oralidade fingida. Em francês o personagem inicia o diálogo com bon, je commence. Em português brasileiro, a não ser que seja em um contexto formal, um tio não se dirige a uma sobrinha pequena com traços formais de palestrante, mas Werneck optou pela tradução vou começar e manteve o tom formal da expressão. Esse exemplo configura as escolhas do tradutor quando a questão envolve língua oral e linguagem dos quadrinhos. 
+Na próxima tira da p. 53, no requadro 1 aparecem dois usos das formas -ss-. No requadro 2, as reticências evidenciam a linguagem icônica e a oralidade fingida. Para esse contexto a ideia de suspensão demonstra a apreensão do pai com a doença do filho. 
+64 
+A língua oral tem muitos espaços para renovação e reestruturação das frases. É possível imaginar um diálogo no qual alguém repete palavras e não completa suas sentenças. Por isso, para representar a língua oral com a língua escrita, as reticências são muito usadas como marca de oralidade fingida. Na próxima prancha da p. 54 aparecem três empregos que expressam sentimentos diferentes, no requadro 6, tristeza; no requadro 8, ideia de continuidade; no requadro 9 , distração e suspensão de pensamento. 
+Na próxima tira da p. 56 mais uma ocorrência da forma -ss- no requadro 3. As exclamações repetidas no requadro 3, marca de linguagem icônica e oralidade fingida, expressam uma ênfase necessária aos sentimentos de revolta da personagem. 
+65 
+66 
+Prancha 
+Ocorrências 
+Texto em PB 
+A sopa 
+Formas -ss- 
+Formas -st- 
+a) Esse rosa cintilante. (p. 151 RQ 7)
+b) Ouvi isso numa das brigas que eles costumavam ter. (p.152 RQ 8)
+c) Depois disso, a porta ficará trancada. (p. 154 RQ 2) 
+d) Até hoje, depois desse tempão. (p. 155 RQ 4) 
+e) Esta é a minha caneta com cheiro de framboesa. (p. 151 RQ 6)
+f) Esta é a sua casa nova. (p. 154 RQ 1)
+g) Aqui está senhorita, este é o seu quarto. (p. 154 RQ 3) 
+Legenda: RQ requadro 
+Apresentamos, a seguir, fragmento da p. 151 da prancha A sopa. Nela aparece o uso das formas -ss- e -st- em requadros sucessivos em situações muito parecidas. Isso nos leva a deduzir que o tradutor não escolhe as formas de demonstrativo seguindo nenhuma norma específica e confirma o hibridismo de normas presente na tradução de Persépolis e também reflete a marca de oralidade fingida, já que a personagem é uma adolescente e necessariamente não aplicaria o uso normatizado dos demonstrativos em uma situação de informalidade. 
+A onomatopeia PFF... representa a indignação da personagem. Nesse caso é possível constatar que um ícone presente nos quadrinhos substitui um grande número de palavras, pois a onomatopeia evitou que o autor precisasse descrever os sentimentos da personagem. 
+Na próxima tira da p. 152 aparece a forma -ss- em isso e o balão explosão representando a briga do casal de tios de Marjane. 
+As marcas de oralidade fingida sob a perspectiva de representação de normas ficam bem claras na tira de Persépolis a seguir. 
+O emprego das formas -st- é bem raro no RG Persépolis. Nos requadros 1 e 3 da p. 154 essa forma de demonstrativos aparece em duas ocorrências. Nas duas vezes sugere que a regra da divisão ternária dos gramáticos normativos foi respeitada. No primeiro exemplo: Esta 
+67 
+é sua nova casa, a tia de Marjane estaria mais próxima da entrada do alojamento e no segundo caso, requadro 3, a freira estaria mais próxima da entrada do quarto. 
+Em ambos os casos, o contexto é de formalidade onde adultos se referem a uma adolescente. O hibridismo de normas na aplicação das regras dos demonstrativos nesse caso se relaciona com a oralidade fingida na medida em que é aceitável que adultos, como marca de formalidade, deixem prevalecer em suas falas usos da norma padrão em contextos mais monitorados. 
+O RG Perséplois foi escrito por Satrapi em francês, mas a história não se passa em países nos quais os personagens têm o francês como primeira língua. Em sua infância, Marjane morou em Teerã, onde a língua materna é o farsi e, quando adolescente, viveu em Viena, onde se fala alemão. 
+Para representar essa ideia de que, apesar de ser escrito em francês, outros idiomas fazem parte do contexto linguístico da história, as marcas de oralidade fingida surgem nas palavras em outro idioma nos balões e também nas inscrições. O requadro 1 da p. 155 mostra as placas do supermercado com inscrições em alemão como Kartoffel (batata). No requadro 6, o caixa fala o preço das compras e Marjane escreveu o valor em alemão achtundneunzig dreissig bite (noventa e oito xelins e trinta centavos, por favor [tradução nossa]). 
+68 
+Na p. 155, também aparece a flexão da forma -ss- do demonstrativo no requadro 3 desse. 
+69 
+Prancha 
+Ocorrências 
+Texto em PB 
+Love story 
+Formas -ss- 
+Formas -st- 
+a)Também passei por isso quando cheguei na França (p. 228 RQ 7)
+c) Mas algumas pessoas gostavam dessa decadência. (p. 232 RQ 2) 
+b) Dessa vez não fiz esforço nenhum. ( p. 232 RQ 5)
+c) É isso? (p. 234 RQ 5) 
+d) Este fim de semana. (p. 229 RQ 5)
+e) Isto aqui não é nenhum bordel. (p. 234 RQ 3 
+Legenda : RQ requadro 
+Na tira a seguir temos mais um exemplo de uso da forma -ss- (isso) e uma marca de oralidade fingida relacionada aos diversos contextos linguísticos de Persépolis. 
+No requadro 1, a personagem principal brinca com duas crianças e uma delas fala um nome por quatro vezes: Mariane!. A mudança de grafia do nome Marjane por Mariane acontece porque a pronúncia do nome Marjane em alemão é [ma’hiane] e as crianças são falantes do alemão. Esse é um exemplo de oralidade fingida já que é uma tentativa de exprimir a fala espontânea das crianças. 
+Na próxima prancha da p. 229 aparece mais um emprego da forma -st- dos demonstrativos. O contexto é mais formal, já que um novo aluno se dirige a Marjane para uma primeira conversa. É provável que a escolha do uso da foma -st- no texto final tenha sido influenciada por essa formalidade característica de início de relacionamento. 
+No requadro 5 aparece um balão expresso por meio do ícone de balão pensamento. No requadro 9 as reticências reaparecem indicando silêncio ou suspensão de diálogo. 
+70 
+Em uma situação parecida, na qual dois adolescentes conversam, p. 232, são as formas -ss- que aparecem , nos requadros 2 e 4, evidenciando o hibridismo de normas. 
+71 
+4.2.3. Imperativo – indicativo/ subjuntivo 
+Como já foi mencionado no capítulo anterior, o uso do imperativo no PB se relaciona com o emprego dos modos subjuntivo ou indicativo. Em Persépolis não aparece nenhuma forma tu como pronome de tratamento ou pessoal, por isso analisamos as ocorrências de você com subjuntivo e você com indicativo, como nos exemplos faça (você) / faz (você). 
+Ao considerarmos as normas do PB para o imperativo é possível verificar que o fenômeno da inversão de formas oriundas do indicativo e subjuntivo é comprovado no texto traduzido de Persépolis. Na TGP o imperativo afirmativo na 2a pessoa do singular é formado pela retirada do -s final da conjugação do presente do indicativo: tu estudas, no presente, se conjuga no imperativo estuda [tu]. Com o pronome você, o imperativo virá da terceira pessoa do singular (ele) do subjuntivo presente: [que] ele fale no presente do subjuntivo, se conjuga fale você no imperativo. Visto que em Persépolis não se usa tu, todas as formas de imperativo deveriam, pela TGP, apresentarem as formas oriundas do subjuntivo, mas pela análise quantitativa, isso não se comprova. O que temos é uma maioria de formas oriundas do indicativo. 
+Outra observação importante diz respeito à primeira pessoa do plural. O imperativo de nós aparece na formação ir seguido de infinitivo. 
+72 
+73 
+FORMAS 
+No 
+% 
+INDICATIVO 
+105 
+78 
+SUBJUNTIVO 29 22 
+Pela ótica da gramática normativa, só seria possível usar as formas no subjuntivo, mas o tradutor preferiu seguir os usos normais brasileiros. 
+100 
+TOTAL 
+134 
+Prancha 
+Ocorrências 
+Texto em PB 
+1. a)  Dá um tempo, Marji (p. 50 RQ 7) 
+2. b)  Vê se não chateia. (p. 51 RQ 1) 
+3. c)  Vai encontrar o cretino do seu irmão. 
+(p. 51 RQ 4) 
+4. d)  Olha só. (p. 55 RQ 4) 
+5. e)  Toma um presente. (p. 57 RQ 3) 
+6. f)  Me ajude. (p.53 RQ 1) 
+Tenha bons sonhos. (p. 57 RQ 3) 
+Na próxima tira da p. 50 da história Moscou, o contexto é bem informal. O pai de Marjane chama a atenção da filha e utiliza o imperativo oriundo do presente do indicativo dá (você) no requadro 3. Ele usa uma expressão fixa “dá um tempo”, extremamente informal e que só se usa com verbo no indicativo. 
+Moscou Imperativo Indicativo/você 
+Imperativo
+Subjuntivo/você g) 
+Legenda: RQ requadro 
+Novamente em um contexto informal, no requadro 1, o pai de Marjane fala com a filha e usa a forma vê (você). No requadro 4, o avô de Marjane fala com o filho e também aparece o fenômeno da inversão de formas do imperativo. Os traços de oralidade fingida reforçam o contexto informal. Marjane usa a intejeição uau!, no requadro 2, que tem no texto um papel icônico, e as reticências do requadro 3 indicam a continuidade da história. No requadro 4 o balão explosão revela um sentimento de raiva do avô de Marjane. 
+Na tira a seguir, requadro 1, o imperativo aparece na forma me ajude oriunda do subjuntivo, mas não podemos dizer que é um contexto formal e nem uma construção coerente com as regras postuladas pela gramática tradicional porque a frase começa com um pronome oblíquo, fato que é considerado inadequado nas descrições tradicionais das normas de língua portuguesa. A forma vamos reforça a função conativa da frase. Um traço de oralidade fingida é a repetição de palavras ou frases, no requadro 1, Tá bom, tá bom ! 
+74 
+Um exemplo de imperativo na primeira pessoa do plural: vamos fazer usado em sua forma ir + infinitivo aparece no requadro 3 da próxima tira. A interrogação sozinha, requadro 3, aparece nos balões e é um traço de linguagem icônica. É possível entender que o personagem ficou em dúvida ou mesmo não compreendeu o que foi dito. Apenas um sinal de pontuação representa muitas palavras demonstrando os recursos possíveis que são usados na linguagem sintética nas HQ. 
+Na próxima tira um exemplo de hibridismo de normas. Em um mesmo contexto o personagem usa as formas do imperativo oriundas do indicativo e do subjuntivo: toma requadro 2 e tenha requadro 3. Nós brasileiros nunca usamos “tem” no imperativo, por isso soaria estranho “tem bons sonhos”;; daí o uso que o tradutor fez de “tenha”. 
+75 
+76 
+Prancha 
+Ocorrências 
+Texto em PB 
+A sopa 
+Imperativo Indicativo/você 
+Imperativo Subjuntivo/você 
+a) E olha só! (p.150 RQ 2)
+b) Olha, são pra você! (p.150 RQ 5)
+c) Vem aqui no fim de semana. (p. 153 RQ 5)
+d) Cuida bem de você. (p. 153 RQ 6) 
+e)Vá fazer sua mala. (p. 153 RQ 4) f) Vá ao aldi. (p. 154 RQ 7) 
+Legenda: RQ requadro 
+A prancha de abertura da história A sopa, p. 150, é um exemplo de prancha unicamente narrativa das HQ. A história é contada pela narradora e a autora só usa cartuchos. A interdependência entre imagens e escrita está bem representada. No requadro 1 a personagem Marjane descreve seus sentimentos em relação a sua nova vida em Viena. O texto mostra as expectativas de uma adolescente que mora longe da família. O desenho é de uma moça desolada, a expressão dos olhos e da boca mostra tristeza e decepção. A autora não precisou descrever nos cartuchos os sentimentos do personagem. A imagem, nesse caso, é um texto descritivo e, mesmo sem a presença do diálogo, é possível reconhecer nesse conjunto indissociável de imagem/texto a situação pela qual a personagem passa. 
+No segundo requadro aparece o uso do imperativo olha só oriundo do indicativo. Nesse caso a narradora constata um fato e chama a atenção do leitor. Os únicos balões que aparecem, requadros 4 e 5, são em forma de pensamento e a imagem é o texto. Marjane pensa como seria sua amiga de quarto e os desenhos de rostos exprimem a descrição de cada pensamento. 
+Na próxima prancha da p. 153 o emprego do imperativo aparece também de forma híbrida. No requadro 4, em que um adulto se refere a uma adolescente, a escolha foi o subjuntivo vá. No requadro 5, duas adolescentes conversam e uma delas usa a forma oriunda de indicativo vem. No requadro 6, o tio de Marjane fala com ela: Cuida bem de você, deixando bem explícita a relação de inversão de regras do imperativo da TGP, em que a forma do indicativo está aplicada à pessoa você. 
+77 
+78 
+Na tira a seguir da p. 154 uma freira conversa com a adolescente Marjane, o que pode ser considerado um contexto de formalidade. No requadro 1 o imperativo aparece em sua forma oriunda do subjuntivo: vá. 
+A oralidade fingida está bem marcada no diálogo do requadro 1. Na fala da freira aparecem palavras em alemão. O intuito é mostrar a dificuldade de Marjane em entender o alemão. Em nota de rodapé, a autora traduz as palavras e no balão de sua fala repete links! o que seria um sinal, na fala espontânea, de que ela finalmente teria compreendido a palavra alemã. 
+79 
+Prancha 
+Ocorrências 
+Texto em PB 
+Love Story 
+Imperativo Indicativo/você 
+Imperativo Subjuntivo/você 
+a)Olha, não entendi muito bem a última aula de matemática. (p. 230 RQ 5)
+b) Vai pra casa. (p. 235 RQ 7)
+c) Vem cá. (p.235 RQ 5) 
+d) Toma. (p.235 RQ 6)
+e) Seja forte. (p. 228 RQ 8) 
+Legenda: RQ requadro 
+Predomina, na história Love Story, o uso do imperativo das formas oriundas do indicativo. A única ocorrência da forma oriunda do subjuntivo é em um contexto formal em que uma senhora conversa com Marjane, p. 228, que aparece na tira a seguir no requadro 3 na forma seja. 
+Na próxima tira da p. 230, no requadro 3 aparece a forma no imperativo olha, o contexto é informal já que são dois colegas conversando. As reticências aparecem novamente, 
+agora indicando tempo transcorrido. O ícone da interrogação aparece duas vezes, no requadro 1, no balão, expressando dúvida e no requadro 3 em conjunto com vários ícones como a exclamação e o traço irregular dando a ideia de dúvida, surpresa e decepção. 
+Em um contexto bem informal aparecem as formas imperativas todas oriundas do indicativo na p. 235 nos requadros 5, 6 e 7. 
+Novamente, aparecem palavras em alemão para especificar o contexto linguístico em que Marjane estava inserida. Além do desenho deixar claro a insatisfação da mãe do namorado da personagem principal na fala Raus! Ich sage raus!!! (Sai fora! Eu mandei, 
+80 
+fora!!! [ tradução nossa]) , o balão explosão iconiza o sentimento de raiva e o grito da personagem. 
+4.2.4 Relações pronominais 
+No RG Persépolis não aparece nenhuma ocorrência de lhe como objeto direto em relação a você. Nunca é usada a forma tu e a predominância da correlação você→te é de 90% nas ocorrências. 
+81 
+CO-RELAÇÃO 
+No 
+% 
+VOCÊ→TE 
+85 
+VOCÊ→ O/A
+VOCÊ→LHE (OBJ. DIRETO) TOTAL 
+Moscou Co-relação V ocê→te 
+Co-relação 
+V ocê→o/a 
+Co-relação 
+V ocê→lhe 
+a)Eu vou dormir aqui hoje e te conto umas histórias. (p.50 RQ 6 )
+b) Foi o seu pai que te contou. (p. 56 RQ 7) c) Se eu te conto tudo isso, é porque é importante que você saiba. (p.56 RQ 7) 
+Nenhuma ocorrência Nenhuma ocorrência 
+9 10 
+00 
+94 100 
+90 
+Prancha 
+Ocorrências 
+Texto em PB 
+Legenda- RQ requadro 
+Na tira a seguir, da página 50, o tio conversa com Marjane. No requadro 1 a sobrinha usa você para falar com o tio e logo depois, no requadro 2, o adulto usa te. 
+82 
+Em seguida, no requadro 3 da próxima tira, um exemplo no qual você e te aparecem em um mesmo balão. 
+Prancha 
+Ocorrências 
+Texto em PB 
+A sopa 
+Correlação 
+V ocê→te 
+Correlação 
+V ocê→o/a 
+Correlação 
+V ocê→lhe 
+a)Eu te vi no café com aqueles 2 canalhas! Só quando eles levarem a suas roupas é que você vai perceber como são ingratos. (p.151 RQ 7) 
+Nenhuma ocorrência Nenhuma ocorrência 
+Legenda: RQ requadro 
+Novamente um exemplo no qual você e te aparecem juntos em um mesmo contexto na p. 151, no requadro 2. 
+83 
+Prancha 
+Ocorrências 
+Texto em PB 
+Love story 
+Correlação 
+Você→te 
+Correlação 
+V ocê→o/a 
+Correlação 
+V ocê→lhe 
+a)Tudo vai acabar bem pra você. Espero te ver de novo. (p. 228 RQ 8)
+b) Vou te fazer algumas perguntas. (p.230 RQ 5) 
+c) Se você quiser, te levo pra casa, mas antes preciso encher o tanque. (p.232 RQ 4) d) Amanhã vou te ver lá. (p. 233 RQ 7) 
+Nenhuma ocorrência Nenhuma ocorrência 
+Legenda: RQ requadro 
+Nas tiras a seguir aparecem exemplos variados de usos da correlação você →te na história Love story. 
+Página 228, requadro 2: 
+Página 230, requadro 3: 
+Página 232, requadro 1: 
+Página 233, requadro 3, aparece só o te , mas em um contexto em que os personagens se tratam por você: 
+84 
+4.2.5. Verbos ter e haver 
+O verbo ter no sentido de “existir” já se encontra consagrado pelo uso na fala de muitos brasileiros, até mesmo na fala de brasileiros escolarizados. Em Persépolis o verbo ter com sentido existencial e também na formação de tempos compostos é empregado em 62% das ocorrências: 
+HAVER 29 38 
+85 
+FORMAS 
+No 
+% 
+TER 
+49 
+62 
+TOTAL 
+100 
+78 
+Nas pranchas analisadas detalhadamente não apareceu nenhuma ocorrência do verbo haver. Como nas HQ a presença da oralidade fingida influencia no discurso, o verbo ter com função existencial aparece em maior número, confirmando o hibridismo das normas e também da oralidade fingida. 
+Prancha 
+Ocorrências 
+Texto em PB 
+Moscou 
+Verbo ter 
+Verbo haver 
+a)Se pelo menos tivesse sido preso. (p.50 HQ 2)
+b) Na minha família tem muitos heróis (p. 57 HQ 4) 
+Nenhuma ocorrência 
+Legenda: RQ requadro 
+O verbo ter aparece em maior número na formação de tempos compostos em Persépolis, como mostra o exemplo da próxima tira da p. 50 requadro 2: 
+A seguir, na p. 57, um uso de ter no sentido de “existir”: 
+86 
+Prancha 
+Ocorrências 
+Texto em PB 
+A sopa 
+Verbo ter 
+Verbo haver 
+a) Tinham ido me buscar no aeroporto. (p.151 HQ 1)
+b) Ainda tem 10 caixas de detergente aromatizado na minha casa. (p.155 RQ 4) 
+c) Dei a ela uns pistaches que eu tinha trazido. (p. 157 RQ 1) 
+Nenhuma ocorrência 
+Legenda: RQ requadro 
+Novamente, no requadro 1 da próxima tira retirada da p. 151, aparece o verbo ter usado em tempos compostos, evidenciando a preferência desse emprego em Persépolis. 
+No requadro, 3 da próxima tira, o verbo ter foi usado com sentido existencial na p.155: 
+Na próxima prancha da p. 157 no requadro 1 temos um exemplo do verbo ter usado em tempos compostos. Aparecem também várias marcas de oralidade fingida como as onomatopeias nos requadro 1 e 2. 
+As escolhas do tradutor em relação à oralidade fingida são bem marcadas no requadro 3. Marjane não fala alemão e tenta se comunicar com sua nova amiga em Viena. Ao mostrar a cena do diálogo houve a necessidade de lembrar ao leitor que Marjane falava francês e quando sua amiga tenta ensinar um nova palavra a reação de Marjane é relacionar o significado com uma palavra francesa fenêtre (janela). Para não perder o efeito da oralidade 
+87 
+fingida no diálogo, o tradutor escolheu escrever uma nota explicativa: fenêtre = janela, em francês (n.t.). A escolha pela nota de rodapé demonstra a necessidade de manter o efeito de oralidade fingida do texto em francês. 
+88 
+Prancha 
+Ocorrências 
+Texto em PB 
+Love story 
+Verbo ter 
+Verbo haver 
+a)Eu tinha percebido a necessidade de uma relação carnal. (p.229 RQ 1)
+b) Nem tinha percebido. ( p. 229 RQ 7)
+c) Eu já tinha desistido. (p. 232 RQ 5) 
+d) Eu tinha prometido à minha mãe que não faria isso. (p. 234 RQ 6)
+e) Eu tinha acabado de ler os “3 ensaios sobre a teoria da sexualidade”. (p.234 RQ 7 na nota de rodapé) 
+Nenhuma ocorrência 
+Legenda: RQ requadro 
+A história Love story é um outro exemplo de como o verbo ter é o mais empregado nos tempos compostos em Persépolis. Não aparece nenhuma ocorrência do verbo haver e temos cinco com o verbo ter. Na p. 229 nos requadros 1 e 7: 
+89 
+Na p. 232, requadro1: 
+90 
+Na p. 234 no requadro 3 e na nota de rodapé do mesmo requadro. 
+4.2.6. A gente e nós 
+Em nossa apresentação das ocorrências no capítulo 3 afirmamos que o uso de a gente vem ganhando espaço no PB. Em Persépolis aparece um equilíbrio entre o uso de nós e a gente: 
+91 
+PRONOMES 
+No 
+% 
+NÓS 
+115 
+51 
+A GENTE 
+Moscou 
+110 
+Nós
+A gente 
+49 
+100 
+a) Nós nos divorciamos. (p.55 RQ 6)
+b) Os russos não são como nós. (p.55 RQ 8) 
+c) Por que você não vem morar com a gente. (p. 50 RQ 5) 
+TOTAL 
+225 
+Prancha 
+Ocorrências 
+Texto em PB 
+Legenda: RQ requadro 
+Para análise vamos considerar se o contexto é formal ou informal. As marcas de oralidade fingida relacionadas às ocorrências de normas se mostram bem explicitadas no usos de nós e a gente no PB. Em contexto de fala espontânea mais monitorada aparece mais a forma nós. Mas, como já dissemos, o hibridismo de normas é também fator determinante na análise do RG Persépolis. 
+Na tira a seguir, Marjane é uma criança e usa em um contexto informal a gente: 
+Na próxima tira nos requadros 1 e 2, quando o tio de Marjane conta sobre sua experiência familiar, ele emprega nós em sua fala. Apesar de estar conversando com a sobrinha pequena, o tio usa uma linguagem mais formal: 
+92 
+Prancha 
+Ocorrências 
+Texto em PB 
+A sopa 
+Nós 
+A gente 
+a)Quando nós vamos? (p.153 RQ 4)
+b) Então nós fomos. (p.153 RQ 8)
+c) Nós damos de presente quando alguém viaja para o exterior. (p. 157 RQ 1)
+d) Então nós fomos. (p. 158 RQ 1) 
+e) Vem aqui no final de semana , pra gente ir patinar no gelo. ( p.153 RQ 5) 
+Legenda: RQ requadro 
+Na história A sopa aparece o uso de nós em maior número. Na próxima prancha da p. 153, isso ocorre porque a personagem Marjane, uma adolescente, fala com uma amiga adulta de sua mãe, o que representaria um contexto mais formal entre os personagens. Na única ocorrência de a gente, requadro 5, é uma adolescente que fala com Marjane. 
+93 
+Na tira a seguir Marjani conta um hábito de seu povo, e usa o nós para generalizar a ideia (nós = os iranianos): 
+De novo em um contexto narrativo com o texto nos cartuchos, a autora usa nós: 
+94 
+Prancha 
+Ocorrências 
+Texto em PB 
+Love story 
+Nós
+A gente 
+a)Mesmo assim, nós fomos dançar.( p.232 RQ 6) 
+b) Mas a gente nunca mais se viu. (p.228 RQ 8)
+c) A gente não tinha nada em comum. (p. 232 RQ 6) 
+d) As coisas sempre acontecem quando a gente menos espera. ( 232 RQ 06) 
+Legenda: RQ requadro 
+Na próxima prancha, da p. 232 da história Love story, o hibridismo de normas reaparece quando a narradora usa nós, no requadro 3 e a gente em um mesmo contexto, com a predominância da forma a gente: 
+95 
+Na narração dos cartuchos aparece o uso de a gente na p. 228, requadro 3: 
+4.3. Conclusões sobre a análise das ocorrências 
+As normas linguísticas influenciam o resultado de um texto traduzido na medida em que ficam perceptíveis as representações híbridas de normas. Os quadrinhos, pela sua linguagem e especialmente por causa da oralidade fingida, é um gênero textual que mantém o hibridismo de normas em seu texto traduzido. 
+Confirmando a afirmação inicial de que nossa análise tem como base o PB, é possível concluir que, por razões editoriais e por causa do terceiro código presente nas traduções, Paulo Werneck empregou em seu texto traduzido, influenciado pelas normas impostas pelos agentes normativos - fato comprovado pelo depoimento do próprio tradutor em entrevista - na maioria de seu texto aspectos normativos do PB descritos em Bagno (2012b). 
+No emprego dos demonstrativos as formas -ss- foram maioria comprovando a descrição gramatical sobre o uso dessas formas no PB. As formas -st- aparecem no texto de Werneck muito raramente e confirmam o hibridismo de normas. 
+As formas no imperativo em Persépolis também são híbridas, as normas de usos no PB demonstraram a inversão entre o subjuntivo/ você e indicativo/ você. Nenhum personagem usa tu em suas falas, no entanto o indicativo/você é maioria nos usos do imperativo, o que 
+96 
+confirma, além do hibridismo, o emprego da inversão de você/subjuntivo com você/indicativo. Não aparece no texto nenhuma forma vós. 
+O uso do imperativo na pessoa de nós, em Persépolis, com o verbo vamos seguido de infinitivo também confirma o uso da norma culta real do PB. 
+As relações pronominais você→te, o grande número de ocorrências do verbo ter nos tempos compostos, o uso do verbo ter com a função existencial e uma quantidade significativa do emprego de a gente que aparecem em Persépolis confirmam as normas de uso do PB. 
+Werneck normatizou seu texto acompanhando de perto as convenções do PB, influenciado pelas normas dos agentes normatizantes e pela oralidade fingida que foram sintetizadas no texto final publicado. 
+Prevalecem no texto de Persépolis as variedades urbanas de prestígio do português contemporâneo. Pela quantificação dos dados, aparecem em maioria as representações de norma com base na norma culta real e também fica bem marcada a estreita relação entre língua falada e escrita presente na oralidade fingida do texto das HQ. 
+O hibridismo pode ser explicado a partir da variedade das representações de normas que são do tradutor e de cada agente responsável pela produção final do texto traduzido. Pelo visto, a tradução de Persépolis para o PB está bem próxima de uma norma de prestígio urbana, que representa o modo como realmente falamos hoje no Brasil. 
+97 
+CONCLUSÃO 
+A presente pesquisa buscou explicitar, de maneira teórica e comparativa, as características da tradução de quadrinhos e as ocorrências de normas linguísticas e oralidade fingida em um texto traduzido do francês para português brasileiro. 
+A premissa principal dessa pesquisa era de que as normas linguísticas incidentes no texto, por meio das escolhas do tradutor e também dos agentes normatizantes, e os traços de oralidade fingida são fatores que influenciam no texto final. Além disso, a própria estrutura da linguagem dos quadrinhos e suas características, que vão desde a linguagem icônica até os recursos gráficos específicos, demonstra que o trabalho do tradutor dessas histórias não se restringe ao texto escrito nos balões e nos cartuchos. 
+Assim sendo, os resultados obtidos após a análise nos levaram a concluir que o texto final traduzido de quadrinhos sofre influência dos traços de oralidade fingida presentes no texto fonte e que as variedades de norma linguística constituem um fator determinante no resultado final desse texto, já que o tradutor, consciente ou inconscientemente, deixa incidir sobre ele suas marcas de norma e, para a publicação, os agentes normatizantes também decidem sobre as opções normativas por eles consideradas aceitáveis para o mercado editorial. 
+Com a análise de Persépolis foi possível identificar, atentando para as ocorrências de fatos gramaticais, que o tradutor, Paulo Werneck, privilegiou as normas características do português brasileiro contemporâneo dentro da variedade de prestígio urbana, conforme a descrição que dela fazem os compêndios gramaticais mais recentes publicados no Brasil. Essa opção pelo português brasileiro urbano contemporâneo se evidencia, quantitativamente, nos resultados obtidos na coleta e análise dos fatos gramaticais pesquisados, conforme o quadro abaixo: 
+98 
+DEMONSTRATIVOS 
+IMPERATIVO (VOCÊ) 
+RELAÇÕES PRONOMINAIS 
+TER E HAVER 
+NÓS E A GENTE 
+no ocorrências
+no ocorrências 
+no ocorrências
+no ocorrências 
+no ocorrências 
+233 
+134 
+94 
+78 
+225 
+-ss- 
+-st- 
+indicativo 
+subjuntivo 
+você/te 
+você/o/a 
+você/lhe 
+ter 
+haver 
+nós 
+a gente 
+84% 
+16% 
+78% 
+22% 
+90% 
+10% 
+- 
+62% 
+38% 
+51% 
+49% 
+196 
+37 
+105 
+29 
+85 
+9 
+- 
+49 
+29
+115
+110 
+O português brasileiro (PB) vem sendo estudado como uma língua autônoma com características próprias e normas cientificamente comprovadas. Muitas normas do PB diferem das normas da gramática normativa tradicional porque nos estudos científicos sobre o idioma brasileiro são considerados os aspectos genuínos da fala dos brasileiros. 
+Portanto, um gênero como os quadrinhos, em que a relação entre língua falada e língua escrita é pautada em suas semelhanças e não em suas diferenças, é um suporte ideal para a confirmação de que, para uma descrição honesta das regras do PB, é preciso considerar a fala daqueles que usam o idioma cotidianamente. 
+A tradução é considerada por muitos um ofício e tem uma função social importante. Tão importante que já é denominada pela maioria dos estudiosos como ciência, a Tradutologia. Nesse sentido, pesquisar os mecanismos de tradução de um gênero de texto específico pretende contribuir para a definição e fixação dos estudos da tradução como ciência. 
+A oralidade fingida presente nos quadrinhos também colabora para a análise de um idioma genuíno, já que, mesmo que premeditada, a intenção é mostrar o uso da língua em seu nicho mais natural: o diálogo. 

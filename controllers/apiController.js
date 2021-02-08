@@ -9,7 +9,8 @@ var Projeto = require('../models/projetos');
 var Resultado = require('../models/resultado');
 var Token  = require('../models/token');
 const path = require('path');
-var async = require('async')
+var async = require('async');
+const util = require('util');
 
 const port = process.env.PORT || '3000';
 
@@ -437,29 +438,32 @@ function criaDiretorios(idProjeto){
 
 /*
 function execRouge(projetoPath){
-
     return new Promise((resolve,reject) =>{
         try{       
-            const { spawnSync} = require("child_process");
+            const { spawn} = require("child_process");
             let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
             console.log(rougeProperties);
             try{ 
                 if(rougeProperties){             
-                        const ls = spawnSync('java', ['-jar','-Xmx5048m','-Drouge.prop=' + rougeProperties.toString(), path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar')]);
-                        resolve({success:true, message : "ROUGE foi executado corretamente"});                                               
+                        const ls = spawn('java', ['-jar','-Xmx5048m','-Drouge.prop=' + rougeProperties.toString(), path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar')]);
+                        
+                        process.on('close', (code) => {
+                        return console.log("ROUGE executado");
+                        });
+
                          }            
                          
             } catch(err){
-                reject({success:false, message : "Não foi possível executar o ROUGE2"})
+                reject({success:false, message : err});
             }
         } catch(err){
             reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
   
-        }
-        
-  }).catch(err => {
-    reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
-  });
+        }    
+    }).catch(err => {
+        console.log(err);
+    })   
+  
   }
 */
 function execRouge(projetoPath){
@@ -476,7 +480,7 @@ function execRouge(projetoPath){
                             reject({success:false, message : "Não foi possível executar o ROUGE2", error: error})
                             
                         }                    
-                        // console.log(`stderr: ${stderr}`);                
+                         console.log(`stderr: ${stderr}`);                
                           console.log(`stdout: ${stdout}`);                          
                          }); 
                          
@@ -486,7 +490,7 @@ function execRouge(projetoPath){
                         });           
                      };
             } catch(err){
-                reject({success:false, message : "Não foi possível executar o ROUGE2"})
+                reject({success:false, message : "Não foi possível executar o ROUGE2", err :err})
             }
         } catch(err){
             reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
@@ -680,7 +684,7 @@ let arquivoProperties = {
 exports.api_rouge_prepara = (req,res,next) =>{ 
     if(req && req.user.name && req.token){
         console.log(req.body);     
-        arquivoProperties.ngram = req.body.ngram || properties.get('ngram');
+        arquivoProperties.ngram = req.body.ngram=='' ? properties.get('ngram') : req.body.ngram;
         arquivoProperties.beta = parseFloat(req.body.beta) || parseFloat(properties.get('beta'));
         arquivoProperties.rouge_type = req.body.rouge_type || properties.get('rouge.type');
         arquivoProperties.post_tagger = req.body.post_tagger || properties.get('pos_tagger_name');
@@ -743,7 +747,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             console.log({'Arquivos refence/system gravados' : arquivos.success});
                                         
                                             let executaRouge = await execRouge(projetoPath);
-                                            console.log({'Execução ROUGE concluída' : executaRouge.success});
+                                            console.log({'Execução ROUGE concluída' : executaRouge});
                                             
                                             let result = await formataResult(projetoOutput);
                                             console.log({'Resultado formatado' : result.success});                                            
