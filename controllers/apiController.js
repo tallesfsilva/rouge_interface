@@ -7,6 +7,7 @@ var Usuario = require('../models/usuarios');
 var Session = require('../models/session');
 var Projeto = require('../models/projetos');
 var Resultado = require('../models/resultado');
+var Token  = require('../models/token');
 const path = require('path');
 var async = require('async')
 
@@ -149,9 +150,9 @@ exports.api_login_get = (req,res,next) =>{
         })
       }).catch(err => { console.log(err)});  
     }else if((session==null || session==undefined)){ 
-        console.log("entrei aqui!")       
+   
             try{
-                console.log("entrei aqui!")  
+                console.log("entrei aqui!");  
                 Usuario.findOne({'_id': sessionId.id})
                 .exec(function(err, results){ 
                 console.log("usuario" + results);      
@@ -167,7 +168,7 @@ exports.api_login_get = (req,res,next) =>{
                                 })
                                 .then (response => response.json())
                                 .then(data => {                               
-                                    let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario});
+                                    let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario_id});
                                    res
                                    .status(201)
                                    .cookie('session',cookieValue,{
@@ -227,7 +228,6 @@ exports.api_perfil = (req,res,next) => {
         if(req && req.cookies.session){   
              Usuario.findOne({'_id' : req.idUser})
              .exec( (err, result) =>{
-
         if(result){
                     res.render('perfil', {success: true, usuario: result});
                 }else{
@@ -282,9 +282,10 @@ exports.api_user_registrar_post =  [
                                     })
                                     .then (response => response.json())
                                     .then(data => {    
-                                        console.log(data);                                   
-                                        res
-                                    .cookie('session',data.session._id, {
+                                        console.log(data);  
+                                        let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario});                                 
+                                        res 
+                                    .cookie('session',cookieValue, {
                                         /*expires: new Date(Date.now() + 8 * 3600000),*/ httpOnly: true 
                                         })
                                         .redirect('home'); 
@@ -343,12 +344,9 @@ exports.api_session_criar = function ( req, res, next ) {
             res.setHeader('Access-Control-Allow-Origin', '*');
         session.save(function(err){
                 if(err) res.json({"success" : false, message : "Não foi possível salvar a sessão", erro: err});
-                //const id_usuario = session.usuario;
-                //console.log(id_usuario);//
-                //localStorage.setItem(session.usuario, refreshToken);
-                      
+                             
                 res.json({session})
-               // res.json({refreshToken: refreshToken, "success": true, "message": "user registered"});
+             
                    
                     
             })
@@ -363,12 +361,10 @@ exports.api_session_criar = function ( req, res, next ) {
 
 
 function geraAccessToken(user) {
+
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: '86400s' })
   }
   
-
-
-
 
 function formataRougeProperties(arquivoProperties){
 
@@ -581,7 +577,7 @@ function gravaArquivosCorpus(system, corpus_dataset, projetoPath){
                 } else if(system.length && projetoPath){
                     try{
                         for(let i=0;i<system.length;i++){
-                            fs.writeFileSync(projetoPath +'/system/' +'C'+(i+1)+'_'+ system[i].name.split('_').join("") , system[i].data, (err)=> {      
+                            fs.writeFileSync(projetoPath +'/system/' +'task1' +'_'+ system[i].name.split('_').join("") , system[i].data, (err)=> {      
                                     if(err) reject({success: false, message: "Não foi possível gravar o arquivo system"});
                             })
                         }
@@ -697,6 +693,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
        // console.log(req.body.topic_type.length)
         //Implementar função que trate um elemento 
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
+        console.log(arquivoProperties.topic_type);
         let corpus = req.body.corpus;
         let corpus_dataset = req.body.corpus_dataset;
         console.log(corpus_dataset);
@@ -1101,7 +1098,7 @@ function formatJSON(projetoOutput){
                         catch(e){
                                 console.log(e);
                                 resolve({success: false, message: "Arquivo json não gerado"});
-                        }       
+                        }      
                 
             }).catch(err =>{
                 return console.log(err);
@@ -1110,7 +1107,6 @@ function formatJSON(projetoOutput){
 };
 
 exports.api_configuracoes = (req,res,next) => {
-
 
     res.render('configuracoes');
 
