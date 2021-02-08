@@ -23,7 +23,7 @@ var propertiesReader = require('properties-reader');
 const { resolve } = require('path');
 const { json } = require('express');
 const { RSA_NO_PADDING } = require('constants');
-var properties = propertiesReader('rouge/rouge.properties');
+let properties = propertiesReader('rouge/rouge.properties');
 
 
 let results = [];
@@ -384,7 +384,6 @@ function formataRougeProperties(arquivoProperties){
                     properties.set('pos_tagger_name', arquivoProperties.post_tagger);
                     properties.set('stemmer.name', arquivoProperties.stemmer_name);
                     properties.set('stemmer.use', arquivoProperties.stemmer_use);
-
                     
                     //console.log("Projeto directório:" + properties.get('project.dir'));
             
@@ -396,7 +395,8 @@ function formataRougeProperties(arquivoProperties){
                 
                     try{
                         if(rougeProperties){
-                            fs.writeFileSync(arquivoProperties.project_dir + '/rouge.properties', rougeProperties);                      
+                            fs.writeFileSync(arquivoProperties.project_dir + '/rouge.properties', rougeProperties); 
+                            properties = propertiesReader('rouge/rouge.properties');                    
                             resolve({success: true, message: "rouge.properties criado"})            
                         }
                     }catch(err){
@@ -683,8 +683,9 @@ let arquivoProperties = {
 }
 exports.api_rouge_prepara = (req,res,next) =>{ 
     if(req && req.user.name && req.token){
-        console.log(req.body);     
-        arquivoProperties.ngram = req.body.ngram=='' ? properties.get('ngram') : req.body.ngram;
+        console.log(req.body);   
+        arquivoProperties.ngram = !req.body.ngram ? properties.get('ngram') : req.body.ngram;
+
         arquivoProperties.beta = parseFloat(req.body.beta) || parseFloat(properties.get('beta'));
         arquivoProperties.rouge_type = req.body.rouge_type || properties.get('rouge.type');
         arquivoProperties.post_tagger = req.body.post_tagger || properties.get('pos_tagger_name');
@@ -693,9 +694,8 @@ exports.api_rouge_prepara = (req,res,next) =>{
         arquivoProperties.stemmer_use = req.body.stemmer_use ? true : properties.get('stemmer.use');
         arquivoProperties.stopwords_use = req.body.stopwords_use ? true :  properties.get('stopwords.use');
         arquivoProperties.stopwords_file =  path.join(process.cwd() + '/'+'rouge/resources/stopwords-rouge-default.txt');
-        let topicArray = [];
-       // console.log(req.body.topic_type.length)
-        //Implementar função que trate um elemento 
+        let topicArray = [];        
+
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
         console.log(arquivoProperties.topic_type);
         let corpus = req.body.corpus;
@@ -764,7 +764,8 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             resultado.save((err) => {
                                                 if(err) res.json({success : false,message :"Não foi possível salvar o resultado"});
                                                     //console.log("Resultado salvo: " + resultado);
-                                                    console.log({success:true, message: "Resultado gravado corretamente"});
+
+                                                                                                    console.log({success:true, message: "Resultado gravado corretamente"});
                                                     if(req.headers['authorization']){                                         
     
                                                         res.json({projeto: projeto._id, resultado : resultado.medidas})
