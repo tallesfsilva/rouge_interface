@@ -637,35 +637,19 @@ function validaSystem(system){
     }else{
         return false;
     }    
-
 }
 
 function formataNgram(string){
     return string.replace(/ /g,"").split(",").
     map((a) => {return a.replace(/^[0-9]+|^S[0-9]+|^SU[0-9]+|^[L]/g,"")}).join("")==""
 }
-/*
-function formataNgram(ngram){
-    let count = 0;
-    if(ngram){
-        //Verificar como criar um regex com o padrão N,SN,SUN,L
-        //Verificar repetições
-        console.log(ngram);
-        for(let i=0; i<ngram.length;i++){            
-            if((parseInt(ngram[i]))){}
-            else if(ngram[i].split('')[0]=='S' && 
-            ngram[i].split('')[1]==parseInt(ngram[i].split('')[1])){}
-            else if((ngram[i].split('')[0]=='S' && ngram[i].split('')[1]=='U'
-            && ngram[i].split('')[2]==parseInt(ngram[i].split('')[2]))){}
-            else if(ngram[i]=='L'){}           
-            else{
-                return false;
-            }            
-        }
-            return true;
-    }
-}*/
 
+
+exports.criar_corpus = (req,res,next) =>{
+
+        res.render('corpus_page');
+
+}
 
 let arquivoProperties = {
     ngram: '',
@@ -699,16 +683,13 @@ exports.api_rouge_prepara = (req,res,next) =>{
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
         console.log(arquivoProperties.topic_type);
         let corpus = req.body.corpus;
-        let corpus_dataset = req.body.corpus_dataset;
-        console.log(corpus_dataset);
-        console.log(corpus);
+        let corpus_dataset = req.body.corpus_dataset;       
         //Verifica se usuário quer utilizar corpus
         if(corpus && corpus!=null && corpus!=undefined && corpus_dataset 
             && corpus_dataset!=undefined && corpus_dataset!=null){
             let system = req.files.system;
             let ngramValida = formataNgram(arquivoProperties.ngram);
-            let systemValida = validaSystem(system);        
-            console.log("Utilizando corpus");
+            let systemValida = validaSystem(system);       
             if(!ngramValida){
                 res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
              }else if(!systemValida){        
@@ -916,19 +897,6 @@ exports.api_novo_projeto = (req,res,next) => {
         res.render('rouge_page');
 
 }
-//Função implementada direto no template. Avaliar forma de reduzir código
-/*
-function formataData(value){
-    
-    for(let i=0;i<value.length;i++){
-        if(value){
-            let data = (value[i].dataCriacao.getDate()<10 ? "0" +value[i].dataCriacao.getDate() : value[i].dataCriacao.getDate())  + "/" + mes[value[i].dataCriacao.getMonth()] + "/" + value[i].dataCriacao.getFullYear()                                                
-            console.log(data);
-     }
-    }
-    return value;
-   
-}*/
 
 exports.api_projeto = (req,res,next) => {
 
@@ -1050,8 +1018,7 @@ function formataResult(projetoOutput){
                     while(csv_temp.indexOf('\n\n') >-1){
                         csv_temp = csv_temp.replace('\n\n', '\n');
                      }    
-                   // console.log(csv_temp);                    
-                    
+               
                  fs.writeFile(path.join(process.cwd() +'/' + projetoOutput+'/result.csv'), csv_temp, (err) =>{
                     
                         if(err) {

@@ -96,6 +96,7 @@ router.get('/logout', api_controller.api_logout) ;
 router.get('/novo_projeto', authenticateToken, api_controller.api_novo_projeto);
 router.post('/novo_projeto', authenticateToken, api_controller.api_rouge_prepara) ;
 router.get('/perfil', authenticateToken, api_controller.api_perfil) ;
+router.get('/corpus', authenticateToken, api_controller.criar_corpus) ;
 
 router.post('/perfil', authenticateToken, api_controller.api_perfil_post) ;
 router.get('/sobre', authenticateToken, api_controller.api_sobre) ;
