@@ -32,7 +32,7 @@
     "node-localstorage": "^2.1.6",
     "nodemon": "^2.0.6",
     "properties-reader": "^2.1.1",
-    "pug": "^3.0.0"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "css-class-generator": "^2.0.0",
