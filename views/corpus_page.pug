@@ -4,6 +4,35 @@ block menu
     include menu
 
 block content 
+    div(style="display:flex; flex-direction:column; margin:10px")
+            div(style="display:flex; margin-top:15px; flex-direction: column;")
+                div(style="display:flex;flex-direction:row")            
+                     a(class="input_btn" type="button" href="corpus_incluir") Novo Corpus                            
+              
 
-        div Página de Criação de Corpus
-            
+            table(class="table table-borderless")
+                thead 
+                    tr(class="tr01")
+                        th(scope="col1") Código 
+                        th(scope="col1") Nome Corpus
+                        th Data Criação                      
+                        th Total de Arquivos
+                        th Editar                       
+                     
+                tbody(style="text-align:center")
+                    if corpus
+                        -for (var i=0; i< corpus.length; i++)
+                            tr(class="cell_")
+                                td=corpus[i]._id
+                                td=corpus[i].nome_corpus 
+                                -function formataData(value){ const mes = [];mes[0] = "01";mes[1] = "01";  mes[2] = "02";mes[3] = "03"; mes[4] = "04";mes[5] = "05";mes[6] = "06";mes[7] = "07";mes[8] = "08";mes[9] = "09";mes[10] = "10";mes[11] = "11";mes[12] = "12";return (value.dataCriacao.getDate()<10 ? "0" +value.dataCriacao.getDate() : value.dataCriacao.getDate())  + "/" + mes[value.dataCriacao.getMonth()] + "/" + value.dataCriacao.getFullYear()}                                             
+                                td #{formataData(corpus[i])}
+                                td=arquivos==0 ? 0 : arquivos[i].length
+                                td                            
+                                    a(href='/corpus/editar/'+ corpus[i]._id) &#9997
+                                td 
+                                    a(href='/corpus/excluir/'+corpus[i]._id) &#x2613
+
+    script(src="/javascripts/jquery-3.5.1.min.js")         
+
+                            

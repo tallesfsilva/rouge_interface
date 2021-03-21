@@ -75,21 +75,14 @@ console.log(req.cookies.session);
     }
 }
 
-router.get('/home', authenticateToken, function(req, res, next) {
- 
-    console.log("Token" + req.token);
-    
-    res.render('home', {token: req.token}); 
-  });
 
 
 router.get('/', function(req, res, next) {
 
-
       res.redirect('/login'); 
      // res.render('login');
-});
-
+  });
+router.get('/home', authenticateToken, api_controller.api_home);
 router.get('/login', api_controller.api_login_get) ;
 router.post('/login', api_controller.api_login_post) ;
 router.get('/logout', api_controller.api_logout) ;
@@ -97,6 +90,11 @@ router.get('/novo_projeto', authenticateToken, api_controller.api_novo_projeto);
 router.post('/novo_projeto', authenticateToken, api_controller.api_rouge_prepara) ;
 router.get('/perfil', authenticateToken, api_controller.api_perfil) ;
 router.get('/corpus', authenticateToken, api_controller.criar_corpus) ;
+router.get('/corpus/editar/:id', authenticateToken, api_controller.editar_corpus) ;
+router.post('/corpus/editar/:id', authenticateToken, api_controller.editar_post_corpus) ;
+router.get('/corpus_incluir', authenticateToken, api_controller.corpus_form) ;
+router.post('/corpus_incluir', authenticateToken, api_controller.incluir_corpus) ;
+router.get('/corpus/excluir/:id', authenticateToken, api_controller.excluir_corpus) ;
 
 router.post('/perfil', authenticateToken, api_controller.api_perfil_post) ;
 router.get('/sobre', authenticateToken, api_controller.api_sobre) ;

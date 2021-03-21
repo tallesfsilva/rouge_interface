@@ -31,7 +31,7 @@ div(style="display:flex; flex-direction:column; align-items: center")
               //- div(class="group" style="margin-top: 20px; display:flex; flex-direction: row; margin-right:10px")
                 input#check_rouge(type="checkbox" checked name="default_rouge")
                 span(style="color:#2F3962;font-size:18px;font-weight:bold; position:absolute;pointer-events:none;left:5px;top:-20px;text-align: center;") Usar padrão ROUGE
-              div(class="input_container")
+              div(class="input_container")                  
                   div(class="group")
                     div(style="display: flex; flex-direction: column")    
                       div(class="input_rouge" style="display: flex; margin-left: -5px; flex-direction: row")                   
@@ -59,13 +59,19 @@ div(style="display:flex; flex-direction:column; align-items: center")
                                     span(class="label_form") Corpus dataset:    
                               div(style="margin-right:70px;")                  
                                 select#corpus_dataset(disabled class="form-control" name="corpus_dataset")                   
-                                  option(value="dissertacoes") Dissertações
-                                  option(value="corpus2") Corpus 2
-                                  option(value="Corpus3") Corpus 3                      
-                                  option(value="Corpus4") Corpus 4
-                                  option(value="Corpus5") Corpus 5
-                                  option(value="Corpus6") Corpus 6
-                                  option(value="Corpus7") Corpus 7
+                                  optgroup(label="Meus Corpus")                                  
+                                   -for (var i=0; i< corpus.length; i++)
+                                    - var id = corpus[i].usuario.toString()
+                                      if id == idUser                                       
+                                          option(value=corpus[i]._id) #{(corpus[i].nome_corpus)}
+                                  optgroup(label="Corpus Global")    
+                                  -for (var i=0; i< corpus.length; i++)
+                                    - var id = corpus[i].usuario.toString()
+                                      if id != idUser                                       
+                                          option(value=corpus[i]._id) #{(corpus[i].nome_corpus)}
+                                                                                                           
+                                       
+                                   
              
               div(class="input_container")              
                   div(class="group")

@@ -1,0 +1,60 @@
+extends layout
+
+block menu
+    include menu
+
+
+block content 
+    h1= title
+    div(style="display:flex; flex-direction:column; align-items: left")    
+        if !success && message && body
+            each value in message
+                div#error(style="display:block" class="alert alert-danger" role="alert")=value.msg
+        else
+            div(style="display:none" class="alert alert-danger" role="alert")=message
+        if !success && message && file          
+            div#error(style="display:block" class="alert alert-danger" role="alert")=message
+        else
+            div(style="display:none" class="alert alert-danger" role="alert")=message
+            
+        if success && message   
+            div#error(style="display:block" class="alert alert-success" role="alert")=message
+        else
+            div(style="display:none" class="alert alert-danger" role="alert")=message 
+        form(method="POST" name="corpus" action="" enctype="multipart/form-data")       
+            div(class="container-fluid" style="background-color: #ececf7;padding-top: 15px;")
+                div(class="group")
+                    input(name="nome_corpus" type="text" required value=(undefined===corpus ? '' : corpus.nome_corpus))
+                    label Nome Corpus: 
+                    span(class="highlight")
+                    span(class="bar")         
+                div(class="group")
+                    input(name="categoria" type="text" required value=(undefined===corpus ? '' : corpus.categoria))
+                    label Categoria: 
+                    span(class="highlight")
+                    span(class="bar")
+                div(class="group") 
+                     div(style="display:flex; flex-direction:column;align-items:start")                  
+                        label(style="position:relative")  Descrição:                                          
+                        textarea(name="descricao_corpus", style="background-color: #ECECF7" cols="145", rows="10") #{undefined===corpus ? '' : corpus.descricao}                    
+                div(class="group")                     
+                    label(style="position:relative")  Arquivos:   
+                    input(type="file" class="form-control-file" name="corpus" required multiple=true)
+                   
+                    if arquivos 
+                        - function formataNome(arquivo){arquivo=arquivo.toString().split(","); return arquivo}
+                        - var nomeFormatados = formataNome(arquivos)
+                        div(style="display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-evenly;")
+                            each value in nomeFormatados
+                              div(style="display:flex;flex-direction:row")
+                                a=value
+                                a &#x2613
+                       
+                            
+                div(class="group")
+                    input(class="input_btn" type="submit" value=undefined===btn ? "Incluir" : btn)                
+   
+    script.
+       op("form[name='corpus']").addEventListener('submit', () =>{    
+              "u+"==="u+" ? c() : null;      
+      })

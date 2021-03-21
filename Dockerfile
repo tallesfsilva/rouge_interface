@@ -4,7 +4,13 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
+RUN apt-get update
+
 RUN npm install
+
+RUN apt-get install default-jdk -y
+
+
 
 COPY . .
 

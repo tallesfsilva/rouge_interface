@@ -1,0 +1,2 @@
+ROUGE-Type,Task Name,System Name,Avg_Recall,Avg_Precision,Avg_F-Score,Num Reference Summaries
+ROUGE-1,TASK2,PERSIANSYSSUM27.TXT,NaN,NaN,0.00000,0

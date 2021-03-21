@@ -7,6 +7,7 @@ var Usuario = require('../models/usuarios');
 var Session = require('../models/session');
 var Projeto = require('../models/projetos');
 var Resultado = require('../models/resultado');
+var Corpus = require('../models/corpus');
 var Token  = require('../models/token');
 const path = require('path');
 var async = require('async');
@@ -556,13 +557,13 @@ function gravaArquivos(reference,system, projetoPath){
 
 }
 
-function gravaArquivosCorpus(system, corpus_dataset, projetoPath){
+function gravaArquivosCorpus(system, corpus_dataset, projetoPath, idUsuario){
 
     return new Promise((resolve,reject) => {
         try{           
          if(projetoPath && corpus_dataset){
             try{
-                fse.copy(path.join(process.cwd().toString() + '/rouge/corpus/' + corpus_dataset +'/reference/'), projetoPath +'/reference/', err=>{
+                fse.copy(path.join(process.cwd().toString() + '/rouge/' + idUsuario + '/' + corpus_dataset +'/reference/'), projetoPath +'/reference/', err=>{
                     if(err) reject({success: false, message: "Não foi possível gravar o corpus", erro: err});                                           
                 })                
             
@@ -647,9 +648,176 @@ function formataNgram(string){
 
 exports.criar_corpus = (req,res,next) =>{
 
-        res.render('corpus_page');
+    if(req && req.body && req.headers && req.idUser){    
+        console.log(req.idUser);       
+
+
+            Corpus.find({'usuario': req.idUser}, {nome_corpus:1, categoria: 1, dataCriacao: 1}).sort({'dataCriacao': 'desc'})
+            .exec((err, corpus) => {
+                if(corpus){
+                    let id = req.idUser;
+                    let  arquivos = [];   
+                    try{                 
+                        for(i=0;i<corpus.length;i++){                 
+                            arquivos.push(fs.readdirSync('rouge/'+ id +'/'+ corpus[i]._id +'/reference/') )             
+                         }
+                    }catch(err){               
+                        arquivos.length = 0;
+                    }                 
+                    res.render('corpus_page', {success: true, arquivos: arquivos, corpus: corpus})
+                }
+
+
+            })
+
+
 
 }
+
+}
+
+exports.corpus_form = (req,res,next) =>{
+
+        res.render('corpus_form');
+
+}
+
+function gravaArquivosCriacaoCorpus(arquivosCorpus, pathCorpus){
+
+    return new Promise((resolve,reject) => {
+        try{      
+        if(arquivosCorpus.length===undefined && pathCorpus){
+            try{
+                fs.writeFileSync(pathCorpus + arquivosCorpus.name, arquivosCorpus.data, (err)=> {      
+                    if(err) reject({success: false, message: "Não foi possível gravar o arquivo corpus - FS", erro: err});                                           
+            })
+            } catch(err){
+                reject({success: false, message: "Não foi possível gravar o arquivo corpus - Promise", err: err});
+            }
+            }else if(arquivosCorpus.length && pathCorpus){
+                try{
+                    for(let i=0;i<arquivosCorpus.length;i++){
+                        fs.writeFileSync(pathCorpus + arquivosCorpus[i].name, arquivosCorpus[i].data, (err)=> {          
+                                if(err) reject({success: false, message: "Não foi possível gravar os arquivos corpus", erro: err});                                           
+                        })
+                    };  
+                } catch(err){
+                    reject({success: false, message: "Não foi possível gravar os arquivos corpus", err:err});
+                    }
+                }
+              
+                resolve({success: true, message: "Arquivos corpus gravados corretamente"});
+ } catch(err){
+          return console.log(err);
+        }
+}).catch(err => {
+    return console.log(err);
+})
+
+}
+
+function criaDiretorioCorpus(idCorpus, idUsuario){
+    
+    return new Promise((resolve, reject) => {
+        try{
+            if(idCorpus && idUsuario){
+                    try{
+                        fs.mkdirSync('rouge/' + idUsuario +'/'+ idCorpus +'/' + 'reference', { recursive: true });
+                        
+                    }catch(err){
+                       reject({success: false, message: "Não foi possível criar os diretórios"})
+                    }                 
+                }else{
+                    reject({success: false, message: "Não foi possível criar os diretórios"})
+                }
+           } catch(err){
+                reject({success: false, message: "Não foi possível criar os diretórios"})
+                   }        
+        resolve({success: true, message: "Diretórios criados"})       
+                 
+     }).catch(err => {return false ;})
+    }
+          
+
+
+exports.incluir_corpus = [
+
+    body('nome_corpus', 'O nome deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+    body('nome_corpus', 'Nome não pode ser vazio').trim().isLength(0).escape(),
+    body('categoria', 'Categoria deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+    body('descricao_corpus', 'Descrição deve ter no mínimo 10 caracteres.').trim().isLength({ min: 5 }).escape(),
+    
+    (req,res,next) =>{
+       if(req && req.body && req.headers && req.user.name){      
+            const errors = validationResult(req);          
+        if(!errors.isEmpty()){        
+             res.render('corpus_form', {success: false, body: true, message : errors.array()}); 
+         }else{                  
+                //console.log(req.files);
+                //console.log(req.body)
+                let arquivoCorpus = req.files.corpus;
+                let validaCorpus = validaReference(arquivoCorpus);
+               console.log(validaCorpus);
+            if(!validaCorpus){           
+                res.render('corpus_form',{success : false, file: true,  message :"Arquivos inválidos. Verifique se formato de arquivo é txt ou se o nome do arquivo é 'aaaaa_aaaaa'."});
+                }else{
+                    Usuario.findOne({'email' : req.user.name})
+                    .exec((err,usuario)=>{
+                        if(err)   res.render("corpus_page", {success: false ,message:"Usuário não encontrado"})       
+                            if(usuario!=null && usuario!=undefined){
+                                var corpus = new Corpus({   
+                                    usuario : usuario,             
+                                    nome_corpus : req.body.nome_corpus,
+                                    categoria : req.body.categoria,
+                                    descricao : req.body.descricao_corpus,
+                                    compartilha: req.body.compartilha,
+                                    dataCriacao: Date.now(),                    
+                                });
+                               
+                            
+                            corpus.save((err) => {
+                                if(err)   res.render("corpus_form", {success: false ,message:"Não foi possível salvar o corpus"})
+                                                           
+                                        console.log(corpus._id);
+                                        let idCorpus = corpus._id;
+                                        let idUsuario = usuario._id;
+                                        let pathCorpus = 'rouge/' + idUsuario +'/' + idCorpus + '/reference/';
+
+                                        async function corpusArquivos() {
+                                            let corpusDiretorio = await criaDiretorioCorpus(idCorpus, idUsuario);
+                                            console.log({"Criação de Diretório:" : corpusDiretorio.success});
+                                            console.log(arquivoCorpus)
+                                            if(corpusDiretorio.success){
+                                                let gravaCorpus = await gravaArquivosCriacaoCorpus(arquivoCorpus, pathCorpus);
+                                                console.log({"Arquivos corpus gravados: " : gravaCorpus.success})   
+                                              
+                                        }
+                                        }                                    
+                                         corpusArquivos().catch(err=> {console.log(err)})
+                                         res.redirect("/corpus")
+                                        
+                               
+                               
+
+                            })
+
+          
+                            }else{
+                                res.render("corpus_form", {success: false ,message:"Usuário inválido"})
+                            }         
+
+        });        
+
+        }
+                 }
+    }else{
+        res.render("corpus_form", {success: false ,message:"Não foi possível iniciar a opperação"})
+    }
+}
+
+];
+
+
 
 let arquivoProperties = {
     ngram: '',
@@ -681,15 +849,14 @@ exports.api_rouge_prepara = (req,res,next) =>{
         let topicArray = [];        
 
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
-        console.log(arquivoProperties.topic_type);
         let corpus = req.body.corpus;
-        let corpus_dataset = req.body.corpus_dataset;       
+        let corpus_dataset = req.body.corpus_dataset;         
+        let system = req.files.system;
+        let ngramValida = formataNgram(arquivoProperties.ngram);
+        let systemValida = validaSystem(system);             
         //Verifica se usuário quer utilizar corpus
         if(corpus && corpus!=null && corpus!=undefined && corpus_dataset 
-            && corpus_dataset!=undefined && corpus_dataset!=null){
-            let system = req.files.system;
-            let ngramValida = formataNgram(arquivoProperties.ngram);
-            let systemValida = validaSystem(system);       
+            && corpus_dataset!=undefined && corpus_dataset!=null){            
             if(!ngramValida){
                 res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
              }else if(!systemValida){        
@@ -713,6 +880,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                         let projetoOutput = 'projetos/' + projeto._id + '/results';
                                         arquivoProperties.outputFile = 'projetos/' + projeto._id + '/results';                                
                                         arquivoProperties.project_dir = 'projetos/' + projeto._id;
+                                        let idUsuario = usuario._id;
                                         console.log(arquivoProperties);
                                   
                                     //Verificar forma de parar execução caso retorno de sucesso de qualquer promise seja false
@@ -724,7 +892,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             let rouge_properties = await formataRougeProperties(arquivoProperties);   
                                             console.log({'rouge.properties alterado' : rouge_properties.success});                         
                                         
-                                            let arquivos = await gravaArquivosCorpus(system,corpus_dataset, projetoPath);
+                                            let arquivos = await gravaArquivosCorpus(system,corpus_dataset, projetoPath, idUsuario);
                                             console.log({'Arquivos refence/system gravados' : arquivos.success});
                                         
                                             let executaRouge = await execRouge(projetoPath);
@@ -769,12 +937,8 @@ exports.api_rouge_prepara = (req,res,next) =>{
  }
     //Usuário não utilizará corpus
     } else{   
-        let reference = req.files.reference;
-        let system = req.files.system;         
-        let ngramValida = formataNgram(arquivoProperties.ngram);
-        let referenceValida = validaReference(reference);
-        let systemValida = validaSystem(system);
-       
+        let reference = req.files.reference;      
+        let referenceValida = validaReference(reference);     
          if(!ngramValida){
             res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
          }else if(!referenceValida || !systemValida){        
@@ -892,11 +1056,167 @@ exports.api_sobre = (req,res,next) =>{
             res.render('sobre');
 }
 
-exports.api_novo_projeto = (req,res,next) => {
+exports.editar_post_corpus = [
 
-        res.render('rouge_page');
+    body('nome_corpus', 'O nome deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+    body('nome_corpus', 'Nome não pode ser vazio').trim().isLength(0).escape(),
+    body('categoria', 'Categoria deve ter no mínimo 5 caracteres.').trim().isLength({ min: 5 }).escape(),
+    body('descricao_corpus', 'Descrição deve ter no mínimo 10 caracteres.').trim().isLength({ min: 5 }).escape(),
+    
+    (req,res,next) =>{
+       if(req && req.body && req.headers && req.user.name && req.params.id){      
+            const errors = validationResult(req);          
+        if(!errors.isEmpty()){        
+             res.render('corpus_form', {success: false, body: true, message : errors.array()}); 
+         }else{                 
+             
+               let arquivoCorpus = req.files.corpus;
+               let validaCorpus = validaReference(arquivoCorpus);
+            if(!validaCorpus){           
+                res.render('corpus_form',{success : false, file: true,  message :"Arquivos inválidos. Verifique se formato de arquivo é txt ou se o nome do arquivo é 'aaaaa_aaaaa'."});
+                }else{
+                    let arquivos = [];
+                      var corpus = new Corpus({   
+                                    usuario : req.idUser,             
+                                    nome_corpus : req.body.nome_corpus,
+                                    categoria : req.body.categoria,
+                                    descricao : req.body.descricao_corpus,
+                                    compartilha: req.body.compartilha,
+                                    dataCriacao: Date.now(), 
+                                    _id : req.params.id                   
+                                });                            
+                            Corpus.findByIdAndUpdate(req.params.id, corpus, {new: true}, function (err,corpusAtualizado) {
+                                if(err)   res.render("corpus_form", {success: false ,message:"Não foi possível atualizar o corpus"})
+                                                           
+                                        let idCorpus = corpus._id;
+                                        let idUsuario = req.idUser;                                      
+                                        let pathCorpus = 'rouge/' + idUsuario +'/' + idCorpus + '/reference/';
+
+                                        async function corpusArquivos() {                                            
+                                            let gravaCorpus = await gravaArquivosCriacaoCorpus(arquivoCorpus, pathCorpus);
+                                            console.log({"Arquivos corpus gravados: " : gravaCorpus.success})   
+                                        }
+                                        corpusArquivos().catch(err=>console.log(err)); 
+
+                                        try{
+                                             arquivos.push(fs.readdirSync(pathCorpus) )             
+                                           }catch(err){
+                                            res.render('corpus_form', {success: false, message:"Não foi possível ler o diretório do corpus"});
+                                           }                                         
+                                           res.render('corpus_form', {success: true, message:"O corpus foi atualizado com sucesso", corpus: corpusAtualizado, arquivos: arquivos});
+                                        });   
+                        }   
+
+        }
+           
+    }else{
+        res.render("corpus_form", {success: false ,message:"Não foi possível iniciar a opperação"})
+    }
+    }
+]
+
+exports.editar_corpus = (req,res,next) =>{
+    if(req && req.params.id && req.idUser){
+        console.log(req.params.id);
+        let idCorpus = req.params.id;
+        let idUsuario = req.idUser;      
+        let pathCorpus = 'rouge/' + idUsuario +'/' + idCorpus + '/reference/';  
+        let arquivos = [];
+        Corpus.findOne({'_id': idCorpus})
+        .exec((err, corpus)=>{
+            if(err) res.render('corpus_page', {success:false, message:"Não foi possível excluir o corpus"})
+            try{
+                arquivos.push(fs.readdirSync(pathCorpus))             
+            }catch(err){
+                res.render('corpus_form', {success:false, message:"Não foi possível ler o diretório do corpus"})
+            }
+            res.render('corpus_form', {btn: "Atualizar" ,arquivos: arquivos, corpus:corpus});
+        })
+
+    }else{
+        res.render('corpus_form', {success:false, message:"Parâmetros inválidos"})
+    }
 
 }
+
+exports.excluir_corpus = (req,res,next) =>{
+
+    if(req && req.params.id && req.idUser){
+        console.log(req.params.id);
+        let idCorpus = req.params.id;
+        let idUsuario = req.idUser;
+        let pathCorpus = 'rouge/' + idUsuario +'/' + idCorpus;  
+
+        Corpus.findOneAndDelete({'_id': idCorpus})
+        .exec((err)=>{
+            if(err) res.render('corpus_page', {success:false, message:"Não foi possível excluir o corpus"})
+            try{
+                fs.rmdirSync(pathCorpus, {recursive : true});
+            }catch(err){
+                res.render('corpus_page', {success:false, message:"Não foi póssível excluir o corpus"})
+            }
+            res.redirect('/corpus');
+        })
+
+    }else{
+        res.render('corpus_page', {success:false, message:"Parâmetros inválidos"})
+    }
+
+}
+
+
+exports.api_home = (req,res,next) => {
+    if(req.idUser && req.token){
+        console.log("Token" + req.token);
+        let idUser = req.idUser;   
+        console.log(idUser); 
+        Corpus.find()
+         .exec((err, corpus) =>{
+             if(err) res.render('rouge_page', {success:false, message:"Corpus não Encontrado"})
+            if(corpus!=null && corpus!=undefined){                
+                     
+             res.render('home', {idUser: idUser, success: true, corpus: corpus});             
+        }else{
+            res.render('home', {success:false, token: req.token, message:"Corpus não Encontrado"})
+        }
+
+    });
+    }else{
+        res.render('home', {success:false, message:"Identificador não encontrado"})
+    }           
+
+};
+
+      
+
+
+    
+   
+
+exports.api_novo_projeto = (req,res,next) => {
+
+    if(req.idUser && req.token){
+        let idUser = req.idUser;   
+        console.log(idUser); 
+        Corpus.find()
+         .exec((err, corpus) =>{
+             if(err) res.render('rouge_page', {success:false, message:"Corpus não Encontrado"})
+            if(corpus!=null && corpus!=undefined){                
+                     
+             res.render('rouge_page', {idUser: idUser, success: true, corpus: corpus});             
+        }else{
+            res.render('rouge_page', {success:false, message:"Corpus não Encontrado"})
+        }
+
+    });
+    }else{
+        res.render('rouge_page', {success:false, message:"Identificador não encontrado"})
+    }           
+
+};
+
+      
+
 
 exports.api_projeto = (req,res,next) => {
 

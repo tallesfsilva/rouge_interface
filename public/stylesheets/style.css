@@ -6,6 +6,15 @@ body {
 
 }
 
+*{
+
+  user-select: none;
+}
+
+.tr01 > th{
+  text-align: center;
+}
+
 table {
   color:  #151631 !important;
 
