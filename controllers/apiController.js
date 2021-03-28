@@ -21,17 +21,13 @@ const { body,validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const fetch = require('node-fetch');
 var propertiesReader = require('properties-reader');
-const { resolve } = require('path');
-const { json } = require('express');
 const { RSA_NO_PADDING } = require('constants');
 let properties = propertiesReader('rouge/rouge.properties');
-
 
 let results = [];
 
 
 exports.api_login_post = (req,res,next) =>{
-
   try{
     Usuario.findOne({'email': req.body.email})
     .exec(function(err, results){ 
@@ -153,11 +149,10 @@ exports.api_login_get = (req,res,next) =>{
       }).catch(err => { console.log(err)});  
     }else if((session==null || session==undefined)){ 
    
-            try{
-                console.log("entrei aqui!");  
+            try{               
                 Usuario.findOne({'_id': sessionId.id})
                 .exec(function(err, results){ 
-                console.log("usuario" + results);      
+                   
                 if(err) return next(err);      
                 if (results) {                                    
                    fetch("http://localhost:"+port+"/api/session/", {
@@ -217,7 +212,7 @@ exports.api_logout = (req,res,next) => {
             } 
               if(session){  
                 let cookieValue = JSON.stringify({'s_id': session._id, 'id': session.usuario});             
-                  //console.log(session);
+                 
                   res.cookie('session',cookieValue,{expires: new Date(Date.now())})
                   .redirect('login');                  
               }
@@ -268,7 +263,7 @@ exports.api_user_registrar_post =  [
                     }else{
                         Usuario.findOne({'email' : req.body.email})
                         .exec( (err, result) =>{
-                            console.log(result);
+                           
                             if(err) return console.log(err);
                             if(result===null || result===undefined){
                                 usuario.save((err) =>{                                
@@ -284,7 +279,7 @@ exports.api_user_registrar_post =  [
                                     })
                                     .then (response => response.json())
                                     .then(data => {    
-                                        console.log(data);  
+                                        
                                         let cookieValue = JSON.stringify({'s_id': data.session._id, 'id': data.session.usuario});                                 
                                         res 
                                     .cookie('session',cookieValue, {
@@ -557,13 +552,15 @@ function gravaArquivos(reference,system, projetoPath){
 
 }
 
-function gravaArquivosCorpus(system, corpus_dataset, projetoPath, idUsuario){
+function gravaArquivosCorpus(system, corpusDataset, projetoPath, corpusUsuario){
 
     return new Promise((resolve,reject) => {
         try{           
-         if(projetoPath && corpus_dataset){
+         if(projetoPath && corpusDataset && corpusUsuario){
+             console.log(corpusUsuario);
+             console.log(corpusDataset);
             try{
-                fse.copy(path.join(process.cwd().toString() + '/rouge/' + idUsuario + '/' + corpus_dataset +'/reference/'), projetoPath +'/reference/', err=>{
+                fse.copy(path.join(process.cwd().toString() + '/rouge/' + corpusUsuario + '/' + corpusDataset +'/reference/'), projetoPath +'/reference/', err=>{
                     if(err) reject({success: false, message: "Não foi possível gravar o corpus", erro: err});                                           
                 })                
             
@@ -649,7 +646,7 @@ function formataNgram(string){
 exports.criar_corpus = (req,res,next) =>{
 
     if(req && req.body && req.headers && req.idUser){    
-        console.log(req.idUser);       
+        console.log(req.idUser);      
 
 
             Corpus.find({'usuario': req.idUser}, {nome_corpus:1, categoria: 1, dataCriacao: 1}).sort({'dataCriacao': 'desc'})
@@ -661,7 +658,8 @@ exports.criar_corpus = (req,res,next) =>{
                         for(i=0;i<corpus.length;i++){                 
                             arquivos.push(fs.readdirSync('rouge/'+ id +'/'+ corpus[i]._id +'/reference/') )             
                          }
-                    }catch(err){               
+                    }catch(err){ 
+                        console.log(err);              
                         arquivos.length = 0;
                     }                 
                     res.render('corpus_page', {success: true, arquivos: arquivos, corpus: corpus})
@@ -753,8 +751,7 @@ exports.incluir_corpus = [
         if(!errors.isEmpty()){        
              res.render('corpus_form', {success: false, body: true, message : errors.array()}); 
          }else{                  
-                //console.log(req.files);
-                //console.log(req.body)
+               
                 let arquivoCorpus = req.files.corpus;
                 let validaCorpus = validaReference(arquivoCorpus);
                console.log(validaCorpus);
@@ -772,8 +769,7 @@ exports.incluir_corpus = [
                                     descricao : req.body.descricao_corpus,
                                     compartilha: req.body.compartilha,
                                     dataCriacao: Date.now(),                    
-                                });
-                               
+                                });                              
                             
                             corpus.save((err) => {
                                 if(err)   res.render("corpus_form", {success: false ,message:"Não foi possível salvar o corpus"})
@@ -795,15 +791,9 @@ exports.incluir_corpus = [
                                         }                                    
                                          corpusArquivos().catch(err=> {console.log(err)})
                                          res.redirect("/corpus")
-                                        
-                               
-                               
-
-                            })
-
-          
+                            })          
                             }else{
-                                res.render("corpus_form", {success: false ,message:"Usuário inválido"})
+                               res.render("corpus_form", {success: false ,message:"Usuário inválido"})
                             }         
 
         });        
@@ -849,14 +839,15 @@ exports.api_rouge_prepara = (req,res,next) =>{
         let topicArray = [];        
 
         arquivoProperties.topic_type = (req.body.topic_type ? req.body.topic_type.join("|") : req.body.topic_type) || properties.get('topic.type');
-        let corpus = req.body.corpus;
-        let corpus_dataset = req.body.corpus_dataset;         
+        let corpus = req.body.corpus;     
+        let corpusDataset = req.body.corpus_dataset ? req.body.corpus_dataset.split('|')[0] : null;         
+        let corpusUsuario = req.body.corpus_dataset ? req.body.corpus_dataset.split('|')[1] : null; 
         let system = req.files.system;
         let ngramValida = formataNgram(arquivoProperties.ngram);
         let systemValida = validaSystem(system);             
         //Verifica se usuário quer utilizar corpus
-        if(corpus && corpus!=null && corpus!=undefined && corpus_dataset 
-            && corpus_dataset!=undefined && corpus_dataset!=null){            
+        if(corpus && corpus!=null && corpus!=undefined && corpusDataset 
+            && corpusDataset!=undefined && corpusDataset!=null && corpusUsuario){                     
             if(!ngramValida){
                 res.render('rouge_page',{success : false,message :"Ngram inválido. Por favor insira a métrica correta."});     
              }else if(!systemValida){        
@@ -892,7 +883,7 @@ exports.api_rouge_prepara = (req,res,next) =>{
                                             let rouge_properties = await formataRougeProperties(arquivoProperties);   
                                             console.log({'rouge.properties alterado' : rouge_properties.success});                         
                                         
-                                            let arquivos = await gravaArquivosCorpus(system,corpus_dataset, projetoPath, idUsuario);
+                                            let arquivos = await gravaArquivosCorpus(system,corpusDataset, projetoPath, corpusUsuario);
                                             console.log({'Arquivos refence/system gravados' : arquivos.success});
                                         
                                             let executaRouge = await execRouge(projetoPath);

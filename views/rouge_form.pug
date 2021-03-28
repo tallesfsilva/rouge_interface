@@ -63,12 +63,12 @@ div(style="display:flex; flex-direction:column; align-items: center")
                                    -for (var i=0; i< corpus.length; i++)
                                     - var id = corpus[i].usuario.toString()
                                       if id == idUser                                       
-                                          option(value=corpus[i]._id) #{(corpus[i].nome_corpus)}
+                                          option(value=corpus[i]._id + '|' + id) #{(corpus[i].nome_corpus)}
                                   optgroup(label="Corpus Global")    
-                                  -for (var i=0; i< corpus.length; i++)
-                                    - var id = corpus[i].usuario.toString()
-                                      if id != idUser                                       
-                                          option(value=corpus[i]._id) #{(corpus[i].nome_corpus)}
+                                    -for (var i=0; i< corpus.length; i++)
+                                      - var id = corpus[i].usuario.toString()
+                                        if id != idUser                                       
+                                            option(value=corpus[i]._id + '|' + id.toString()) #{(corpus[i].nome_corpus)}
                                                                                                            
                                        
                                    

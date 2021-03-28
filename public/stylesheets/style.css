@@ -8,7 +8,7 @@ body {
 
 *{
 
-  user-select: none;
+  user-select:auto;
 }
 
 .tr01 > th{
