@@ -59,16 +59,18 @@ div(style="display:flex; flex-direction:column; align-items: center")
                                     span(class="label_form") Corpus dataset:    
                               div(style="margin-right:70px;")                  
                                 select#corpus_dataset(disabled class="form-control" name="corpus_dataset")                   
-                                  optgroup(label="Meus Corpus")                                  
-                                   -for (var i=0; i< corpus.length; i++)
-                                    - var id = corpus[i].usuario.toString()
-                                      if id == idUser                                       
-                                          option(value=corpus[i]._id + '|' + id) #{(corpus[i].nome_corpus)}
-                                  optgroup(label="Corpus Global")    
+                                  optgroup(label="Meus Corpus")
+                                   if corpus                                  
                                     -for (var i=0; i< corpus.length; i++)
                                       - var id = corpus[i].usuario.toString()
-                                        if id != idUser                                       
-                                            option(value=corpus[i]._id + '|' + id.toString()) #{(corpus[i].nome_corpus)}
+                                        if id == idUser                                       
+                                            option(value=corpus[i]._id + '|' + id) #{(corpus[i].nome_corpus)}
+                                  optgroup(label="Corpus Global")    
+                                    if corpus
+                                      -for (var i=0; i< corpus.length; i++)
+                                        - var id = corpus[i].usuario.toString()
+                                          if id != idUser                                       
+                                              option(value=corpus[i]._id + '|' + id.toString()) #{(corpus[i].nome_corpus)}
                                                                                                            
                                        
                                    
