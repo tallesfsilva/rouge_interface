@@ -31,7 +31,6 @@ exports.api_login_post = (req,res,next) =>{
   try{
     Usuario.findOne({'email': req.body.email})
     .exec(function(err, results){ 
-        console.log(results);      
         if(err) return next(err);      
         if (results && (results.email == req.body.email)) {
              Session.findOne({'usuario' : results}) 
@@ -61,7 +60,7 @@ exports.api_login_post = (req,res,next) =>{
                                .redirect('home');     
                             
                             }).catch (err => {   
-                                console.log(err);
+                                
                                 res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema no login. Por favor tente novamente"});
                             });
                 }else if ((session && session.refreshToken) 
@@ -91,7 +90,7 @@ exports.api_login_post = (req,res,next) =>{
                                     .redirect('home');     
                             
                                 }).catch (err => {                                    
-                                    console.log(err);                                    
+                                                              
                                     res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema no login. Por favor tente novamente"});
                                     
                                  });              
@@ -115,15 +114,14 @@ exports.api_login_get = (req,res,next) =>{
        
     if(req.cookies.session){
         const sessionId = JSON.parse(req.cookies.session);
-        console.log(sessionId.id);
-        console.log(sessionId);
+     
         Session.findOne({'_id' : sessionId.s_id}) 
         .exec(function(err,session) {  
-            console.log("session" +  session)      
+             
             if(err) return console.log(err)
             if(session && session.refreshToken){
-                 console.log("Autenticação:" +  session)
-                //Refatorar para função - toda geração do token tratato via backend
+             
+               
                     fetch("http://localhost:"+port+"/api/token", {    
                     method: 'POST',
                     headers: {
@@ -139,7 +137,7 @@ exports.api_login_get = (req,res,next) =>{
             .then (token => {        
           //console.log(token);
           jwt.verify(token.accessToken, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-              //console.log(err)
+               
               if (err) return res.sendStatus(403)
               req.user = user;
               req.token =token;  
@@ -174,7 +172,7 @@ exports.api_login_get = (req,res,next) =>{
                                    .redirect('home');     
                                 
                                 }).catch (err => {   
-                                    console.log(err);
+                                  
                                     res.render('login', {"success": false, "user": null, "message": "Ocorreu um problema no login. Por favor tente novamente"});
                                 });      
 }else{
@@ -207,7 +205,7 @@ exports.api_logout = (req,res,next) => {
         Session.findOneAndDelete({'_id' : session_id}) 
           .exec(function(err,session) {
             if(err){
-                console.log(err)
+                
                 res.redirect('login');
             } 
               if(session){  
@@ -252,8 +250,7 @@ exports.api_user_registrar_post =  [
                    if(req && req.body && req.headers){
                      const user = {name: req.body.email}; 
                         const errors = validationResult(req);
-                        var usuario = new Usuario({
-                            
+                        var usuario = new Usuario({                            
                             nome : req.body.nome,
                             email : req.body.email,
                             senha : md5(req.body.senha),
@@ -321,8 +318,7 @@ exports.api_session_criar = function ( req, res, next ) {
         const user = {name: req.body.usuario.email};  
         
         const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET);
-        console.log("Refresh token: " + refreshToken);                      
-        console.log("API: Session: Criar - /api/session/");
+        
         
         var session = new Session({
             usuario  : req.body.usuario,
@@ -381,7 +377,7 @@ function formataRougeProperties(arquivoProperties){
                     properties.set('stemmer.name', arquivoProperties.stemmer_name);
                     properties.set('stemmer.use', arquivoProperties.stemmer_use);
                     
-                    //console.log("Projeto directório:" + properties.get('project.dir'));
+                     
             
                     let rougeProperties = JSON.stringify(properties._properties);
                     rougeProperties = rougeProperties.replace(/":"/g, "=")
@@ -432,43 +428,13 @@ function criaDiretorios(idProjeto){
 
 };
 
-/*
-function execRouge(projetoPath){
-    return new Promise((resolve,reject) =>{
-        try{       
-            const { spawn} = require("child_process");
-            let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
-            console.log(rougeProperties);
-            try{ 
-                if(rougeProperties){             
-                        const ls = spawn('java', ['-jar','-Xmx5048m','-Drouge.prop=' + rougeProperties.toString(), path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar')]);
-                        
-                        process.on('close', (code) => {
-                        return console.log("ROUGE executado");
-                        });
-
-                         }            
-                         
-            } catch(err){
-                reject({success:false, message : err});
-            }
-        } catch(err){
-            reject({success:false, message : "Não foi possível iniciar o processo de execução", error: err})
-  
-        }    
-    }).catch(err => {
-        console.log(err);
-    })   
-  
-  }
-*/
 function execRouge(projetoPath){
 
     return new Promise((resolve,reject) =>{
         try{       
             const { exec} = require("child_process");
             let rougeProperties = path.join(process.cwd() +'/' + projetoPath + '/' + 'rouge.properties');
-            console.log(rougeProperties);
+        
             try{ 
                 if(rougeProperties){             
                         const ls = exec('java -jar -Xmx4048m -Drouge.prop=' + rougeProperties.toString() + ' ' + path.join(process.cwd().toString() + '/rouge/rouge2-1.2.2.jar'), (error, stdout, stderr) => {
@@ -476,8 +442,7 @@ function execRouge(projetoPath){
                             reject({success:false, message : "Não foi possível executar o ROUGE2", error: error})
                             
                         }                    
-                         console.log(`stderr: ${stderr}`);                
-                          console.log(`stdout: ${stdout}`);                          
+                                              
                          }); 
                          
                         ls.on('exit', function (code) {
@@ -646,7 +611,7 @@ function formataNgram(string){
 exports.criar_corpus = (req,res,next) =>{
 
     if(req && req.body && req.headers && req.idUser){    
-        console.log(req.idUser);      
+          
 
 
             Corpus.find({'usuario': req.idUser}, {nome_corpus:1, categoria: 1, dataCriacao: 1}).sort({'dataCriacao': 'desc'})
@@ -659,7 +624,7 @@ exports.criar_corpus = (req,res,next) =>{
                             arquivos.push(fs.readdirSync('rouge/'+ id +'/'+ corpus[i]._id +'/reference/') )             
                          }
                     }catch(err){ 
-                        console.log(err);              
+                        reject({success: false, message: "Não foi possível criar o corpus", err:err});       
                         arquivos.length = 0;
                     }                 
                     res.render('corpus_page', {success: true, arquivos: arquivos, corpus: corpus})
@@ -706,10 +671,10 @@ function gravaArquivosCriacaoCorpus(arquivosCorpus, pathCorpus){
               
                 resolve({success: true, message: "Arquivos corpus gravados corretamente"});
  } catch(err){
-          return console.log(err);
+    reject({success: false, message: "Não foi possível gravar os arquivos corpus", err:err});
         }
 }).catch(err => {
-    return console.log(err);
+    reject({success: false, message: "Não foi possível gravar os arquivos corpus", err:err});
 })
 
 }
@@ -754,7 +719,7 @@ exports.incluir_corpus = [
                
                 let arquivoCorpus = req.files.corpus;
                 let validaCorpus = validaReference(arquivoCorpus);
-               console.log(validaCorpus);
+         
             if(!validaCorpus){           
                 res.render('corpus_form',{success : false, file: true,  message :"Arquivos inválidos. Verifique se formato de arquivo é txt ou se o nome do arquivo é 'aaaaa_aaaaa'."});
                 }else{
